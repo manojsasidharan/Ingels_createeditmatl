@@ -438,12 +438,13 @@
 				
 				<ComboBox selectedKey="{Country}">
 					<items>
-						<core:Item text="Discontinued" key="Discontinued"/>
-						<core:Item text="Suspended" key="Suspended"/>
-						<core:Item text="No Order" key="No Order"/>
-						<core:Item text="Recall" key="Recall"/>
-						<core:Item text="Vendor Out" key="Vendor Out"/>
-						<core:Item text="Inactive" key="Inactive"/>
+						<core:Item text="Active (Purchase & Billing)" key="03"/>
+						<core:Item text="Discontinued / To Be Discontinued" key="05"/>
+						<core:Item text="Suspended (Purchasing)" key="06"/>
+						<core:Item text="No Order (Purchasing)" key="07"/>
+						<core:Item text="Recall (Billing Plant Status)" key="08"/>
+						<core:Item text="Vendor Out (Billing Plant Status)" key="09"/>
+						<core:Item text="Inactive (Purchasing)" key="10"/>						
 					</items>
 					<layoutData>
 						<l:GridData span="XL4 L4 M4 S4" />
