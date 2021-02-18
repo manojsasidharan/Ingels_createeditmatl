@@ -1,0 +1,9 @@
+/* Enter your custom styles here */
+
+.Basic-Others .sapUiFormTitleH4 {
+    border-bottom-color: transparent;
+}
+
+.PAList .sapMLIB {
+	border-bottom: none;
+}

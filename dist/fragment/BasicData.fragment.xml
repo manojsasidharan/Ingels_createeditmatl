@@ -1,0 +1,596 @@
+<core:FragmentDefinition
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" 
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	xmlns:t="sap.ui.table"
+	class="sapUiSizeCompact">
+	
+<l:Grid defaultSpan="XL6 L6 M6 S12"><l:content>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Groupings"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Category" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="" key=""/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</ComboBox>
+					
+				<Label fieldGroupIds="lbl"  text="Matl. Type" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="" key=""/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</ComboBox>
+				<Label fieldGroupIds="lbl"  text="Group" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				<Label fieldGroupIds="lbl"  text="Department" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="" key=""/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</ComboBox>
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="General Data"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Tax Class" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="" key=""/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</ComboBox>
+				<Label fieldGroupIds="lbl"  text="Val. Class" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				<Label fieldGroupIds="lbl"  text="Org. Region" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				<Label fieldGroupIds="lbl"  text="Str. Conditions" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Temperature" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Input>
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="C" key="C"/>
+						<core:Item text="F" key="F"/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</ComboBox>
+				<Label fieldGroupIds="lbl"  text="Haz. Matl" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="Aerosol" key="Aerosol"/>
+						<core:Item text="Chemical" key="Chemical"/>
+						<core:Item text="Oil" key="Oil"/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</ComboBox>
+			</f:content>
+		</f:SimpleForm>
+</l:content></l:Grid>
+
+<l:Grid defaultSpan="XL12 L12 M12 S12"><l:content>
+				<t:Table
+					rows="{VendorFundsModel>/}"
+					selectionMode="MultiToggle"
+					visibleRowCount="4"
+					ariaLabelledBy="title">
+					<t:extension>
+						<OverflowToolbar>
+							<Title class="sapUiFormTitleH4" text="Unit of Measure/EANs/UPC/Dimensions/Tags"/>
+							<ToolbarSpacer/>
+							<Button type="Transparent" icon="sap-icon://add" text="Add"></Button>
+							<Button type="Transparent" icon="sap-icon://delete" text="Remove"></Button>
+						</OverflowToolbar>
+					</t:extension>
+					<t:columns>
+						<t:Column resizable="false" width="85px">
+							<Label wrapping="true" text="Base UoM"></Label>
+							<t:template>
+								<ComboBox selectedKey="{Country}"><items><core:Item text="EA" key="EA"/></items></ComboBox>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="85px">
+							<Label wrapping="true" text="Alt UoM"></Label>
+							<t:template>
+								<ComboBox selectedKey="{Country}"><items><core:Item text="EA" key="EA"/></items></ComboBox>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="110px">
+							<Label wrapping="true" text="Measurement Unit"></Label>
+							<t:template>
+								<Text text="Each"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="50px" >
+							<Label wrapping="true" text="&lt;=&gt;"></Label>
+							<t:template>
+								<Text text="&lt;=&gt;"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="85px" >
+							<Label wrapping="true" text="Number"></Label>
+							<t:template>
+								<Input width="68px" />
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="50px">
+							<Label wrapping="true" text="Base UoM"></Label>
+							<t:template>
+								<RadioButton groupName="1" />
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="60px">
+							<Label wrapping="true" text="Order UoM"></Label>
+							<t:template>
+								<RadioButton groupName="1" />
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="70px">
+							<Label wrapping="true" text="Delivery UoM"></Label>
+							<t:template>
+								<RadioButton groupName="1" />
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="60px">
+							<Label wrapping="true" text="Sales UoM"></Label>
+							<t:template>
+								<RadioButton groupName="1" />
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="160px">
+							<Label wrapping="true" text="EAN/UPC"></Label>
+							<t:template>
+								<Input width="143px"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="160px">
+							<Label wrapping="true" text="EAN Category"></Label>
+							<t:template>
+								<Input width="143px"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="50px">
+							<Label wrapping="true" text="Addl. EANs"></Label>
+							<t:template>
+								
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="80px">
+							<Label wrapping="true" text="Gross Wt."></Label>
+							<t:template>
+								<Input width="63px"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="80px">
+							<Label wrapping="true" text="Net Wt."></Label>
+							<t:template>
+								<Input width="63px"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="100px">
+							<Label wrapping="true" text="Wt. Unit"></Label>
+							<t:template>
+								<Input width="83px"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="65px">
+							<Label wrapping="true" text="Length"></Label>
+							<t:template>
+								<Input width="48px"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="60px">
+							<Label wrapping="true" text="Width"></Label>
+							<t:template>
+								<Input width="43px"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="60px">
+							<Label wrapping="true" text="Height"></Label>
+							<t:template>
+								<Input width="43px"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="85px">
+							<Label wrapping="true" text="Dimention"></Label>
+							<t:template>
+								<Input width="68px"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false"  width="70px">
+							<Label wrapping="true" text="Volume"></Label>
+							<t:template>
+								<Input width="53px"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="80px">
+							<Label wrapping="true" text="Vol. Unit"></Label>
+							<t:template>
+								<Input width="63px"/>
+							</t:template>
+						</t:Column>
+					</t:columns>
+				</t:Table>
+</l:content></l:Grid>
+
+<l:Grid defaultSpan="XL6 L6 M6 S12"><l:content>		
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Shelf Life"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Rem. Shelf Life" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Total Shelf Life" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+					
+				<Label fieldGroupIds="lbl"  text="Period Indicator" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="Day" key="Day"/>
+						<core:Item text="Week" key="Week"/>
+						<core:Item text="Month" key="Month"/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</ComboBox>
+				
+				<Label fieldGroupIds="lbl"  text="Rounding Rule" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Storage %" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Validity"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Valid From" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<DatePicker
+				placeholder="Enter Date"
+				change="handleChange">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</DatePicker>
+			
+				<Label fieldGroupIds="lbl"  text="Valid To" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<DatePicker
+				placeholder="Enter Date"
+				change="handleChange">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</DatePicker>
+				
+				<Label fieldGroupIds="lbl"  text="Matl. Status" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="Discontinued" key="Discontinued"/>
+						<core:Item text="Suspended" key="Suspended"/>
+						<core:Item text="No Order" key="No Order"/>
+						<core:Item text="Recall" key="Recall"/>
+						<core:Item text="Vendor Out" key="Vendor Out"/>
+						<core:Item text="Inactive" key="Inactive"/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</ComboBox>
+				
+				<Label fieldGroupIds="lbl"  text="Valid From" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<DatePicker
+				placeholder="Enter Date"
+				change="handleChange">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</DatePicker>
+				<Label fieldGroupIds="lbl"  text=" " wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Text text=" ">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Text>
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Tie and Tier"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Vendor Tie" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+					
+				<Label fieldGroupIds="lbl"  text="Vendor Tier" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Warehouse Tie" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Warehouse Tier" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Ratio" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Order Restriction" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="" key=""/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</ComboBox>
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			adjustLabelSpan="false"
+			class="Basic-Others"
+			title=" "
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Order Sequence" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Unit Factor" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				<Button type="Emphasized" width="100px" icon="sap-icon://bullet-text" text="Attributes" press="onProductAttributesPress">
+					
+				</Button>
+			</f:content>
+		</f:SimpleForm>
+</l:content></l:Grid>
+</core:FragmentDefinition>

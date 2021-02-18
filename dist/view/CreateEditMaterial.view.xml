@@ -1,0 +1,53 @@
+<mvc:View controllerName="Ingles.AddOn.CreateEditMaterial.controller.CreateEditMaterial"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" 
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	class="sapUiSizeCompact"
+	displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.MaterialHeader" type="XML"></core:Fragment>
+						<IconTabBar
+							backgroundDesign="Transparent"
+							id="idTabBar"
+							expanded="{device>/isNoPhone}"
+							tabDensityMode="Compact"
+							class="sapUiNoContentPadding">
+							<items>
+								<IconTabFilter text="Basic Data" key="Basic Data">
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.BasicData" type="XML"></core:Fragment>
+								</IconTabFilter>
+								<IconTabFilter text="Purchasing" key="Purchasing">
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.Purchasing" type="XML"></core:Fragment>
+								</IconTabFilter>
+								<IconTabFilter text="Material Profile" key="Material Profile">
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.MaterialProfile" type="XML"></core:Fragment>
+								</IconTabFilter>
+								<IconTabFilter text="Sales" key="Sales">
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.Sales" type="XML"></core:Fragment>
+								</IconTabFilter>
+								<IconTabFilter text="Logistics DC" key="Logistics DC">
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.LogisticsDC" type="XML"></core:Fragment>
+								</IconTabFilter>
+								<IconTabFilter text="Logistics Stores" key="Logistics Stores">
+									
+								</IconTabFilter>
+								<IconTabFilter text="POS Global" key="POS Global">
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.POSGlobal" type="XML"></core:Fragment>
+								</IconTabFilter>
+								<IconTabFilter text="POS Stores" key="POS Stores">
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.POSStores" type="XML"></core:Fragment>
+								</IconTabFilter>
+							</items>
+						</IconTabBar>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

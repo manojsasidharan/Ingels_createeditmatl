@@ -1,0 +1,782 @@
+<core:FragmentDefinition
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" 
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	class="sapUiSizeCompact">
+	
+<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl" text="DC" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12" />
+					</layoutData>
+				</Label>
+				<Input value="110051">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S12" />
+					</layoutData>
+				</Input>
+				<Text text="Description of DC">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12" />
+					</layoutData>
+				</Text>
+				
+			</f:content>
+		</f:SimpleForm>
+		
+<l:Grid defaultSpan="XL6 L6 M6 S12"><l:content>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="MRP Paramaters"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl" text="MRP Type" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="" key=""/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</ComboBox>
+			
+				<Label fieldGroupIds="lbl"  text="Lot Sizing Proc" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Reorder Point" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Max Stock Level" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Min Safety Stock" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				<Label fieldGroupIds="lbl"  text="Safety Stock" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Target Stock" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				<Label fieldGroupIds="lbl" text="Period Indicator" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl" text="Min T. Range" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl" text="Max T. Range" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl" text="Rounding Profile" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Rounding Value" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="UoM Group" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Service Level" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="General Control Parameters"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Purchase Group" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Tax Indicator" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Matl. Status" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				<Label fieldGroupIds="lbl"  text="Valid From" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<DatePicker>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</DatePicker>
+				
+				<Text text=" " wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Text>
+				<CheckBox text="Auto PO">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</CheckBox>
+				
+				<Text text=" " wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Text>
+				<CheckBox text="Avail. Check">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</CheckBox>
+				<Text text=" " wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Text>
+				<CheckBox text="ABC Indicator">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</CheckBox>
+				<Text text=" " wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Text>
+				<CheckBox text="Neg. Stocks">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</CheckBox>
+				<Text text=" " wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Text>
+				<CheckBox text="Batch Management">
+					<layoutData>
+						<l:GridData span="XL10 L10 M10 S10" />
+					</layoutData>
+				</CheckBox>
+				<Text text=" " wrapping="false">
+					<layoutData>
+						<l:GridData span="XL12 L12 M12 S12" />
+					</layoutData>
+				</Text>
+				<Text text=" " wrapping="false">
+					<layoutData>
+						<l:GridData span="XL12 L12 M12 S12" />
+					</layoutData>
+				</Text>
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="MRP Controller / Replenishment Data"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="MRP Controller" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+			
+				<Label fieldGroupIds="lbl"  text="Planning Cycle" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Delivery Cycle" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="PI.Deliv. Time" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Input>
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="" key=""/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</ComboBox>
+				
+				<Label fieldGroupIds="lbl"  text="Supply Source" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				<Label fieldGroupIds="lbl"  text="Consign Control" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="GR Proc. Time" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Input>
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="" key=""/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</ComboBox>
+				<Label fieldGroupIds="lbl"  text="GL Proc. Time" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Input>
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="" key=""/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</ComboBox>
+				<Text text=" " wrapping="false">
+					<layoutData>
+						<l:GridData span="XL12 L12 M12 S12" />
+					</layoutData>
+				</Text>
+				<Text text=" " wrapping="false">
+					<layoutData>
+						<l:GridData span="XL12 L12 M12 S12" />
+					</layoutData>
+				</Text>
+				<Text text=" " wrapping="false">
+					<layoutData>
+						<l:GridData span="XL12 L12 M12 S12" />
+					</layoutData>
+				</Text>
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Forecast Parameters"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Forecast Type" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="" key=""/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</ComboBox>
+			
+				<Label fieldGroupIds="lbl"  text="Forecast Group" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Forecast Prof." wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Forecast Model" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Period Indicator" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<ComboBox selectedKey="{Country}">
+					<items>
+						<core:Item text="" key=""/>
+					</items>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</ComboBox>
+				<Label fieldGroupIds="lbl"  text="Last Forecast" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Smth. Prom. Cons." wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				<Label fieldGroupIds="lbl"  text="Deter. Schema" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Ref. Matl. COns." wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Ref. Plant Cons." wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Date To" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<DatePicker>
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</DatePicker>
+				
+				<Label fieldGroupIds="lbl"  text="Multiplier" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Exp. Weekly Mnt" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Storage Data"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Facility" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+			
+				<Label fieldGroupIds="lbl"  text="Storage Location" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Storage Bin" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Picking Area" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Physical Inventory / Goods Issue / Picking / Shipping"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="CC Physical Inv." wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+			
+				<Label fieldGroupIds="lbl"  text="CC Ind. Fixed" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Loading Group" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Service Level" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				<Label fieldGroupIds="lbl"  text="Processing Time" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Base Quantity" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				<Label fieldGroupIds="lbl"  text="Setup Time" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+				
+				<Label fieldGroupIds="lbl"  text="Logistics Group" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL4 L4 M4 S4" />
+					</layoutData>
+				</Input>
+			</f:content>
+		</f:SimpleForm>
+		<HBox>
+			<layoutData>
+					<l:GridData span="XL12 L12 M12 S12" />
+				</layoutData>
+			
+		</HBox>
+		<HBox>
+			<layoutData>
+					<l:GridData span="XL12 L12 M12 S12" />
+				</layoutData>
+			<Button type="Emphasized" icon="sap-icon://money-bills" press="onAccountingViewPress()" text="Accounting View"></Button>
+		</HBox>
+</l:content></l:Grid>
+</core:FragmentDefinition>

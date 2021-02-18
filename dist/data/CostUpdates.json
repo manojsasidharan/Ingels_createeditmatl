@@ -1,0 +1,16 @@
+[
+	{ "Name": "Off Invoice", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Other Item Up-Down", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Other Vendor Up-Down", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Freight Allowance", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Prepay + Add", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Due Vendor", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Billback", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Duty", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Freight Bill", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Backhaul", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Next Last Cost", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Cash Discount", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Total Cost", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false},
+	{ "Name": "Slot Allowance", "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false}
+]

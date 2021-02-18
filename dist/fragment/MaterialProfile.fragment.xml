@@ -1,0 +1,99 @@
+<core:FragmentDefinition
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" 
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	class="sapUiSizeCompact">
+		
+<l:Grid defaultSpan="XL6 L6 M6 S12"><l:content>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Important Dates"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Item Added Date" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="05/12/2017"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="First Receipt Date" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="05/12/2017"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Purchasing Effective Date" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="05/12/2017"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="STO Date - Billing Effective Date" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="05/12/2017"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Last Shipped Date" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="05/12/2017"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Last Maintenance (updated) date (Material?)" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="05/12/2017"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="PO Information"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Last Received PO" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="45000123"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Last Received PO Date" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="05/12/2017"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Last Received PO Quantity" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="200.00"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Last Goods Received Date" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="05/12/2017"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Text text=" "><layoutData><l:GridData span="XL12 L12 M12 S12" /></layoutData></Text>
+				<Text text=" "><layoutData><l:GridData span="XL12 L12 M12 S12" /></layoutData></Text>
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Ranking Information"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Anticipated Rank" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="0"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Actual Service Level" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="0"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Annual Rank" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="0"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Inventory Information"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Inventory On Order" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="0"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Inventory On Hand" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="0"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Promo On Hand" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="0"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Forward Buy On Hand" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="0"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Pending Relieve" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="0"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+				<Label fieldGroupIds="lbl"  text="Reg In Process" wrapping="false"><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Label>
+				<Text text="0"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Text>
+			</f:content>
+		</f:SimpleForm>
+</l:content></l:Grid>
+</core:FragmentDefinition>

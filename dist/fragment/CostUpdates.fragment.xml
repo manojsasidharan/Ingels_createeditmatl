@@ -1,0 +1,87 @@
+<core:FragmentDefinition
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" 
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:t="sap.ui.table"
+	xmlns="sap.m"
+	class="sapUiSizeCompact">
+
+<Dialog title="Conditions / Cost Updates - 3513, PLANTERS COCKTL P NUT" class="sapUiSizeCompact">
+	<content>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Material List Cost" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S3" />
+					</layoutData>
+				</Label>
+				<Input value="{RefMaterial}">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2" />
+					</layoutData>
+				</Input>
+					<ComboBox selectedKey="{Country}">
+						<items>
+							<core:Item text="" key=""/>
+						</items>
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S2" />
+						</layoutData>
+					</ComboBox>
+			</f:content>
+		</f:SimpleForm>
+		
+		<t:Table width="800px"
+				rows="{CostUpdatesModel>/}"
+				selectionMode="None"
+				visibleRowCount="14"
+				ariaLabelledBy="title">
+				<t:columns>
+					<t:Column resizable="true" width="200px">
+						<Label text="Particulars"></Label>
+						<t:template>
+							<Text text="{CostUpdatesModel>Name}" wrapping="false" />
+						</t:template>
+					</t:Column>
+					<t:Column resizable="false" width="150px">
+						<Label text="Cost"></Label>
+						<t:template>
+							<Input value="{CostUpdatesModel>Cost}" type="Number" textAlign="Right"/>
+						</t:template>
+					</t:Column>
+					<t:Column resizable="false" width="150px" >
+						<Label text="From"></Label>
+						<t:template>
+							<DatePicker />
+						</t:template>
+					</t:Column>
+					<t:Column resizable="false" width="150px" >
+						<Label text="Till"></Label>
+						<t:template>
+							<DatePicker />
+						</t:template>
+					</t:Column>
+					<t:Column resizable="false" width="120px">
+						<Label text="Item Level?"></Label>
+						<t:template>
+							<CheckBox text="Item Level"></CheckBox>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+	</content>
+	<buttons>
+		<Button type="Emphasized" width="100px" icon="sap-icon://accept" text="OK" press="onCostUpdatesCancel"></Button>
+		<Button width="100px" icon="sap-icon://cancel" text="Cancel" press="onCostUpdatesCancel"></Button>
+	</buttons>
+</Dialog>
+
+</core:FragmentDefinition>

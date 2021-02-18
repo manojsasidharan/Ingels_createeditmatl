@@ -1,0 +1,87 @@
+<core:FragmentDefinition
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" 
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	class="sapUiSizeCompact">
+
+<Dialog title="Product Attributes" class="sapUiSizeCompact">
+	<content>
+		<l:Grid defaultSpan="XL6 L6 M6 S12"><l:content>
+			<List width="350px" class="PAList">
+				<InputListItem label="Aerosol/Flammable Item"><CheckBox /></InputListItem>
+				<InputListItem label="Contain Dextromethorphan"><CheckBox /></InputListItem>
+				<InputListItem label="FSA eligible"><CheckBox /></InputListItem>
+				<InputListItem label="Is Gluten Free"><CheckBox /></InputListItem>
+				<InputListItem label="Is Organic"><CheckBox /></InputListItem>
+				<InputListItem label="Seasonal"><CheckBox /></InputListItem>
+				<InputListItem label="Private Label">
+					<ComboBox width="150px" selectedKey="{Country}">
+						<items>
+							<core:Item text="" key=""/>
+						</items>
+					</ComboBox>
+				</InputListItem>
+				<InputListItem label="Variable Weight"><CheckBox /></InputListItem>
+				<InputListItem label="Club Item"><CheckBox /></InputListItem>
+				<InputListItem label="Auto Price?"><CheckBox /></InputListItem>
+			</List>
+			<List width="350px" class="PAList">
+				<InputListItem label="Retention Days"><Input width="150px" /></InputListItem>
+				<InputListItem label="Label Scheme">
+					<ComboBox width="150px" selectedKey="{Country}">
+						<items>
+							<core:Item text="Warehouse" key="Warehouse"/>
+							<core:Item text="DSD" key="DSD"/>
+							<core:Item text="DSD Cross Dock" key="DSD Cross Dock"/>
+							<core:Item text="Both" key="Both"/>
+						</items>
+					</ComboBox>
+				</InputListItem>
+				<InputListItem label="Tag Qty"><Input width="150px" /></InputListItem>
+				<InputListItem label="New Until Date"><DatePicker width="150px"/></InputListItem>
+				<InputListItem label="Manufacturer Code"><Input width="150px"/></InputListItem>
+				<InputListItem label="Sourcing Type">
+					<ComboBox width="150px" selectedKey="{Country}">
+						<items>
+							<core:Item text="Warehouse" key="Warehouse"/>
+							<core:Item text="DSD" key="DSD"/>
+							<core:Item text="DSD Cross Dock" key="DSD Cross Dock"/>
+							<core:Item text="Both" key="Both"/>
+						</items>
+					</ComboBox>
+				</InputListItem>
+				<InputListItem label="Tobacco Type">
+					<ComboBox width="150px" selectedKey="{Country}">
+						<items>
+							<core:Item text="" key=""/>
+						</items>
+					</ComboBox>
+				</InputListItem>
+				<InputListItem label="Location">
+					<ComboBox width="150px" selectedKey="{Country}">
+						<items>
+							<core:Item text="" key=""/>
+						</items>
+					</ComboBox>
+				</InputListItem>
+				<InputListItem label="Nutrition Rating"><Input width="150px"/></InputListItem>
+				<InputListItem label="Mix Match Code"><Input width="150px"/></InputListItem>
+				<InputListItem label="Misc. Account">
+					<ComboBox width="150px" selectedKey="{Country}">
+						<items>
+							<core:Item text="" key=""/>
+						</items>
+					</ComboBox>
+				</InputListItem>
+			</List>
+		</l:content></l:Grid>
+	</content>
+	<buttons>
+		<Button type="Emphasized" width="100px" icon="sap-icon://accept" text="OK" press="onProductAttributesCancel"></Button>
+		<Button width="100px" icon="sap-icon://cancel" text="Cancel" press="onProductAttributesCancel"></Button>
+	</buttons>
+</Dialog>
+
+</core:FragmentDefinition>

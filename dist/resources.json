@@ -1,0 +1,99 @@
+{
+    "resources": [
+        {
+            "name": "controller/CreateEditMaterial.controller.js"
+        },
+        {
+            "name": "data/CostUpdates.json"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "data/VendorFunds.json"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "manifest-bundle.zip"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/CreateEditMaterial-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../sap-ui-version.json"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "view/CreateEditMaterial.view.xml"
+        },
+        {
+            "name": "fragment/VendorFunding.fragment.xml"
+        },
+        {
+            "name": "fragment/Sales.fragment.xml"
+        },
+        {
+            "name": "fragment/Purchasing.fragment.xml"
+        },
+        {
+            "name": "fragment/ProductAttributes.fragment.xml"
+        },
+        {
+            "name": "fragment/POSStores.fragment.xml"
+        },
+        {
+            "name": "fragment/POSGlobal.fragment.xml"
+        },
+        {
+            "name": "fragment/MaterialProfile.fragment.xml"
+        },
+        {
+            "name": "fragment/MaterialHeader.fragment.xml"
+        },
+        {
+            "name": "fragment/LogisticsDC.fragment.xml"
+        },
+        {
+            "name": "fragment/CostUpdates.fragment.xml"
+        },
+        {
+            "name": "fragment/BasicData.fragment.xml"
+        },
+        {
+            "name": "fragment/AccountingView.fragment.xml"
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": "index.html"
+        }
+    ]
+}

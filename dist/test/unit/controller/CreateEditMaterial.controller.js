@@ -1,0 +1,1 @@
+sap.ui.define(["Ingles/AddOn/CreateEditMaterial/controller/CreateEditMaterial.controller"],function(t){"use strict";QUnit.module("CreateEditMaterial Controller");QUnit.test("I should test the CreateEditMaterial controller",function(e){var r=new t;r.onInit();e.ok(r)})});

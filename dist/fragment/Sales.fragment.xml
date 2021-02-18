@@ -1,0 +1,210 @@
+<core:FragmentDefinition
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" 
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	class="sapUiSizeCompact">
+	
+<!--<f:SimpleForm-->
+<!--			editable="true"-->
+<!--			layout="ResponsiveGridLayout"-->
+<!--			title="Access Paramaters"-->
+<!--			adjustLabelSpan="false"-->
+<!--			columnsXL="1"-->
+<!--			columnsL="1"-->
+<!--			columnsM="1"-->
+<!--			singleContainerFullSize="false" >-->
+<!--			<f:content>-->
+<!--				<Label fieldGroupIds="lbl"  text="Sales Org" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL1 L1 M1 S12" />-->
+<!--					</layoutData>-->
+<!--				</Label>-->
+<!--				<Input value="IM10">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S12" />-->
+<!--					</layoutData>-->
+<!--				</Input>-->
+<!--				<Text text="Ingles Sales Org.">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL3 L3 M3 S12" />-->
+<!--					</layoutData>-->
+<!--				</Text>-->
+					
+<!--				<Label fieldGroupIds="lbl"  text="Price List" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL1 L1 M1 S12" />-->
+<!--					</layoutData>-->
+<!--				</Label>-->
+<!--				<Input value="">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S12" />-->
+<!--					</layoutData>-->
+<!--				</Input>-->
+<!--				<Label fieldGroupIds="lbl"  text="Plant" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL1 L1 M1 S12" />-->
+<!--					</layoutData>-->
+<!--				</Label>-->
+<!--				<Input value="">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S12" />-->
+<!--					</layoutData>-->
+<!--				</Input>-->
+				
+<!--				<Label fieldGroupIds="lbl"  text="Dist. Channel" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL1 L1 M1 S12" />-->
+<!--					</layoutData>-->
+<!--				</Label>-->
+<!--				<Input value="40">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S12" />-->
+<!--					</layoutData>-->
+<!--				</Input>-->
+<!--				<Text text="Retail">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL3 L3 M3 S12" />-->
+<!--					</layoutData>-->
+<!--				</Text>-->
+				
+<!--				<Label fieldGroupIds="lbl"  text="Plant Group (Zone)" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL1 L1 M1 S12" />-->
+<!--					</layoutData>-->
+<!--				</Label>-->
+<!--				<Input value="">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S12" />-->
+<!--					</layoutData>-->
+<!--				</Input>-->
+<!--				<Label fieldGroupIds="lbl"  text="Sales Unit" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL1 L1 M1 S12" />-->
+<!--					</layoutData>-->
+<!--				</Label>-->
+<!--				<Input value="">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S12" />-->
+<!--					</layoutData>-->
+<!--				</Input>-->
+<!--			</f:content>-->
+<!--		</f:SimpleForm>-->
+		
+<!--<l:Grid defaultSpan="XL6 L6 M6 S12"><l:content>-->
+<!--		<f:SimpleForm-->
+<!--			editable="true"-->
+<!--			layout="ResponsiveGridLayout"-->
+<!--			title="Validities for Each Dist. Channel"-->
+<!--			adjustLabelSpan="false"-->
+<!--			columnsXL="1"-->
+<!--			columnsL="1"-->
+<!--			columnsM="1"-->
+<!--			singleContainerFullSize="false" >-->
+<!--			<f:content>-->
+<!--				<Label fieldGroupIds="lbl"  text="Sales Unit" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S2" />-->
+<!--					</layoutData>-->
+<!--				</Label>-->
+<!--				<Input value="">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL4 L4 M4 S4" />-->
+<!--					</layoutData>-->
+<!--				</Input>-->
+<!--				<CheckBox text="Cash Discount">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL6 L6 M6 S6" />-->
+<!--					</layoutData>-->
+<!--				</CheckBox>-->
+				
+<!--				<Label fieldGroupIds="lbl"  text="Min. Del. Qty" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S2" />-->
+<!--					</layoutData>-->
+<!--				</Label>-->
+<!--				<Input value="{RefMaterial}">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S2" />-->
+<!--					</layoutData>-->
+<!--				</Input>-->
+<!--				<ComboBox selectedKey="{Country}">-->
+<!--					<items>-->
+<!--						<core:Item text="" key=""/>-->
+<!--					</items>-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S2" />-->
+<!--					</layoutData>-->
+<!--				</ComboBox>-->
+				
+<!--				<Label fieldGroupIds="lbl"  text="Max. Del. Qty" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S2" />-->
+<!--					</layoutData>-->
+<!--				</Label>-->
+<!--				<Input value="{RefMaterial}">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S2" />-->
+<!--					</layoutData>-->
+<!--				</Input>-->
+<!--				<ComboBox selectedKey="{Country}">-->
+<!--					<items>-->
+<!--						<core:Item text="" key=""/>-->
+<!--					</items>-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S2" />-->
+<!--					</layoutData>-->
+<!--				</ComboBox>-->
+<!--			</f:content>-->
+<!--		</f:SimpleForm>-->
+<!--		<f:SimpleForm-->
+<!--			editable="true"-->
+<!--			layout="ResponsiveGridLayout"-->
+<!--			title="Current Price"-->
+<!--			adjustLabelSpan="false"-->
+<!--			columnsXL="1"-->
+<!--			columnsL="1"-->
+<!--			columnsM="1"-->
+<!--			singleContainerFullSize="false" >-->
+<!--			<f:content>-->
+<!--				<Label fieldGroupIds="lbl"  text="Curr. Final Price" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S2" />-->
+<!--					</layoutData>-->
+<!--				</Label>-->
+<!--				<Input value="{RefMaterial}">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL4 L4 M4 S4" />-->
+<!--					</layoutData>-->
+<!--				</Input>-->
+<!--				<Text text="" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL6 L6 M6 S6" />-->
+<!--					</layoutData>-->
+<!--				</Text>-->
+				
+<!--				<Label fieldGroupIds="lbl"  text="Valid From" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S2" />-->
+<!--					</layoutData>-->
+<!--				</Label>-->
+<!--				<DatePicker value="{RefMaterial}">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL4 L4 M4 S4" />-->
+<!--					</layoutData>-->
+<!--				</DatePicker>-->
+<!--				<Label fieldGroupIds="lbl"  text="Valid To" wrapping="false">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL2 L2 M2 S2" />-->
+<!--					</layoutData>-->
+<!--				</Label>-->
+<!--				<DatePicker value="{RefMaterial}">-->
+<!--					<layoutData>-->
+<!--						<l:GridData span="XL4 L4 M4 S4" />-->
+<!--					</layoutData>-->
+<!--				</DatePicker>-->
+<!--			</f:content>-->
+<!--		</f:SimpleForm>-->
+<!--</l:content></l:Grid>-->
+</core:FragmentDefinition>

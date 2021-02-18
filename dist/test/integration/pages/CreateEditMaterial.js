@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/test/Opa5"],function(e){"use strict";var t="CreateEditMaterial";e.createPageObjects({onTheAppPage:{actions:{},assertions:{iShouldSeeTheApp:function(){return this.waitFor({id:"app",viewName:t,success:function(){e.assert.ok(true,"The CreateEditMaterial view is displayed")},errorMessage:"Did not find the CreateEditMaterial view"})}}}})});
