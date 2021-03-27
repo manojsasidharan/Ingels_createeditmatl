@@ -1,0 +1,50 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" class="sapUiSizeCompact">
+	<Dialog title="Accounting View" class="sapUiSizeCompact">
+		<content>
+			<OverflowToolbar>
+				<Label text="General Valuation Data"/>
+				<ToolbarSpacer/>
+			</OverflowToolbar>
+			<l:Grid defaultSpan="XL6 L6 M6 S12">
+				<l:content>
+					<List width="350px" class="PAList">
+						 <DisplayListItem label="Total Stock" value="{material>/accounting/totStock}"/>
+					</List>
+					<List width="350px" class="PAList">
+						 <DisplayListItem label="Valuation Class" value="{material>/accounting/valClass}"/>
+					</List>
+				</l:content>
+			</l:Grid>
+			<OverflowToolbar >
+				<Label text="Prices and Values"/>
+				<ToolbarSpacer/>
+			</OverflowToolbar>
+			<l:Grid defaultSpan="XL6 L6 M6 S12">
+				<l:content>
+					<List width="350px" class="PAList">
+						 <DisplayListItem label="Price Control" value="{=((${material>/accounting/priceControl} === 'S') ? 'Standard Cost' : 'Moving Average')}"/>				
+						 <DisplayListItem label="Standard Price"  />
+						 <DisplayListItem label="Price Per Unit"  value="{material>/accounting/pricePerUnit}"/>
+						 <DisplayListItem label="Future Price" />
+						 <DisplayListItem label="Future Price From" 
+						 value="{path: 'material/accounting/futurePriceFrom', type: 'sap.ui.model.type.Date',
+										formatOptions: { pattern: 'MM/dd/yyyy', source: { pattern: 'yyyy-MM-dd' }}}" />
+						 <DisplayListItem label="Previous Price" />
+					</List>
+					<List width="350px" class="PAList">
+						 <DisplayListItem label="Currency"  value="{material>/accounting/currency}"/>
+						 <DisplayListItem label="Price Unit"  value="{material>/accounting/priceUnit}"/>
+						 <DisplayListItem label="Inventory Value"  value="{material>/accounting/invValue}"/>
+						 <DisplayListItem label="Average Weight" />
+						 <DisplayListItem label="Last Price Change" />
+					</List>
+				</l:content>
+			</l:Grid>
+		</content>
+		<buttons>
+			<Button type="Emphasized" width="100px" icon="sap-icon://accept" text="OK" press="onAccountingViewCancel"></Button>
+			<Button width="100px" icon="sap-icon://cancel" text="Cancel" press="onAccountingViewCancel"></Button>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

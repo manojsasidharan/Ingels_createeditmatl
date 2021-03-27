@@ -1,0 +1,28 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" class="sapUiSizeCompact">
+			<f:SimpleForm editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1"
+				visible="{ parts: ['appControl>/mode', 'appControl>/editable'], formatter: '.showPageHeader'}" singleContainerFullSize="true" width="1000px">
+				<f:content>
+					<Label fieldGroupIds="lbl" text="Material #" design="Bold" wrapping="false" >
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S2"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>/matnr}" textAlign="Left">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S2"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Description" design="Bold" wrapping="false" >
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S3"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>/generalData/description}" >
+						<layoutData>
+							<l:GridData span="XL5 L5 M5 S5"/>
+						</layoutData>
+					</Text>
+				</f:content>
+			</f:SimpleForm>
+</core:FragmentDefinition>

@@ -1,0 +1,76 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" class="sapUiSizeCompact">
+	<Dialog title="Product Attributes" class="sapUiSizeCompact">
+		<content>
+			<l:Grid defaultSpan="XL6 L6 M6 S12" binding="{material>/attributes}">
+				<l:content>
+					<List width="400px" class="PAList">
+						<InputListItem label="Label Scheme">
+							<ComboBox width="230px" selectedKey="{material>labelScheme}" editable="{appControl>/editable}" valueState="Warning" items="{MasterDataModel>/labelSchemes}"
+								valueStateText="Required Entry">
+								<items>
+									<core:ListItem text="{MasterDataModel>code}: {MasterDataModel>name}" id="lcd" key="{MasterDataModel>code}" textDirection="LTR"/>
+								</items>
+							</ComboBox>
+						</InputListItem>
+						<InputListItem label="Location" labelTextDirection="LTR">
+							<ComboBox width="230px" selectedKey="{material>location}" showSecondaryValues="true" items="{MasterDataModel>/locationCode}"
+								valueState="Warning" valueStateText="Required Entry" editable="{appControl>/editable}" textAlign="Left" textDirection="LTR">
+								<items>
+									<core:ListItem text="{MasterDataModel>code}:{MasterDataModel&gt;name}" key="{MasterDataModel>code}" textDirection="LTR"/>
+								</items>
+							</ComboBox>
+						</InputListItem>						
+						<InputListItem label="Tag Qty"><Input width="150px" value="{material>tagQty}" editable="{appControl>/editable}" valueState="Warning" valueStateText="Required Entry"/></InputListItem>
+						<InputListItem label="Retention Days"><Input width="150px" value="{material>retnDays}" editable="{appControl>/editable}" valueState="Warning" valueStateText="Required Entry"/></InputListItem>
+						<InputListItem label="Sourcing Type">
+							<ComboBox width="150px" selectedKey="{material>sourcingType}"
+								editable="{= (${appControl>/mode} === 'EDIT' &amp;&amp; ${appControl>/editable} === true ? true : false )}">
+								<items>
+									<core:Item text="Warehouse" key="Warehouse"/>
+									<core:Item text="DSD" key="DSD"/>
+									<core:Item text="CrossDock" key="CrossDock"/>
+									<core:Item text="Both" key="Both"/>
+								</items>
+							</ComboBox>
+						</InputListItem>
+						<InputListItem label="Private Label">
+							<Input width="150px" value="{material>pvtLabel}" maxLength="4" editable="{appControl>/editable}"></Input>
+						</InputListItem>
+						<InputListItem label="New Until Date"><DatePicker width="150px" displayFormat="MM/dd/yyyy" editable="{appControl>/editable}"/></InputListItem>
+						<InputListItem label="Manufacturer Code"><Input width="150px" editable="{appControl>/editable}"/></InputListItem>
+						<InputListItem label="Tobacco Type">
+							<ComboBox width="150px" selectedKey="{Country}" editable="{appControl>/editable}">
+								<items>
+									<core:Item text="" key=""/>
+								</items>
+							</ComboBox>
+						</InputListItem>
+						<InputListItem label="Nutrition Rating"><Input value="{material>nutritionRating}" width="150px" editable="{appControl>/editable}"/></InputListItem>						
+					</List>
+					<List width="350px" class="PAList">
+						<InputListItem label="Contain Dextromethorphan"><CheckBox editable="{appControl>/editable}"/></InputListItem>
+						<InputListItem label="FSA eligible"><CheckBox editable="{appControl>/editable}"/></InputListItem>
+						<InputListItem label="Is Gluten Free"><CheckBox editable="{appControl>/editable}"/></InputListItem>
+						<InputListItem label="Is Organic"><CheckBox editable="{appControl>/editable}"/></InputListItem>
+						<InputListItem label="Seasonal"><CheckBox editable="{appControl>/editable}"/></InputListItem>
+						<InputListItem label="Variable Weight"><CheckBox selected="{material>varWeight}" editable="{appControl>/editable}"/></InputListItem>
+						<InputListItem label="Club Item"><CheckBox editable="{appControl>/editable}"/></InputListItem>						
+						<InputListItem label="Mix Match Code"><Input width="150px" editable="{appControl>/editable}"/></InputListItem>
+						<InputListItem label="Misc. Account">
+							<ComboBox width="150px" selectedKey="{Country}" editable="{appControl>/editable}">
+								<items>
+									<core:Item text="" key=""/>
+								</items>
+							</ComboBox>
+						</InputListItem>
+					</List>
+				</l:content>
+			</l:Grid>
+		</content>
+		<buttons>
+			<Button type="Emphasized" width="100px" icon="sap-icon://accept" text="OK" press="onCloseProductAttributes"/>
+			<Button width="100px" icon="sap-icon://cancel" text="Cancel" press="onCloseProductAttributes"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

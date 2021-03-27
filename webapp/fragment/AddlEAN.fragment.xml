@@ -1,0 +1,45 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:t="sap.ui.table" xmlns="sap.m" class="sapUiSizeCompact">
+	<Dialog title="Additional EANs/Unit of Measure" class="sapUiSizeCompact">
+		<content>
+			<t:Table id="AddlEANTable" width="450px" rows="{material>/addlEAN}" visibleRowCount="5" class="sapUiTinyMargin">
+				<t:extension>
+					<OverflowToolbar>
+						<Title class="sapUiFormTitleH6" text="Enter additional EANs and unit of measures"/>
+						<ToolbarSpacer/>
+						<Button type="Transparent" icon="sap-icon://add" press="onAppendAddlEAN" tooltip="Add row" visible="{appControl>/editable}"/>
+						<Button type="Transparent" icon="sap-icon://delete" press="onDeleteAddlEAN" tooltip="Delete selected row" visible="{appControl>/editable}"/>
+					</OverflowToolbar>
+				</t:extension>
+				<t:columns>
+					<t:Column resizable="false" hAlign="Center" width="150px">
+						<Label wrapping="true" text="Alt.UoM"/>
+						<t:template>
+							<ComboBox selectedKey="{material>altUoM}" showSecondaryValues="true" items="{path: 'MasterDataModel>/orderUnits', templateShareable:true}" editable="{appControl>/editable}">
+								<items>
+									<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+								</items>
+							</ComboBox>
+						</t:template>
+					</t:Column>
+					<t:Column resizable="false" hAlign="Center" width="90px">
+						<Label text="Main EAN"></Label>
+						<t:template>
+							<CheckBox selected="{material>mainEAN}" editable="{appControl>/editable}"></CheckBox>
+						</t:template>
+					</t:Column>
+					<t:Column resizable="false" hAlign="Center">
+						<Label wrapping="true" text="EAN/UPC"/>
+						<t:template>
+							<Input value="{material>EAN}" editable="{appControl>/editable}"/>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+		</content>
+		<buttons>
+			<Button type="Emphasized" width="100px" icon="sap-icon://accept" text="OK" press="onCloseAddlEAN"></Button>
+			<Button width="100px" icon="sap-icon://cancel" text="Cancel" press="onCloseAddlEAN"></Button>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

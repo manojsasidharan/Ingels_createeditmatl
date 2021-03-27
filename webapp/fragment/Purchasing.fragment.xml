@@ -1,0 +1,560 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" class="sapUiSizeCompact">
+	<VBox binding="{material>/purchasing}">
+		<f:SimpleForm title="Selection Criteria" binding="{material>/purchasing/selectionCriteria}" editable="true" layout="ResponsiveGridLayout"
+			adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+			<f:content>
+				<Label fieldGroupIds="lbl" text="Info. Rec" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12"/>
+					</layoutData>
+				</Label>
+				<Input value="{material>infoRec}" editable="false" enabled="false" >
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S12"/>
+					</layoutData>
+				</Input>
+				<Text text=" ">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Text>
+				<Label fieldGroupIds="lbl" text="Purchasing Org." wrapping="false">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12"/>
+					</layoutData>
+				</Label>
+				<Input value="{material>purchOrg}" editable="false" >
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S12"/>
+					</layoutData>
+				</Input>
+				<Text text="{material>purchOrgText}">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Text>
+				<Label fieldGroupIds="lbl" text="Vendor" wrapping="false" required="true">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12"/>
+					</layoutData>
+				</Label>
+				<Input value="{material>vendor}" fieldWidth="40%"
+						name="purchasingVendor"
+						description="{material>vendorText}"  editable="{= (${appControl>/editable} === true &amp;&amp; ${appControl>/mode} === 'CREATE' ? true : false )}"
+						showValueHelp="true" valueHelpRequest="onValueHelpVendor" suggestionRows="{
+							path: 'MasterDataModel>/vendors',
+							sorter: { path: 'vendor' },
+							length: 10
+						}">
+					<layoutData>
+						<l:GridData span="XL5 L5 M5 S12"/> <!--span="XL2 L2 M2 S12"/>-->
+					</layoutData>
+						<suggestionColumns>
+							<Column>
+								<Label text="vendor"/>
+							</Column>
+							<Column>
+								<Label text="vendorName"/>
+							</Column>
+							<Column>
+								<Label text="salesPerson"/>
+							</Column>
+							<Column>
+								<Label text="telephone"/>
+							</Column>							
+						</suggestionColumns>
+						<suggestionRows>
+							<ColumnListItem>
+								<cells>
+									<Label text="{MasterDataModel>vendor}" />
+									<Label text="{MasterDataModel>vendorName}" />
+									<Label text="{MasterDataModel>salesPerson}" />
+									<Label text="{MasterDataModel>telephone}" />
+								</cells>
+							</ColumnListItem>
+						</suggestionRows>					
+				</Input>
+<!--				<Text text="{material>vendorText}">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Text>-->
+				<Label fieldGroupIds="lbl" text="Site" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12"/>
+					</layoutData>
+				</Label>
+				<Input name="purchaseSite" value="{material>site}" editable="{= (${appControl>/editable} === true &amp;&amp; ${appControl>/mode} === 'CREATE' ? true : false )}" showValueHelp="true" valueHelpRequest="onValueHelpSite">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S12"/>
+					</layoutData>
+				</Input>
+				<Text text=" ">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Text>
+				<Label fieldGroupIds="lbl" text="Material" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12"/>
+					</layoutData>
+				</Label>
+				<Input value="{material>matnr}" editable="false">
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S12"/>
+					</layoutData>
+				</Input>
+				<Text text="{material>/generalData/description}">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Text>
+				<Label fieldGroupIds="lbl" text="Vendor Item No" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12"/>
+					</layoutData>
+				</Label>
+				<Input value="{material>vendorItem}" editable="false">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Input>
+<!--				<Text text=" ">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Text>-->
+			</f:content>
+		</f:SimpleForm>
+		<l:Grid defaultSpan="XL6 L6 M6 S12">
+			<l:content>
+				<f:SimpleForm title="General Data for Each Vendor (Header)" binding="{material>/purchasing/genData}" editable="true"
+					layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false" >
+					<f:content>
+						<Label fieldGroupIds="lbl" text="Order Unit" wrapping="false" required="true">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>orderUnit}" showSecondaryValues="true" items="{MasterDataModel>/orderUnits}" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<CheckBox text="Regular Supplier" selected="{material>regularSupplier}" editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</CheckBox>
+						<Label fieldGroupIds="lbl" text="Sales Person" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2" linebreak="true"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>salesPerson}" editable="false">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Telephone" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>telephone}" editable="false">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>
+					</f:content>
+				</f:SimpleForm>
+				<f:SimpleForm title="Purchasing Order UoM (Header)" binding="{material>/purchasing/POUoM}" editable="true" layout="ResponsiveGridLayout"
+					adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label fieldGroupIds="lbl" text="Order Unit" wrapping="false" required="true">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>orderUnit}"  items="{MasterDataModel>/orderUnits}" showSecondaryValues="true" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4" />
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Conversion" wrapping="false" required="true">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2" linebreak="true"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>ordConvNmrtr}" editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Input>
+						<ComboBox selectedKey="{material>ordConvNmrtrUoM}" showSecondaryValues="true" items="{MasterDataModel>/orderUnits}" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</ComboBox>
+						<Text text=" &lt; - &gt; " wrapping="false" textAlign="Center">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>  
+							</layoutData>
+						</Text>
+						<Input value="{material>ordConvDnmtr}" editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Input>
+						<ComboBox selectedKey="{material>ordConvDnmtrUoM}" showSecondaryValues="true" items="{MasterDataModel>/orderUnits}" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</ComboBox>
+					</f:content>
+				</f:SimpleForm>
+			</l:content>
+		</l:Grid>
+		<l:Grid defaultSpan="XL6 L6 M6 S12">
+			<l:content>
+				<f:SimpleForm title="Data for Each Vendor/Purchasing Org/Plant (Details)" binding="{material>/purchasing/sourcingDetails}" editable="true"
+					layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label fieldGroupIds="lbl" text="Purchase Grp." wrapping="false" required="true">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>purchGroup}" showSecondaryValues="true" items="{MasterDataModel>/purchasingGrp}" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="{MasterDataModel>code}:{MasterDataModel&gt;name}" key="{MasterDataModel>code}" additionalText=""/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox><!--
+						<Label fieldGroupIds="lbl" text="Tax Code" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>taxCode}" editable="false" >
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>-->
+						<!--<Label fieldGroupIds="lbl" text="Min Qty" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>sourceMinQty}" editable="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Input>
+						<ComboBox selectedKey="{material>sourceMinQtyUoM}" showSecondaryValues="true" items="{MasterDataModel>/orderUnits}" editable="false">
+							<items>
+								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Max Qty" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>maxQty}" editable="false">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>-->
+						<Label fieldGroupIds="lbl" text="PI Deliv. Time" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>piDelvyTime}" editable="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Input>
+						<ComboBox selectedKey="Days" editable="false">
+							<items>
+								<core:Item text="Days" key="Days"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Rem Shelf Life" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>remShelfLife}" description="days" editable="false">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>
+<!--						<ComboBox selectedKey="Days" editable="false" >
+							<items>
+								<core:Item text="Days" key="Days"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</ComboBox>-->
+						<Label fieldGroupIds="lbl" text="Grtd.Shelf Life" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>grtdShelfLife}" description="days" editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>						
+						<Label fieldGroupIds="lbl" text="Conf. Control" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>confCtrl}" editable="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Shipping Instr" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>shipInstr}" editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Over Deliv. Tol" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>overDelvTol}" description="%" editable="{appControl>/editable}" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Under Deliv. Tol" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>underDelvTol}" description="%" editable="{appControl>/editable}" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>
+						<CheckBox text="Unlimited over Delivery" selected="{material>unlimitOverDelv}" editable="{appControl>/editable}" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
+							<layoutData>
+								<l:GridData span="XL12 L12 M12 S12"/>
+							</layoutData>
+						</CheckBox>
+						<CheckBox text="Block Vendor from Shipping to all Stores" selected="{material>blockVendor}" editable="{= (${appControl>/mode} === 'EDIT') ? true : false }">
+							<layoutData>
+								<l:GridData span="XL12 L12 M12 S12"/>
+							</layoutData>
+						</CheckBox>
+						<Label fieldGroupIds="lbl" text="Slot Allowance" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{path: 'material>/purchasing/slotAllowance', type: 'sap.ui.model.type.Currency'}" editable="{appControl>/editable}"  
+						visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}" width="140px" textAlign="Right">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>
+					</f:content>
+				</f:SimpleForm>
+				<f:SimpleForm title="Conditions (Details)" binding="{material>/purchasing/conditionDetails}" editable="true" layout="ResponsiveGridLayout"
+					adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label fieldGroupIds="lbl" text="Net Price" wrapping="false" required="true">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>netPrice}" editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Input>
+						<ComboBox selectedKey="{material>netPriceUoM}" showSecondaryValues="true" items="{MasterDataModel>/orderUnits}" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</ComboBox>
+						<Text text=" / " wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Text>
+						<Input value="{material>netPricePer}" editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Input>
+						<ComboBox selectedKey="{material>netPricePerUoM}" showSecondaryValues="true" items="{MasterDataModel>/orderUnits}" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Eff. Price" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>effPrice}" editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Input>
+						<ComboBox selectedKey="{material>effPriceUoM}" showSecondaryValues="true" items="{MasterDataModel>/orderUnits}"  editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</ComboBox>
+						<Text text=" / " wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Text>
+						<Input value="{material>effPricePer}" editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Input>
+						<ComboBox selectedKey="{material>effPricePerUoM}" showSecondaryValues="true" items="{MasterDataModel>/orderUnits}" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Valid To" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<DatePicker placeholder="Enter Date" change="handleChange" value="{material>validTo}" valueFormat="yyyy-MM-dd" displayFormat="MM/dd/yyyy" editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</DatePicker>
+						<Label fieldGroupIds="lbl" text="Pr. Date Cntr" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>dateContrl}" showSecondaryValues="true" items="{MasterDataModel>/prDateControls}" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Freight Terms" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>incoTerms}" showSecondaryValues="true" items="{MasterDataModel>/incoTerms}" editable="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
+							<items>
+								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Inco. Vers" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 0 &amp;&amp; ${appControl>/mode} === 'CREATE' ? true : false )}">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>incoVers}" editable="false" visible="{= (${material>/sourcingTypeKey} === 0 &amp;&amp; ${appControl>/mode} === 'CREATE' ? true : false )}">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>
+					<!--	<Label fieldGroupIds="lbl" text="Inco. Loc1" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>incoLoc1}" editable="false">
+							<layoutData>
+								<l:GridData span="XL10 L10 M10 S10"/>
+							</layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Inco. Loc2" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>incoLoc2}" editable="false">
+							<layoutData>
+								<l:GridData span="XL10 L10 M10 S10"/>
+							</layoutData>
+						</Input>-->
+						<Label fieldGroupIds="lbl" text="" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2" linebreak="true"/>
+							</layoutData>
+						</Label>
+						<CheckBox text="No Discount" selected="{material>noDiscount}" editable="false" >
+							<layoutData>
+								<l:GridData span="XL6 L6 M6 S6"/>
+							</layoutData>
+						</CheckBox>						
+					</f:content>
+				</f:SimpleForm>
+			</l:content>
+		</l:Grid>
+		<HBox>
+			<!--<Button type="Accept" class="spacingcls" icon="sap-icon://save" text="Save Vendor Details"/>-->
+			<Button type="Emphasized" class="spacingcls" icon="sap-icon://money-bills" press="onOpenCostUpdates()" text="Conditions/Cost Updates" />
+			<Button type="Emphasized" class="spacingcls" icon="sap-icon://money-bills" press="onOpenPriceHistory()" text="Material Price History" />
+			<Button type="Emphasized" class="spacingcls" icon="sap-icon://money-bills" press="onOpenVendorFunding()" text="Other Conditions"/>
+			<Button type="Emphasized" class="spacingcls" icon="sap-icon://money-bills" press="onOpenVendorStoreBlocks()" text="Vendor Receiving Blocks" />
+			<Button type="Emphasized" class="spacingcls" icon="sap-icon://copy" press="onOpenVendorCopy()" text="Copy to Vendors" visible="{appControl>/editable}"/>
+		</HBox>
+	</VBox>
+</core:FragmentDefinition>

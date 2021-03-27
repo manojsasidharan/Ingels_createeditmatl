@@ -1,0 +1,6 @@
+[
+	{ "Name": "Performance Allowance", "Value": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "Editable": true, "itemRelevant": true },
+	{ "Name": "Scan-Down", "Value": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "Editable": false, "itemRelevant": false },
+	{ "Name": "WH Up-Charge", "Value": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "Editable": false, "itemRelevant": false },
+	{ "Name": "Total" }
+]

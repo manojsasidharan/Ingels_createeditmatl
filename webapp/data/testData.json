@@ -1,0 +1,6607 @@
+{
+	"referenceSet": 
+	[
+		{
+			"matnr": 3513,
+			"materialGroup": "1014",
+			"refMaterial": "Trading Goods - Base Each UoM",
+			"baseUoM": "EA",
+			"sourcingType": "Warehouse",
+			"sourcingTypeKey": 0,
+			"materialType": "ZHAW",
+			"materialCategory": "00",
+			"generalData": {
+				"taxClass": "0",
+				"valClass": "3100",
+				"description": "Planters Cocktl P Nut",
+				"coo": "USA",
+				"strConditions": "",
+				"temperature": "",
+				"temperatureUnit": "",
+				"size": "16 OZ"
+			},
+			"shelfLife": {
+				"remShelfLife": "100",
+				"ttlShelfLife": "166",
+				"periodIndicator": "D",
+				"roundingRule": "",
+				"storagePct": "",
+				"grtdShelfLife": ""
+			},
+			"validity": {
+				"validFrom": "",
+				"validTo": "9999-12-31",
+				"purchStatus": "03",
+				"purchStatusFrom": "",
+				"billStatus": "03",
+				"billStatusFrom": ""
+			},
+			"tieAndTier": {
+				"vendorTie": "8",
+				"vendorTier": "9",
+				"whsTie": "8",
+				"whsTier": "9",
+				"ratio": 1,
+				"orderRestrn": "P"
+			},
+			"ingredients": "Pecans, Almonds, Cashew",
+			"labelShelfLife": "",
+			"orderSequence": "99999",
+			"maxAllocQty": "",
+			"unitFactor1": 14.1,
+			"unitFactor2": 0.139,
+
+			"texts": [{
+				"textID": "T1",
+				"textName": "Basic Text",
+				"contents": "testing basic text"
+			}],
+			"attributes": {
+				"retnDays": 90,
+				"sourcingType": "Warehouse",
+				"tagQty": 1,
+				"labelScheme": "0",
+				"location": "1014",
+				"storePosDept": "001",
+				"pvtLabel": "0",
+				"varWeight": false,
+				"nutritionRating": "1"
+			},
+
+			"purchasing": {
+				"selectionCriteria": {
+					"infoRec": 401256,
+					"matnr": 3513,
+					"site": "",
+					"purchOrg": "IM10",
+					"purchOrgText": "Ingles Purchase Org",
+					"vendor": "344",
+					"vendorText": "KRAFT FOODS GROUP INC.",
+					"vendorItem": "3513"
+				},
+				"genData": {
+					"orderUnit": "CAR",
+					"regularSupplier": true,
+					"salesPerson": "Joey Outlaw",
+					"telephone": "999999344",
+					"whMovingAvgCost": 33.35
+				},
+				"POUoM": {
+					"orderUnit": "CAR",
+					"ordConvNmrtr": "1",
+					"ordConvDnmtr": "1",
+					"ordConvNmrtrUoM": "CAR",
+					"ordConvDnmtrUoM": "CAR"
+				},
+				"sourcingDetails": {
+					"purchGroup": "056",
+					"taxCode": 0,
+					"sourceMinQty": "40000",
+					"sourceMinQtyUoM": "LB",
+					"maxQty": "",
+					"piDelvyTime": 5,
+					"remShelfLife": 100,
+					"vendorItemNo": 3513,
+					"confCtrl": "0004",
+					"shipInstr": "",
+					"overDelvTol": 10,
+					"underDelvTol": 10,
+					"unlimitOverDelv": false,
+					"blockVendor": false
+				},
+				"conditionDetails": {
+					"netPrice": 35.76,
+					"netPriceUoM": "CAR",
+					"netPricePer": 1,
+					"netPricePerUoM": "CAR",
+					"effPrice": 35.76,
+					"effPriceUoM": "CAR",
+					"effPricePer": 1,
+					"effPricePerUoM": "CAR",
+					"validTo": "",
+					"dateContrl": "01",
+					"group": "",
+					"noDiscount": false,
+					"incoTerms": "3BH",
+					"incoVers": "",
+					"incoLoc1": "",
+					"incoLoc2": ""
+				},
+				"slotAllowance": ["200.00", "$"],
+				"vendorStoreBlocks": [],
+				"priceHistory": [{
+					"StartDate": "01/29/2021",
+					"EndDate": "12/31/9999",
+					"Type": "Net Price",
+					"Amount": "35.76",
+					"Remarks": ""
+				}, {
+					"StartDate": "01/29/2021",
+					"EndDate": "02/01/2021",
+					"Type": "Performance Allowance",
+					"Amount": "1.20",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/28/2021",
+					"Type": "Billback",
+					"Amount": "0.70",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Scan-Down",
+					"Amount": "0.03",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Price Change",
+					"Amount": "4.80",
+					"Remarks": ""
+				}],
+				"addlVendor": [{
+					"lifnr": "",
+					"name1": ""
+				}]
+			},
+
+			"logistics": {
+				"DC": "DC10",
+				"DCText": "DC10 Ingles DC / Black Mountain NC",
+				"MRPParam": {
+					"MRPType": "VV",
+					"reorderPoint": 5532,
+					"lotSizeProc": "EX",
+					"safetyStock": 22,
+					"serviceLevel": "15",
+					"roundingValue": "1080",
+					"cycleStock": 65
+				},
+				"genlControlParam": {
+					"purchGroup": "056",
+					"mrpGroup": "Z001",
+					"autoPO": true,
+					"batchMgmt": true
+				},
+				"periods": {
+					"hist": 13,
+					"forecast": 1,
+					"init": 0,
+					"fixed": 0,
+					"season": 0
+				},
+				"controlData": {
+					"trackLimit": "4.000",
+					"autoReset": true,
+					"modelSlctPro": 2,
+					"wgtGroup": "01"
+				},
+				"MRPControllerData": {
+					"controller": "056",
+					"planDelvyTime": 10,
+					"GRProcTime": 0
+				},
+				"forecastParam": {
+					"periodIndicator": "W",
+					"model": "W",
+					"lastForecast": "2021-02-20",
+					"expWeeklyMvmt": 57,
+					"actWeeklyMvmt": 43
+				},
+				"storageData": {
+					"location": "G10D"
+				}
+
+			},
+
+			"materialProfile": {
+				"impDates": {
+					"itemAddedDate": "2017-12-05",
+					"firstReceiptDate": "2017-12-05",
+					"purchEffDate": "2017-12-05",
+					"STOBillEffDate": "2017-12-05",
+					"lastShippedDate": "2020-12-18",
+					"lastMtncDate": "2017-12-05",
+					"lastChangedBy": "BHALE"
+				},
+				"poInfo": {
+					"lastRecvPO": "45000123",
+					"lastRecvPODate": "2020-12-05",
+					"lastRecvPOQty": "200.00",
+					"lastRecvGoodsDate": "2020-12-12"
+				},
+				"rankInfo": {
+					"anticipatedRank": 0,
+					"actualServiceLevel": 0,
+					"annualRank": 0
+				},
+				"inventoryInfo": {
+					"inventoryOnOrder": 68,
+					"inventoryOnHand": 72,
+					"promoOnHand": 0,
+					"forwardBuyOnHand": 0,
+					"pendingRelieve": 55,
+					"regInProcess": 100
+				}
+			},
+
+			"salesCurrency": "USD",
+
+			"accounting": {
+				"currency": "USD",
+				"valClass": "3100",
+				"totStock": 68,
+				"futurePriceFrom": "",
+				"pricePerUnit": 2.98,
+				"priceUnit": "EA",
+				"invValue": 202.64,
+				"priceControl": "V"
+			},
+
+			"consumption": [],
+
+			"posGlobal": {
+				"posStatus": "1",
+				"posStatusFrom": "",
+				"deptHQ": "001",
+				"posDescription": "BURTSBEESSCARLE",
+				"posTare": "",
+				"deptTare": "",
+				"mixMatchCode": "",
+				"authSellinStore": true,
+				"blockData": {
+					"globalBlock": false,
+					"blockedFrom": "",
+					"blockedZones": [],
+					"blockedSites": [],
+					"blockedSitesExceptions": []
+				}
+			},
+
+			"uomEAN": [{
+				"altUoM": "EA",
+				"number": 1,
+				"LUoM": "EA",
+				"is_BUoM": true,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": true,
+				"UPC": 2900007210,
+				"EANCat": "ZC",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": true
+			}, {
+				"altUoM": "CAR",
+				"number": 12,
+				"LUoM": "EA",
+				"is_BUoM": false,
+				"is_OUoM": true,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": 2900007210,
+				"EANCat": "ZC",
+				"grossWt": 13.95,
+				"netWt": "",
+				"wtUoM": "LB",
+				"length": 16.8,
+				"width": 12.4,
+				"height": 4.9,
+				"dimension": "INCHES",
+				"volume": 0.591,
+				"volUoM": "CUBE",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "ZSP",
+				"number": 12,
+				"LUoM": "EA",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": true,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": 13.95,
+				"netWt": "",
+				"wtUoM": "LB",
+				"length": 16.8,
+				"width": 12.4,
+				"height": 4.9,
+				"dimension": "INCHES",
+				"volume": 0.591,
+				"volUoM": "CUBE",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "PAL",
+				"number": 72,
+				"LUoM": "CAR",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "LAY",
+				"number": 9,
+				"LUoM": "CAR",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "ZWP",
+				"number": 72,
+				"LUoM": "ZSP",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}],
+
+			"addlEAN": [{
+				"altUoM": "EA",
+				"mainEAN": false,
+				"EAN": "77820137401"
+			}, {
+				"altUoM": "CAR",
+				"mainEAN": true,
+				"EAN": "77820137407"
+			}]
+
+		}, {
+			"matnr": 93530,
+			"materialGroup": "9007",
+			"refMaterial": "Trading Goods - Base Pounds UoM",
+			"baseUoM": "LB",
+			"sourcingType": "Warehouse",
+			"sourcingTypeKey": 0,
+			"materialType": "ZHAW",
+			"materialCategory": "00",
+			"generalData": {
+				"taxClass": "0",
+				"valClass": "3100",
+				"description": "ORGANIC B/S BREAST  USA",
+				"coo": "USA",
+				"strConditions": "",
+				"temperature": "",
+				"temperatureUnit": "",
+				"size": "18.5 LB"
+			},
+			"shelfLife": {
+				"remShelfLife": "5",
+				"ttlShelfLife": "9",
+				"periodIndicator": "D",
+				"roundingRule": "",
+				"storagePct": "",
+				"grtdShelfLife": ""
+			},
+			"validity": {
+				"validFrom": "",
+				"validTo": "",
+				"purchStatus": "03",
+				"purchStatusFrom": "",
+				"billStatus": "03",
+				"billStatusFrom": ""
+			},
+			"tieAndTier": {
+				"vendorTie": "1",
+				"vendorTier": "1",
+				"whsTie": "7",
+				"whsTier": "12",
+				"ratio": 1,
+				"orderRestrn": "L"
+			},
+			"ingredients": [],
+			"labelShelfLife": "",
+			"orderSequence": "99999",
+			"maxAllocQty": "",
+			"unitFactor1": 1,
+			"unitFactor2": 10,
+
+			"texts": [{
+				"textID": "T1",
+				"textName": "Basic Text",
+				"contents": ""
+			}],
+			"attributes": {
+				"retnDays": 21,
+				"sourcingType": "Warehouse",
+				"tagQty": 1,
+				"labelScheme": "6",
+				"location": "9007",
+				"pvtLabel": "",
+				"varWeight": "",
+				"nutritionRating": "1"
+			},
+
+			"purchasing": {
+				"selectionCriteria": {
+					"infoRec": 401256,
+					"matnr": 93530,
+					"site": "",
+					"purchOrg": "IM10",
+					"purchOrgText": "Ingles Purchase Org",
+					"vendor": "3264",
+					"vendorText": "PERDUE ORGANIC CHICKEN",
+					"vendorItem": "93530"
+				},
+				"genData": {
+					"orderUnit": "CAR",
+					"regularSupplier": true,
+					"salesPerson": "",
+					"telephone": ""
+				},
+				"POUoM": {
+					"orderUnit": "CAR",
+					"ordConvNmrtr": "1",
+					"ordConvDnmtr": "1",
+					"ordConvNmrtrUoM": "CAR",
+					"ordConvDnmtrUoM": "CAR"
+				},
+				"sourcingDetails": {
+					"purchGroup": "027",
+					"taxCode": 0,
+					"sourceMinQty": "1",
+					"sourceMinQtyUoM": "CAR",
+					"maxQty": "",
+					"piDelvyTime": 5,
+					"remShelfLife": 100,
+					"vendorItemNo": 93530,
+					"confCtrl": "0004",
+					"shipInstr": "",
+					"overDelvTol": 30,
+					"underDelvTol": 30,
+					"unlimitOverDelv": false,
+					"blockVendor": false
+				},
+				"conditionDetails": {
+					"netPrice": 5.015,
+					"netPriceUoM": "CAR",
+					"netPricePer": 1,
+					"netPricePerUoM": "CAR",
+					"effPrice": 5.015,
+					"effPriceUoM": "CAR",
+					"effPricePer": 1,
+					"effPricePerUoM": "CAR",
+					"validTo": "",
+					"dateContrl": "01",
+					"group": "",
+					"noDiscount": false,
+					"incoTerms": "3BH",
+					"incoVers": "",
+					"incoLoc1": "",
+					"incoLoc2": ""
+				},
+				"slotAllowance": ["0.00", "$"],
+				"vendorStoreBlocks": [],
+				"priceHistory": [{
+					"StartDate": "01/29/2021",
+					"EndDate": "12/31/9999",
+					"Type": "Net Price",
+					"Amount": "5.015",
+					"Remarks": ""
+				}, {
+					"StartDate": "01/29/2021",
+					"EndDate": "02/01/2021",
+					"Type": "Performance Allowance",
+					"Amount": "1.20",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/28/2021",
+					"Type": "Billback",
+					"Amount": "0.70",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Scan-Down",
+					"Amount": "0.03",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Price Change",
+					"Amount": "4.80",
+					"Remarks": ""
+				}],
+				"addlVendor": [{
+					"lifnr": "",
+					"name1": ""
+				}]
+			},
+
+			"logistics": {
+				"DC": "DC10",
+				"DCText": "DC10 Ingles DC / Black Mountain NC",
+				"MRPParam": {
+					"MRPType": "ND",
+					"reorderPoint": 62,
+					"lotSizeProc": "",
+					"safetyStock": 135,
+					"serviceLevel": 1,
+					"roundingValue": "",
+					"cycleStock": 204
+				},
+				"genlControlParam": {
+					"purchGroup": "027",
+					"mrpGroup": "9007",
+					"autoPO": true,
+					"batchMgmt": false
+				},
+				"periods": {
+					"hist": 13,
+					"forecast": 1,
+					"init": 0,
+					"fixed": 0,
+					"season": 0
+				},
+				"controlData": {
+					"trackLimit": "4.000",
+					"autoReset": true,
+					"modelSlctPro": 2,
+					"wgtGroup": "01"
+				},
+				"MRPControllerData": {
+					"controller": "",
+					"planDelvyTime": 10,
+					"GRProcTime": 0
+				},
+				"forecastParam": {
+					"periodIndicator": "W",
+					"model": "W",
+					"lastForecast": "2021-02-20",
+					"expWeeklyMvmt": 358,
+					"actWeeklyMvmt": 517
+				},
+				"storageData": {
+					"location": "P10D"
+				}
+
+			},
+
+			"materialProfile": {
+				"impDates": {
+					"itemAddedDate": "2017-12-05",
+					"firstReceiptDate": "2017-12-05",
+					"purchEffDate": "2017-12-05",
+					"STOBillEffDate": "2017-12-05",
+					"lastShippedDate": "2017-12-05",
+					"lastMtncDate": "2017-12-05",
+					"lastChangedBy": "SS09"
+				},
+				"poInfo": {
+					"lastRecvPO": "45000123",
+					"lastRecvPODate": "2017-12-05",
+					"lastRecvPOQty": "200.00",
+					"lastRecvGoodsDate": "2017-12-05"
+				},
+				"rankInfo": {
+					"anticipatedRank": 0,
+					"actualServiceLevel": 0,
+					"annualRank": 0
+				},
+				"inventoryInfo": {
+					"inventoryOnOrder": 392,
+					"inventoryOnHand": 348,
+					"promoOnHand": 0,
+					"forwardBuyOnHand": 0,
+					"pendingRelieve": 55,
+					"regInProcess": 100
+				}
+			},
+
+			"salesCurrency": "USD",
+
+			"accounting": {
+				"currency": "USD",
+				"valClass": "3100",
+				"totStock": 68,
+				"futurePriceFrom": "",
+				"pricePerUnit": 2.98,
+				"priceUnit": "EA",
+				"invValue": 202.64,
+				"priceControl": "V"
+			},
+
+			"posGlobal": {
+				"posStatus": "1",
+				"posStatusFrom": "",
+				"deptHQ": "005",
+				"posDescription": "ORGANIC BREAST",
+				"posTare": "",
+				"deptTare": "",
+				"mixMatchCode": "",
+				"authSellinStore": true,
+				"blockData": {
+					"globalBlock": false,
+					"blockedFrom": "",
+					"blockedZones": [],
+					"blockedSites": [],
+					"blockedSitesExceptions": []
+				}
+			},
+
+			"uomEAN": [{
+				"altUoM": "LB",
+				"number": 1,
+				"LUoM": "LB",
+				"is_BUoM": true,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": true,
+				"UPC": 26182900000,
+				"EANCat": "ZC",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "CAR",
+				"number": 18.45,
+				"LUoM": "LB",
+				"is_BUoM": false,
+				"is_OUoM": true,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": 7274507073,
+				"EANCat": "ZC",
+				"grossWt": 16.84,
+				"netWt": "",
+				"wtUoM": "LB",
+				"length": 19.1,
+				"width": 15,
+				"height": 5.1,
+				"dimension": "INCHES",
+				"volume": 0.846,
+				"volUoM": "CUBE",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "ZSP",
+				"number": 18.45,
+				"LUoM": "LB",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": true,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": 16.84,
+				"netWt": "",
+				"wtUoM": "LB",
+				"length": 19.8,
+				"width": 13.3,
+				"height": 5.3,
+				"dimension": "INCHES",
+				"volume": 0.808,
+				"volUoM": "CUBE",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "PAL",
+				"number": 1,
+				"LUoM": "CAR",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "LAY",
+				"number": 1,
+				"LUoM": "CAR",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "ZWP",
+				"number": 63,
+				"LUoM": "ZSP",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}],
+			"addlEAN": []
+		}, {
+			"matnr": 10084,
+			"materialGroup": "1836",
+			"refMaterial": "Trading Goods - Base Each UoM",
+			"baseUoM": "EA",
+			"sourcingType": "Warehouse",
+			"sourcingTypeKey": 0,
+			"materialType": "ZHAW",
+			"materialCategory": "00",
+			"generalData": {
+				"taxClass": "0",
+				"valClass": "3100",
+				"description": "BURTS BEES LIP STKSCARLETSOACK",
+				"coo": "USA",
+				"strConditions": "",
+				"temperature": "",
+				"temperatureUnit": "",
+				"size": "0.12 OZ"
+			},
+			"shelfLife": {
+				"remShelfLife": "100",
+				"ttlShelfLife": "166",
+				"periodIndicator": "D",
+				"roundingRule": "",
+				"storagePct": "",
+				"grtdShelfLife": ""
+			},
+			"validity": {
+				"validFrom": "",
+				"validTo": "",
+				"purchStatus": "03",
+				"purchStatusFrom": "",
+				"billStatus": "03",
+				"billStatusFrom": ""
+			},
+			"tieAndTier": {
+				"vendorTie": "80",
+				"vendorTier": "9",
+				"whsTie": "80",
+				"whsTier": "9",
+				"ratio": "",
+				"orderRestrn": "P"
+			},
+			"ingredients": [],
+			"labelShelfLife": "",
+			"orderSequence": "999999",
+			"unitFactor1": 14.1,
+			"unitFactor2": 0.139,
+
+			"texts": [{
+				"textID": "T1",
+				"textName": "Basic Text",
+				"contents": ""
+			}],
+			"attributes": {
+				"retnDays": 90,
+				"sourcingType": "Warehouse",
+				"tagQty": 1,
+				"labelScheme": "0",
+				"location": "1836",
+				"pvtLabel": "",
+				"varWeight": "",
+				"nutritionRating": "1"
+			},
+
+			"purchasing": {
+				"selectionCriteria": {
+					"infoRec": 401256,
+					"matnr": 10084,
+					"site": "",
+					"purchOrg": "IM10",
+					"purchOrgText": "Ingles Purchase Org",
+					"vendor": "40133",
+					"vendorText": "CLOROX - BURT'S BEES INC",
+					"vendorItem": "10084"
+				},
+				"genData": {
+					"orderUnit": "CAR",
+					"regularSupplier": true,
+					"salesPerson": "",
+					"telephone": ""
+				},
+				"POUoM": {
+					"orderUnit": "CAR",
+					"ordConvNmrtr": "1",
+					"ordConvDnmtr": "1",
+					"ordConvNmrtrUoM": "CAR",
+					"ordConvDnmtrUoM": "CAR"
+				},
+				"sourcingDetails": {
+					"purchGroup": "092",
+					"taxCode": 0,
+					"sourceMinQty": "3",
+					"sourceMinQtyUoM": "CAR",
+					"maxQty": "",
+					"piDelvyTime": 5,
+					"remShelfLife": 100,
+					"vendorItemNo": 10084,
+					"confCtrl": "0004",
+					"shipInstr": "",
+					"overDelvTol": 10,
+					"underDelvTol": 10,
+					"unlimitOverDelv": false,
+					"blockVendor": false
+				},
+				"conditionDetails": {
+					"netPrice": 9.9,
+					"netPriceUoM": "CAR",
+					"netPricePer": 1,
+					"netPricePerUoM": "CAR",
+					"effPrice": 9.9,
+					"effPriceUoM": "CAR",
+					"effPricePer": 1,
+					"effPricePerUoM": "CAR",
+					"validTo": "",
+					"dateContrl": "01",
+					"group": "",
+					"noDiscount": false,
+					"incoTerms": "3BH",
+					"incoVers": "",
+					"incoLoc1": "",
+					"incoLoc2": ""
+				},
+				"slotAllowance": ["200.00", "$"],
+				"vendorStoreBlocks": [],
+				"priceHistory": [{
+					"StartDate": "01/29/2021",
+					"EndDate": "12/31/9999",
+					"Type": "Net Price",
+					"Amount": "9.9",
+					"Remarks": ""
+				}, {
+					"StartDate": "01/29/2021",
+					"EndDate": "02/01/2021",
+					"Type": "Performance Allowance",
+					"Amount": "1.20",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/28/2021",
+					"Type": "Billback",
+					"Amount": "0.70",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Scan-Down",
+					"Amount": "0.03",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Price Change",
+					"Amount": "4.80",
+					"Remarks": ""
+				}],
+				"addlVendor": [{
+					"lifnr": "",
+					"name1": ""
+				}]
+			},
+
+			"logistics": {
+				"DC": "DC10",
+				"DCText": "DC10 Ingles DC / Black Mountain NC",
+				"MRPParam": {
+					"MRPType": "VV",
+					"reorderPoint": 235316,
+					"lotSizeProc": "EX",
+					"safetyStock": 22,
+					"serviceLevel": "15",
+					"roundingValue": "1080",
+					"cycleStock": 65
+				},
+				"genlControlParam": {
+					"purchGroup": "056",
+					"mrpGroup": "Z001",
+					"autoPO": true,
+					"batchMgmt": false
+				},
+				"periods": {
+					"hist": 13,
+					"forecast": 1,
+					"init": 0,
+					"fixed": 0,
+					"season": 0
+				},
+				"controlData": {
+					"trackLimit": "4.000",
+					"autoReset": true,
+					"modelSlctPro": 2,
+					"wgtGroup": "01"
+				},
+				"MRPControllerData": {
+					"controller": "056",
+					"planDelvyTime": 10,
+					"GRProcTime": 0
+				},
+				"forecastParam": {
+					"periodIndicator": "W",
+					"model": "W",
+					"lastForecast": "2021-02-20",
+					"expWeeklyMvmt": 57,
+					"actWeeklyMvmt": 43
+				},
+				"storageData": {
+					"location": "H10D"
+				}
+
+			},
+
+			"materialProfile": {
+				"impDates": {
+					"itemAddedDate": "2017-12-05",
+					"firstReceiptDate": "2017-12-05",
+					"purchEffDate": "2017-12-05",
+					"STOBillEffDate": "2017-12-05",
+					"lastShippedDate": "2017-12-05",
+					"lastMtncDate": "2017-12-05",
+					"lastChangedBy": "KG00"
+				},
+				"poInfo": {
+					"lastRecvPO": "45000123",
+					"lastRecvPODate": "2017-12-05",
+					"lastRecvPOQty": "200.00",
+					"lastRecvGoodsDate": "2017-12-05"
+				},
+				"rankInfo": {
+					"anticipatedRank": 0,
+					"actualServiceLevel": 0,
+					"annualRank": 0
+				},
+				"inventoryInfo": {
+					"inventoryOnOrder": 68,
+					"inventoryOnHand": 72,
+					"promoOnHand": 0,
+					"forwardBuyOnHand": 0,
+					"pendingRelieve": 55,
+					"regInProcess": 100
+				}
+			},
+
+			"salesCurrency": "USD",
+
+			"accounting": {
+				"currency": "USD",
+				"valClass": "3100",
+				"totStock": 68,
+				"futurePriceFrom": "",
+				"pricePerUnit": 2.98,
+				"priceUnit": "EA",
+				"invValue": 202.64,
+				"priceControl": "V"
+			},
+
+			"posGlobal": {
+				"posStatus": "1",
+				"posStatusFrom": "",
+				"deptHQ": "001",
+				"posTare": "",
+				"deptTare": "",
+				"mixMatchCode": "",
+				"authSellinStore": true,
+				"blockData": {
+					"globalBlock": false,
+					"blockedFrom": "",
+					"blockedZones": [],
+					"blockedSites": [],
+					"blockedSitesExceptions": []
+				}
+			},
+
+			"uomEAN": [{
+				"altUoM": "EA",
+				"number": 1,
+				"LUoM": "EA",
+				"is_BUoM": true,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": true,
+				"UPC": 79285089447,
+				"EANCat": "ZC",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "CAR",
+				"number": 24,
+				"LUoM": "EA",
+				"is_BUoM": false,
+				"is_OUoM": true,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": 79285089751,
+				"EANCat": "ZC",
+				"grossWt": 1.4,
+				"netWt": "",
+				"wtUoM": "LB",
+				"length": 6,
+				"width": 3.8,
+				"height": 4.4,
+				"dimension": "INCHES",
+				"volume": 0.058,
+				"volUoM": "CUBE",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "ZSP",
+				"number": 2,
+				"LUoM": "EA",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": true,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": 0.1,
+				"netWt": "",
+				"wtUoM": "LB",
+				"length": 3.8,
+				"width": 1.5,
+				"height": 0.8,
+				"dimension": "INCHES",
+				"volume": 0.003,
+				"volUoM": "CUBE",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "PAL",
+				"number": 720,
+				"LUoM": "CAR",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "LAY",
+				"number": 80,
+				"LUoM": "CAR",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "ZWP",
+				"number": 432,
+				"LUoM": "ZSP",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}],
+			"addlEAN": []
+		}, {
+			"matnr": 1507626,
+			"materialGroup": "5019",
+			"refMaterial": "Trading Goods - Base Each UoM",
+			"baseUoM": "EA",
+			"sourcingType": "CrossDock",
+			"sourcingTypeKey": 2,
+			"materialType": "ZHAW",
+			"materialCategory": "00",
+			"generalData": {
+				"taxClass": "0",
+				"valClass": "3100",
+				"description": "XDK-TANDOOR CHEF CHKN TNDR W/SPIN-di",
+				"coo": "USA",
+				"strConditions": "",
+				"temperature": "",
+				"temperatureUnit": "",
+				"size": ""
+			},
+			"shelfLife": {
+				"remShelfLife": "75",
+				"ttlShelfLife": "155",
+				"periodIndicator": "D",
+				"roundingRule": "",
+				"storagePct": "",
+				"grtdShelfLife": ""
+			},
+			"validity": {
+				"validFrom": "02/04/2021",
+				"validTo": "12/31/9999",
+				"purchStatus": "03",
+				"purchStatusFrom": "03/02/2021",
+				"billStatus": "03",
+				"billStatusFrom": ""
+			},
+			"tieAndTier": {
+				"vendorTie": "8",
+				"vendorTier": "9",
+				"whsTie": "8",
+				"whsTier": "9",
+				"ratio": "",
+				"orderRestrn": "P"
+			},
+			"ingredients": [],
+			"labelShelfLife": "",
+			"orderSequence": "99999",
+			"maxAllocQty": "",
+			"unitFactor1": 14.1,
+			"unitFactor2": 0.139,
+
+			"texts": [{
+				"textID": "T1",
+				"textName": "Basic Text",
+				"contents": ""
+			}],
+			"attributes": {
+				"retnDays": 45,
+				"sourcingType": "CrossDock",
+				"labelScheme": "",
+				"tagQty": "1",
+				"location": "5006",
+				"pvtLabel": "",
+				"varWeight": "",
+				"nutritionRating": "1"
+			},
+
+			"purchasing": {
+				"selectionCriteria": {
+					"infoRec": 401256,
+					"matnr": 1507626,
+					"site": "",
+					"purchOrg": "IM10",
+					"purchOrgText": "Ingles Purchase Org",
+					"vendor": "405",
+					"vendorText": "UNFI - FROZEN",
+					"vendorItem": "1507626"
+				},
+				"genData": {
+					"orderUnit": "EA",
+					"regularSupplier": true,
+					"salesPerson": "BRAD VICKERY ",
+					"telephone": "609-784-4451"
+				},
+				"POUoM": {
+					"orderUnit": "EA",
+					"ordConvNmrtr": "1",
+					"ordConvDnmtr": "1",
+					"ordConvNmrtrUoM": "EA",
+					"ordConvDnmtrUoM": "EA"
+				},
+				"sourcingDetails": {
+					"purchGroup": "001",
+					"taxCode": 0,
+					"sourceMinQty": "40000",
+					"sourceMinQtyUoM": "LB",
+					"maxQty": "",
+					"piDelvyTime": 5,
+					"remShelfLife": 100,
+					"vendorItemNo": 708214,
+					"confCtrl": "0004",
+					"shipInstr": "",
+					"overDelvTol": 10,
+					"underDelvTol": 10,
+					"unlimitOverDelv": false,
+					"blockVendor": false
+				},
+				"conditionDetails": {
+					"netPrice": 1.30,
+					"netPriceUoM": "EA",
+					"netPricePer": 1.30,
+					"netPricePerUoM": "EA",
+					"effPrice": 1.30,
+					"effPriceUoM": "EA",
+					"effPricePer": 1,
+					"effPricePerUoM": "EA",
+					"validTo": "12/31/9999",
+					"dateContrl": "",
+					"group": "",
+					"noDiscount": false,
+					"incoTerms": "3BH",
+					"incoVers": "",
+					"incoLoc1": "",
+					"incoLoc2": ""
+				},
+				"slotAllowance": ["200.00", "$"],
+				"vendorStoreBlocks": [],
+				"priceHistory": [{
+					"StartDate": "01/29/2021",
+					"EndDate": "12/31/9999",
+					"Type": "Net Price",
+					"Amount": "1.30",
+					"Remarks": ""
+				}, {
+					"StartDate": "01/29/2021",
+					"EndDate": "02/01/2021",
+					"Type": "Performance Allowance",
+					"Amount": "1.20",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/28/2021",
+					"Type": "Billback",
+					"Amount": "0.70",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Scan-Down",
+					"Amount": "0.03",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Price Change",
+					"Amount": "4.80",
+					"Remarks": ""
+				}],
+				"addlVendor": [{
+					"lifnr": "",
+					"name1": ""
+				}]
+			},
+
+			"logistics": {
+				"DC": "DC10",
+				"DCText": "DC10 Ingles DC / Black Mountain NC",
+				"MRPParam": {
+					"MRPType": "ND",
+					"reorderPoint": "",
+					"lotSizeProc": "",
+					"safetyStock": 135,
+					"serviceLevel": 1,
+					"roundingValue": "",
+					"cycleStock": 204
+				},
+				"genlControlParam": {
+					"purchGroup": "027",
+					"mrpGroup": "9007",
+					"autoPO": true,
+					"batchMgmt": false
+				},
+				"periods": {
+					"hist": 13,
+					"forecast": 1,
+					"init": 0,
+					"fixed": 0,
+					"season": 0
+				},
+				"controlData": {
+					"trackLimit": "4.000",
+					"autoReset": true,
+					"modelSlctPro": 2,
+					"wgtGroup": "01"
+				},
+				"MRPControllerData": {
+					"controller": "",
+					"planDelvyTime": 10,
+					"GRProcTime": 0
+				},
+				"forecastParam": {
+					"periodIndicator": "W",
+					"model": "W",
+					"lastForecast": "2021-02-20",
+					"expWeeklyMvmt": 358,
+					"actWeeklyMvmt": 517
+				},
+				"storageData": {
+					"location": "F10D"
+				}
+
+			},
+
+			"materialProfile": {
+				"impDates": {
+					"itemAddedDate": "2017-12-05",
+					"firstReceiptDate": "2017-12-05",
+					"purchEffDate": "2017-12-05",
+					"STOBillEffDate": "2017-12-05",
+					"lastShippedDate": "2017-12-05",
+					"lastMtncDate": "2017-12-05",
+					"lastChangedBy": "BHALE"
+				},
+				"poInfo": {
+					"lastRecvPO": "45000123",
+					"lastRecvPODate": "2017-12-05",
+					"lastRecvPOQty": "200.00",
+					"lastRecvGoodsDate": "2017-12-05"
+				},
+				"rankInfo": {
+					"anticipatedRank": 0,
+					"actualServiceLevel": 0,
+					"annualRank": 0
+				},
+				"inventoryInfo": {
+					"inventoryOnOrder": 0,
+					"inventoryOnHand": 0,
+					"promoOnHand": 0,
+					"forwardBuyOnHand": 0,
+					"pendingRelieve": 0,
+					"regInProcess": 0
+				}
+			},
+
+			"salesCurrency": "USD",
+
+			"accounting": {
+				"currency": "USD",
+				"valClass": "3100",
+				"totStock": 60,
+				"futurePriceFrom": "",
+				"pricePerUnit": 1.30,
+				"priceUnit": "EA",
+				"invValue": 0.00,
+				"priceControl": "V"
+			},
+
+			"posGlobal": {
+				"posStatus": "1",
+				"posStatusFrom": "",
+				"deptHQ": "005",
+				"posDescription": "HAM/TUR HOR",
+				"posTare": "",
+				"deptTare": "",
+				"mixMatchCode": "",
+				"authSellinStore": true,
+				"blockData": {
+					"globalBlock": false,
+					"blockedFrom": "",
+					"blockedZones": [],
+					"blockedSites": [],
+					"blockedSitesExceptions": []
+				}
+			},
+
+			"uomEAN": [{
+				"altUoM": "EA",
+				"number": 1,
+				"LUoM": "EA",
+				"is_BUoM": true,
+				"is_OUoM": true,
+				"is_DUoM": true,
+				"is_SUoM": true,
+				"UPC": "1143311511",
+				"EANCat": "ZC",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+
+			}, {
+				"altUoM": "OZ",
+				"number": 10,
+				"LUoM": "EA",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+
+			}],
+			"addlEAN": []
+
+		}, {
+			"matnr": 94300,
+			"materialGroup": "9100",
+			"refMaterial": "Trading Goods - Base Each UoM",
+			"baseUoM": "EA",
+			"sourcingType": "Warehouse",
+			"sourcingTypeKey": 0,
+			"materialType": "ZHAW",
+			"materialCategory": "00",
+			"generalData": {
+				"taxClass": "0",
+				"valClass": "3100",
+				"description": "HORMEL HAM/TURK PARTY TRA",
+				"coo": "USA",
+				"strConditions": "",
+				"temperature": "",
+				"temperatureUnit": "",
+				"size": "16 OZ"
+			},
+			"shelfLife": {
+				"remShelfLife": "5",
+				"ttlShelfLife": "9",
+				"periodIndicator": "D",
+				"roundingRule": "",
+				"storagePct": "",
+				"grtdShelfLife": ""
+			},
+			"validity": {
+				"validFrom": "2006-10-08",
+				"validTo": "9999-12-31",
+				"purchStatus": "03",
+				"purchStatusFrom": "",
+				"billStatus": "03",
+				"billStatusFrom": ""
+			},
+			"tieAndTier": {
+				"vendorTie": "6",
+				"vendorTier": "4",
+				"whsTie": "6",
+				"whsTier": "6",
+				"ratio": 1,
+				"orderRestrn": "N"
+			},
+			"ingredients": [],
+			"labelShelfLife": "",
+			"orderSequence": "999999",
+			"unitFactor1": 1,
+			"unitFactor2": 0.417,
+
+			"texts": [{
+				"textID": "T1",
+				"textName": "Basic Text",
+				"contents": ""
+			}],
+			"attributes": {
+				"retnDays": 45,
+				"sourcingType": "Warehouse",
+				"tagQty": 1,
+				"labelScheme": "20",
+				"location": "9100",
+				"storePosDept": "001",
+				"pvtLabel": "0",
+				"varWeight": false,
+				"nutritionRating": "1"
+			},
+
+			"purchasing": {
+				"selectionCriteria": {
+					"infoRec": 345678,
+					"matnr": 94300,
+					"site": "",
+					"purchOrg": "IM10",
+					"purchOrgText": "Ingles Purchase Org",
+					"vendor": "3853",
+					"vendorText": "HORMEL FOODS",
+					"vendorItem": "94300"
+				},
+				"genData": {
+					"orderUnit": "CAR",
+					"regularSupplier": true,
+					"salesPerson": "Joey Outlaw",
+					"telephone": "999999344",
+					"whMovingAvgCost": 33.35
+				},
+				"POUoM": {
+					"orderUnit": "CAR",
+					"ordConvNmrtr": "1",
+					"ordConvDnmtr": "1",
+					"ordConvNmrtrUoM": "CAR",
+					"ordConvDnmtrUoM": "CAR"
+				},
+				"sourcingDetails": {
+					"purchGroup": "014",
+					"taxCode": 0,
+					"sourceMinQty": "40000",
+					"sourceMinQtyUoM": "LB",
+					"maxQty": "",
+					"piDelvyTime": 5,
+					"remShelfLife": 100,
+					"vendorItemNo": 94300,
+					"confCtrl": "0004",
+					"shipInstr": "",
+					"overDelvTol": 10,
+					"underDelvTol": 10,
+					"unlimitOverDelv": false,
+					"blockVendor": false
+				},
+				"conditionDetails": {
+					"netPrice": 71.44,
+					"netPriceUoM": "CAR",
+					"netPricePer": 1,
+					"netPricePerUoM": "CAR",
+					"effPrice": 71.44,
+					"effPriceUoM": "CAR",
+					"effPricePer": 1,
+					"effPricePerUoM": "CAR",
+					"validTo": "",
+					"dateContrl": "01",
+					"group": "",
+					"noDiscount": false,
+					"incoTerms": "3BH",
+					"incoVers": "",
+					"incoLoc1": "",
+					"incoLoc2": ""
+				},
+				"slotAllowance": ["200.00", "$"],
+				"vendorStoreBlocks": [],
+				"priceHistory": [{
+					"StartDate": "01/29/2021",
+					"EndDate": "12/31/9999",
+					"Type": "Net Price",
+					"Amount": "35.76",
+					"Remarks": ""
+				}, {
+					"StartDate": "01/29/2021",
+					"EndDate": "02/01/2021",
+					"Type": "Performance Allowance",
+					"Amount": "1.20",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/28/2021",
+					"Type": "Billback",
+					"Amount": "0.70",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Scan-Down",
+					"Amount": "0.03",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Price Change",
+					"Amount": "4.80",
+					"Remarks": ""
+				}],
+				"addlVendor": [{
+					"lifnr": "",
+					"name1": ""
+				}]
+			},
+
+			"logistics": {
+				"DC": "DC10",
+				"DCText": "DC10 Ingles DC / Black Mountain NC",
+				"MRPParam": {
+					"MRPType": "VV",
+					"reorderPoint": 11366,
+					"lotSizeProc": "EX",
+					"safetyStock": 66,
+					"serviceLevel": "15",
+					"roundingValue": "1080",
+					"cycleStock": 69
+				},
+				"genlControlParam": {
+					"purchGroup": "014",
+					"mrpGroup": "Z001",
+					"autoPO": true,
+					"batchMgmt": true
+				},
+				"periods": {
+					"hist": 13,
+					"forecast": 1,
+					"init": 0,
+					"fixed": 0,
+					"season": 0
+				},
+				"controlData": {
+					"trackLimit": "4.000",
+					"autoReset": true,
+					"modelSlctPro": 2,
+					"wgtGroup": "01"
+				},
+				"MRPControllerData": {
+					"controller": "014",
+					"planDelvyTime": 0,
+					"GRProcTime": 0
+				},
+				"forecastParam": {
+					"periodIndicator": "W",
+					"model": "W",
+					"lastForecast": "2021-02-20",
+					"expWeeklyMvmt": 54,
+					"actWeeklyMvmt": 13
+				},
+				"storageData": {
+					"location": "P10D"
+				}
+
+			},
+
+			"materialProfile": {
+				"impDates": {
+					"itemAddedDate": "2006-10-08",
+					"firstReceiptDate": "2006-10-08",
+					"purchEffDate": "2006-10-08",
+					"STOBillEffDate": "2006-10-08",
+					"lastShippedDate": "2020-01-28",
+					"lastMtncDate": "2020-09-21",
+					"lastChangedBy": "KO14"
+				},
+				"poInfo": {
+					"lastRecvPO": "143952",
+					"lastRecvPODate": "2021-01-24",
+					"lastRecvPOQty": 96,
+					"lastRecvGoodsDate": "2020-12-12"
+				},
+				"rankInfo": {
+					"anticipatedRank": 0,
+					"actualServiceLevel": 1,
+					"annualRank": 0
+				},
+				"inventoryInfo": {
+					"inventoryOnOrder": 0,
+					"inventoryOnHand": 382,
+					"promoOnHand": 0,
+					"forwardBuyOnHand": 0,
+					"pendingRelieve": 0,
+					"regInProcess": 100
+				}
+			},
+
+			"salesCurrency": "USD",
+
+			"accounting": {
+				"currency": "USD",
+				"valClass": "3100",
+				"totStock": 68,
+				"futurePriceFrom": "",
+				"pricePerUnit": 2.98,
+				"priceUnit": "EA",
+				"invValue": 202.64,
+				"priceControl": "V"
+			},
+
+			"consumption": [],
+
+			"posGlobal": {
+				"posStatus": "1",
+				"posStatusFrom": "",
+				"deptHQ": "010",
+				"posDescription": "HAM/TUR HOR",
+				"posTare": "",
+				"deptTare": "",
+				"mixMatchCode": "",
+				"authSellinStore": true,
+				"blockData": {
+					"globalBlock": false,
+					"blockedFrom": "",
+					"blockedZones": [],
+					"blockedSites": [],
+					"blockedSitesExceptions": []
+				}
+			},
+
+			"uomEAN": [{
+				"altUoM": "EA",
+				"number": 1,
+				"LUoM": "EA",
+				"is_BUoM": true,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": true,
+				"UPC": 3760028751,
+				"EANCat": "ZC",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "CAR",
+				"number": 8,
+				"LUoM": "EA",
+				"is_BUoM": false,
+				"is_OUoM": true,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": 3760014848,
+				"EANCat": "ZC",
+				"grossWt": 16,
+				"netWt": "",
+				"wtUoM": "LB",
+				"length": 26.7,
+				"width": 10,
+				"height": 14,
+				"dimension": "INCHES",
+				"volume": 2.163,
+				"volUoM": "CUBE",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "ZSP",
+				"number": 8,
+				"LUoM": "EA",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": true,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": 16,
+				"netWt": "",
+				"wtUoM": "LB",
+				"length": 23,
+				"width": 11.8,
+				"height": 10.5,
+				"dimension": "INCHES",
+				"volume": 1.649,
+				"volUoM": "CUBE",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "LB",
+				"number": 1.75,
+				"LUoM": "EA",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "LB",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "INCHES",
+				"volume": "",
+				"volUoM": "CUBE",
+				"hasAddlEAN": false
+			}],
+			"addlEAN": []
+
+		}, {
+			"matnr": 10002662,
+			"materialGroup": "6002",
+			"refMaterial": "Trading Goods - Base Each UoM",
+			"baseUoM": "EA",
+			"sourcingType": "DSD",
+			"sourcingTypeKey": 1,
+			"materialType": "ZHAW",
+			"materialCategory": "00",
+			"generalData": {
+				"taxClass": "0",
+				"valClass": "3100",
+				"description": "ALL NATURAL FRENCH BREAD",
+				"coo": "USA",
+				"strConditions": "",
+				"temperature": "",
+				"temperatureUnit": "",
+				"size": ""
+			},
+			"shelfLife": {
+				"remShelfLife": "5",
+				"ttlShelfLife": "9",
+				"periodIndicator": "D",
+				"roundingRule": "",
+				"storagePct": "",
+				"grtdShelfLife": ""
+			},
+			"validity": {
+				"validFrom": "2006-10-08",
+				"validTo": "9999-12-31",
+				"purchStatus": "03",
+				"purchStatusFrom": "",
+				"billStatus": "03",
+				"billStatusFrom": ""
+			},
+			"tieAndTier": {
+				"vendorTie": "6",
+				"vendorTier": "4",
+				"whsTie": "6",
+				"whsTier": "6",
+				"ratio": 1,
+				"ordRestrn": "N"
+			},
+
+			"ingredients": [],
+			"labelShelfLife": "",
+			"orderSequence": "999999",
+			"unitFactor1": 1,
+			"unitFactor2": 0.417,
+
+			"texts": [{
+				"textID": "T1",
+				"textName": "Basic Text",
+				"contents": ""
+			}],
+			"attributes": {
+				"retnDays": 14,
+				"sourcingType": "DSD",
+				"tagQty": 6,
+				"labelScheme": "10",
+				"location": "6002",
+				"storePosDept": "006",
+				"pvtLabel": "0",
+				"varWeight": false,
+				"nutritionRating": "1"
+			},
+
+			"purchasing": {
+				"selectionCriteria": {
+					"infoRec": 345678,
+					"matnr": 10002662,
+					"purchOrg": "IM10",
+					"purchOrgText": "Ingles Purchase Org",
+					"vendor": "6001",
+					"vendorText": "BAKERY SCALE ITEMS",
+					"vendorItem": ""
+				},
+				"genData": {
+					"orderUnit": "CAR",
+					"regularSupplier": true,
+					"salesPerson": "TIM DAVEY",
+					"telephone": "8006355066",
+					"whMovingAvgCost": 33.35
+				},
+				"POUoM": {
+					"orderUnit": "CAR",
+					"ordConvNmrtr": "1",
+					"ordConvDnmtr": "1",
+					"ordConvNmrtrUoM": "CAR",
+					"ordConvDnmtrUoM": "CAR"
+				},
+				"sourcingDetails": {
+					"purchGroup": "014",
+					"taxCode": 0,
+					"sourceMinQty": "40000",
+					"sourceMinQtyUoM": "LB",
+					"maxQty": "",
+					"piDelvyTime": 5,
+					"remShelfLife": 100,
+					"vendorItemNo": 3513,
+					"confCtrl": "0004",
+					"shipInstr": "",
+					"overDelvTol": "",
+					"underDelvTol": "",
+					"unlimitOverDelv": false,
+					"blockVendor": false
+				},
+				"conditionDetails": {
+					"netPrice": 71.44,
+					"netPriceUoM": "CAR",
+					"netPricePer": 1,
+					"netPricePerUoM": "CAR",
+					"effPrice": 71.44,
+					"effPriceUoM": "CAR",
+					"effPricePer": 1,
+					"effPricePerUoM": "CAR",
+					"validTo": "",
+					"dateContrl": "01",
+					"group": "",
+					"noDiscount": false,
+					"incoTerms": "3BH",
+					"incoVers": "",
+					"incoLoc1": "",
+					"incoLoc2": ""
+				},
+				"slotAllowance": ["200.00", "$"],
+				"vendorStoreBlocks": [],
+				"priceHistory": [{
+					"StartDate": "01/29/2021",
+					"EndDate": "12/31/9999",
+					"Type": "Net Price",
+					"Amount": "35.76",
+					"Remarks": ""
+				}, {
+					"StartDate": "01/29/2021",
+					"EndDate": "02/01/2021",
+					"Type": "Performance Allowance",
+					"Amount": "1.20",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/28/2021",
+					"Type": "Billback",
+					"Amount": "0.70",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Scan-Down",
+					"Amount": "0.03",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Price Change",
+					"Amount": "4.80",
+					"Remarks": ""
+				}],
+				"addlVendor": [{
+					"lifnr": "",
+					"name1": ""
+				}]
+			},
+
+			"logistics": {
+				"DC": "DC10",
+				"DCText": "DC10 Ingles DC / Black Mountain NC",
+				"MRPParam": {
+					"MRPType": "VV",
+					"reorderPoint": 11366,
+					"lotSizeProc": "EX",
+					"safetyStock": 66,
+					"serviceLevel": "15",
+					"roundingValue": "192",
+					"cycleStock": 69
+				},
+				"genlControlParam": {
+					"purchGroup": "014",
+					"mrpGroup": "Z001",
+					"autoPO": true,
+					"batchMgmt": true
+				},
+				"periods": {
+					"hist": 13,
+					"forecast": 1,
+					"init": 0,
+					"fixed": 0,
+					"season": 0
+				},
+				"controlData": {
+					"trackLimit": "4.000",
+					"autoReset": true,
+					"modelSlctPro": 2,
+					"wgtGroup": "01"
+				},
+				"MRPControllerData": {
+					"controller": "014",
+					"planDelvyTime": 0,
+					"GRProcTime": 0
+				},
+				"forecastParam": {
+					"periodIndicator": "W",
+					"model": "W",
+					"lastForecast": "2021-02-20",
+					"expWeeklyMvmt": 54,
+					"actWeeklyMvmt": 13
+				},
+				"storageData": {
+					"location": "P10D"
+				}
+
+			},
+
+			"materialProfile": {
+				"impDates": {
+					"itemAddedDate": "2006-10-08",
+					"firstReceiptDate": "2006-10-08",
+					"purchEffDate": "2006-10-08",
+					"STOBillEffDate": "2006-10-08",
+					"lastShippedDate": "2020-01-28",
+					"lastMtncDate": "2020-09-21",
+					"lastChangedBy": "KO14"
+				},
+				"poInfo": {
+					"lastRecvPO": "143952",
+					"lastRecvPODate": "2021-01-24",
+					"lastRecvPOQty": 96,
+					"lastRecvGoodsDate": "2020-12-12"
+				},
+				"rankInfo": {
+					"anticipatedRank": 0,
+					"actualServiceLevel": 1,
+					"annualRank": 0
+				},
+				"inventoryInfo": {
+					"inventoryOnOrder": 0,
+					"inventoryOnHand": 382,
+					"promoOnHand": 0,
+					"forwardBuyOnHand": 0,
+					"pendingRelieve": 0,
+					"regInProcess": 100
+				}
+			},
+
+			"salesCurrency": "USD",
+
+			"accounting": {
+				"currency": "USD",
+				"valClass": "3100",
+				"totStock": 68,
+				"futurePriceFrom": "",
+				"pricePerUnit": 2.98,
+				"priceUnit": "EA",
+				"invValue": 202.64,
+				"priceControl": "V"
+			},
+
+			"consumption": [],
+
+			"posGlobal": {
+				"posStatus": "1",
+				"posStatusFrom": "",
+				"deptHQ": "006",
+				"posDescription": "",
+				"posTare": "",
+				"deptTare": "",
+				"mixMatchCode": "",
+				"authSellinStore": true,
+				"blockData": {
+					"globalBlock": false,
+					"blockedFrom": "",
+					"blockedZones": [],
+					"blockedSites": [{
+						"key": 100,
+						"text": "Ingles C#100"
+					}],
+					"blockedSitesExceptions": []
+				}
+			},
+
+			"uomEAN": [{
+				"altUoM": "EA",
+				"number": 1,
+				"LUoM": "EA",
+				"is_BUoM": true,
+				"is_OUoM": true,
+				"is_DUoM": true,
+				"is_SUoM": true,
+				"UPC": 5106,
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "OZ",
+				"number": 12,
+				"LUoM": "EA",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}],
+			"addlEAN": []
+		}, {
+			"matnr": 10010805,
+			"materialGroup": "1240",
+			"refMaterial": "Trading Goods - Base Each UoM",
+			"baseUoM": "EA",
+			"sourcingType": "DSD",
+			"sourcingTypeKey": 1,
+			"materialType": "ZHAW",
+			"materialCategory": "00",
+			"generalData": {
+				"taxClass": "0",
+				"valClass": "3100",
+				"description": "COKE ZERO SUGAR CANS",
+				"coo": "USA",
+				"strConditions": "",
+				"temperature": "",
+				"temperatureUnit": "",
+				"size": ""
+			},
+			"shelfLife": {
+				"remShelfLife": "5",
+				"ttlShelfLife": "9",
+				"periodIndicator": "D",
+				"roundingRule": "",
+				"storagePct": "",
+				"grtdShelfLife": ""
+			},
+			"validity": {
+				"validFrom": "2006-10-08",
+				"validTo": "9999-12-31",
+				"purchStatus": "03",
+				"purchStatusFrom": "",
+				"billStatus": "03",
+				"billStatusFrom": ""
+			},
+			"tieAndTier": {
+				"vendorTie": "6",
+				"vendorTier": "4",
+				"whsTie": "6",
+				"whsTier": "6",
+				"ratio": 1,
+				"ordRestrn": "N"
+			},
+			"orderSequence": "999999",
+			"unitFactor1": 1,
+			"unitFactor2": 0.417,
+
+			"ingredients": "",
+			"labelShelfLife": "",
+
+			"texts": [{
+				"textID": "T1",
+				"textName": "Basic Text",
+				"contents": ""
+			}],
+
+			"attributes": {
+				"retnDays": 0,
+				"sourcingType": "DSD",
+				"tagQty": 0,
+				"labelScheme": "1",
+				"location": "6002",
+				"storePosDept": "001",
+				"pvtLabel": "0",
+				"varWeight": false,
+				"nutritionRating": "0"
+			},
+
+			"purchasing": {
+				"selectionCriteria": {
+					"infoRec": 345678,
+					"matnr": 10002662,
+					"purchOrg": "IM10",
+					"purchOrgText": "Ingles Purchase Org",
+					"vendor": "834",
+					"vendorText": "CCBCC-CONA",
+					"vendorItem": "2202"
+				},
+				"genData": {
+					"orderUnit": "CAR",
+					"regularSupplier": true,
+					"salesPerson": "TIM DAVEY",
+					"telephone": "8006355066",
+					"whMovingAvgCost": 33.35
+				},
+				"POUoM": {
+					"orderUnit": "CAR",
+					"ordConvNmrtr": "1",
+					"ordConvDnmtr": "1",
+					"ordConvNmrtrUoM": "CAR",
+					"ordConvDnmtrUoM": "CAR"
+				},
+				"sourcingDetails": {
+					"purchGroup": "LG00",
+					"taxCode": 0,
+					"sourceMinQty": "40000",
+					"sourceMinQtyUoM": "LB",
+					"maxQty": "",
+					"piDelvyTime": 5,
+					"remShelfLife": 100,
+					"vendorItemNo": 3513,
+					"confCtrl": "0004",
+					"shipInstr": "",
+					"overDelvTol": "",
+					"underDelvTol": "",
+					"unlimitOverDelv": false,
+					"blockVendor": false
+				},
+				"conditionDetails": {
+					"netPrice": 71.44,
+					"netPriceUoM": "CAR",
+					"netPricePer": 1,
+					"netPricePerUoM": "CAR",
+					"effPrice": 71.44,
+					"effPriceUoM": "CAR",
+					"effPricePer": 1,
+					"effPricePerUoM": "CAR",
+					"validTo": "",
+					"dateContrl": "01",
+					"group": "",
+					"noDiscount": false,
+					"incoTerms": "3BH",
+					"incoVers": "",
+					"incoLoc1": "",
+					"incoLoc2": ""
+				},
+				"slotAllowance": ["200.00", "$"],
+				"vendorStoreBlocks": [],
+				"priceHistory": [{
+					"StartDate": "01/29/2021",
+					"EndDate": "12/31/9999",
+					"Type": "Net Price",
+					"Amount": "35.76",
+					"Remarks": ""
+				}, {
+					"StartDate": "01/29/2021",
+					"EndDate": "02/01/2021",
+					"Type": "Performance Allowance",
+					"Amount": "1.20",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/28/2021",
+					"Type": "Billback",
+					"Amount": "0.70",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Scan-Down",
+					"Amount": "0.03",
+					"Remarks": ""
+				}, {
+					"StartDate": "11/28/2019",
+					"EndDate": "01/01/2021",
+					"Type": "Price Change",
+					"Amount": "4.80",
+					"Remarks": ""
+				}],
+				"addlVendor": [{
+					"lifnr": "",
+					"name1": ""
+				}]
+			},
+
+			"logistics": {
+				"DC": "DC10",
+				"DCText": "DC10 Ingles DC / Black Mountain NC",
+				"MRPParam": {
+					"MRPType": "VV",
+					"reorderPoint": 11366,
+					"lotSizeProc": "EX",
+					"safetyStock": 66,
+					"serviceLevel": "15",
+					"roundingValue": "192",
+					"cycleStock": 69
+				},
+				"genlControlParam": {
+					"purchGroup": "LG00",
+					"mrpGroup": "Z001",
+					"autoPO": true,
+					"batchMgmt": true
+				},
+				"periods": {
+					"hist": 13,
+					"forecast": 1,
+					"init": 0,
+					"fixed": 0,
+					"season": 0
+				},
+				"controlData": {
+					"trackLimit": "4.000",
+					"autoReset": true,
+					"modelSlctPro": 2,
+					"wgtGroup": "01"
+				},
+				"MRPControllerData": {
+					"controller": "LG00",
+					"planDelvyTime": 0,
+					"GRProcTime": 0
+				},
+				"forecastParam": {
+					"periodIndicator": "W",
+					"model": "W",
+					"lastForecast": "2021-02-20",
+					"expWeeklyMvmt": 54,
+					"actWeeklyMvmt": 13
+				},
+				"storageData": {
+					"location": "P10D"
+				}
+
+			},
+
+			"materialProfile": {
+				"impDates": {
+					"itemAddedDate": "2006-10-08",
+					"firstReceiptDate": "2006-10-08",
+					"purchEffDate": "2006-10-08",
+					"STOBillEffDate": "2006-10-08",
+					"lastShippedDate": "2020-01-28",
+					"lastMtncDate": "2020-09-21",
+					"lastChangedBy": "KO14"
+				},
+				"poInfo": {
+					"lastRecvPO": "143952",
+					"lastRecvPODate": "2021-01-24",
+					"lastRecvPOQty": 96,
+					"lastRecvGoodsDate": "2020-12-12"
+				},
+				"rankInfo": {
+					"anticipatedRank": 0,
+					"actualServiceLevel": 1,
+					"annualRank": 0
+				},
+				"inventoryInfo": {
+					"inventoryOnOrder": 0,
+					"inventoryOnHand": 382,
+					"promoOnHand": 0,
+					"forwardBuyOnHand": 0,
+					"pendingRelieve": 0,
+					"regInProcess": 100
+				}
+			},
+
+			"salesCurrency": "USD",
+
+			"accounting": {
+				"currency": "USD",
+				"valClass": "3100",
+				"totStock": 68,
+				"pricePerUnit": 2.98,
+				"priceUnit": "EA",
+				"invValue": 202.64,
+				"priceControl": "V"
+			},
+
+			"consumption": [],
+
+			"posGlobal": {
+				"posStatus": "1",
+				"posStatusFrom": "",
+				"deptHQ": "006",
+				"posDescription": "",
+				"posTare": "",
+				"deptTare": "",
+				"mixMatchCode": "",
+				"authSellinStore": true,
+				"blockData": {
+					"globalBlock": false,
+					"blockedFrom": "",
+					"blockedZones": [],
+					"blockedSites": [],
+					"blockedSitesExceptions": []
+				}
+			},
+
+			"uomEAN": [{
+				"altUoM": "EA",
+				"number": 1,
+				"LUoM": "EA",
+				"is_BUoM": true,
+				"is_OUoM": true,
+				"is_DUoM": true,
+				"is_SUoM": true,
+				"UPC": 4900004660,
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "OZ",
+				"number": 12,
+				"LUoM": "EA",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}, {
+				"altUoM": "P20",
+				"number": 240,
+				"LUoM": "EA",
+				"is_BUoM": false,
+				"is_OUoM": false,
+				"is_DUoM": false,
+				"is_SUoM": false,
+				"UPC": "",
+				"EANCat": "",
+				"grossWt": "",
+				"netWt": "",
+				"wtUoM": "",
+				"length": "",
+				"width": "",
+				"height": "",
+				"dimension": "",
+				"volume": "",
+				"volUoM": "",
+				"hasAddlEAN": false
+			}],
+
+			"addlEAN": []
+		}
+
+	],
+
+	"scaleNutrientSet": [
+		{
+			"matnr": 3513,
+			"scaleData": {
+				"scalePLU": "",
+				"scaleDesc": "",
+				"scaleDesc2": "",
+				"scaleUoM": "",
+				"fwAmount": "",
+				"fractionalItem": "",
+				"class": "",
+				"tareReqd": "",
+				"scaleLabel1": "",
+				"scaleLabel2": "",
+				"EAS": "",
+				"priceReqd": "",
+				"scaleOfDept": "",
+				"printSafeHandling": "",
+				"changeSource": "",
+				"recordStatus": "",
+				"recordStatusDt": "",
+				"logoNumber": "",
+				"graphicNumber": "",
+				"useBy": ""
+			},
+			"nutrientData": [{
+				"code": "Contain",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Container Information",
+				"textLabel": "Serving Size",
+				"value1Label": "Serve/Container",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Serv",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving Information",
+				"textLabel": "Serving Unit",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calor",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CalorF",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CarboT Choles",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Total Carbohydrates Cholesterol",
+				"textLabel": "",
+				"value1Label": "Grams Milligrams",
+				"value2Label": "Percent RDA Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalSTn",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sal Trans Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatT",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Total Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatTm",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Trans Fal",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FiberD",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Dietary Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Proten",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Protein",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sodium",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sodium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sugar",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calcium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Iron",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Iron",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit A",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "VitaminA",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit c",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin C",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "ServC",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving/Container Information",
+				"textLabel": "Serve/Container",
+				"value1Label": "",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Beta",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Beta Carotene",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Biotin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Biotin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CalorS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CarboO",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Other Carbohydrates",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Copper",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Copper",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatM",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Monounsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatP",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Polyunsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Fiberl",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Insoluble Fiber",
+				"textLabel": "",
+				"value1Label": "K Value",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FiberS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Soluble Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Folate",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Folate",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "lodine",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "lodine",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Magnes",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Magnesium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Niacin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Niacin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Pantot",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Pantothenic Acid",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Phos",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Phosphorus",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Potass",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Potassium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Ribo",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Riboflavin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "SugarA",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar Alcohol",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Thiam",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Thiamin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit D",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin D",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit E",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin E",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B12 ",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B12 ",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA ",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B6",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B6",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Zinc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Zinc",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}]
+		}, {
+			"matnr": 93530,
+			"scaleData": {
+				"scalePLU": "",
+				"scaleDesc": "",
+				"scaleDesc2": "",
+				"scaleUoM": "",
+				"fwAmount": "",
+				"fractionalItem": "",
+				"class": "",
+				"tareReqd": "",
+				"scaleLabel1": "",
+				"scaleLabel2": "",
+				"EAS": "",
+				"priceReqd": "",
+				"scaleOfDept": "",
+				"printSafeHandling": "",
+				"changeSource": "",
+				"recordStatus": "",
+				"recordStatusDt": "",
+				"logoNumber": "",
+				"graphicNumber": "",
+				"useBy": ""
+			},
+			"nutrientData": [{
+				"code": "Contain",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Container Information",
+				"textLabel": "Serving Size",
+				"value1Label": "Serve/Container",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Serv",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving Information",
+				"textLabel": "Serving Unit",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calor",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CalorF",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CarboT Choles",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Total Carbohydrates Cholesterol",
+				"textLabel": "",
+				"value1Label": "Grams Milligrams",
+				"value2Label": "Percent RDA Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalSTn",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sal Trans Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatT",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Total Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatTm",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Trans Fal",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FiberD",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Dietary Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Proten",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Protein",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sodium",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sodium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sugar",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calcium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Iron",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Iron",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit A",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "VitaminA",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit c",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin C",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "ServC",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving/Container Information",
+				"textLabel": "Serve/Container",
+				"value1Label": "",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Beta",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Beta Carotene",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Biotin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Biotin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CalorS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CarboO",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Other Carbohydrates",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Copper",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Copper",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatM",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Monounsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatP",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Polyunsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Fiberl",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Insoluble Fiber",
+				"textLabel": "",
+				"value1Label": "K Value",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FiberS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Soluble Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Folate",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Folate",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "lodine",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "lodine",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Magnes",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Magnesium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Niacin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Niacin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Pantot",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Pantothenic Acid",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Phos",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Phosphorus",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Potass",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Potassium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Ribo",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Riboflavin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "SugarA",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar Alcohol",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Thiam",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Thiamin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit D",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin D",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit E",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin E",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B12 ",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B12 ",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA ",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B6",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B6",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Zinc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Zinc",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}]
+		}, {
+			"matnr": 10084,
+			"scaleData": {
+				"scalePLU": "",
+				"scaleDesc": "",
+				"scaleDesc2": "",
+				"scaleUoM": "",
+				"fwAmount": "",
+				"fractionalItem": "",
+				"class": "",
+				"tareReqd": "",
+				"scaleLabel1": "",
+				"scaleLabel2": "",
+				"EAS": "",
+				"priceReqd": "",
+				"scaleOfDept": "",
+				"printSafeHandling": "",
+				"changeSource": "",
+				"recordStatus": "",
+				"recordStatusDt": "",
+				"logoNumber": "",
+				"graphicNumber": "",
+				"useBy": ""
+			},
+			"nutrientData": [{
+				"code": "Contain",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Container Information",
+				"textLabel": "Serving Size",
+				"value1Label": "Serve/Container",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Serv",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving Information",
+				"textLabel": "Serving Unit",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calor",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CalorF",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CarboT Choles",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Total Carbohydrates Cholesterol",
+				"textLabel": "",
+				"value1Label": "Grams Milligrams",
+				"value2Label": "Percent RDA Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalSTn",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sal Trans Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatT",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Total Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatTm",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Trans Fal",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FiberD",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Dietary Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Proten",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Protein",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sodium",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sodium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sugar",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calcium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Iron",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Iron",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit A",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "VitaminA",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit c",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin C",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "ServC",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving/Container Information",
+				"textLabel": "Serve/Container",
+				"value1Label": "",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Beta",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Beta Carotene",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Biotin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Biotin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CalorS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CarboO",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Other Carbohydrates",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Copper",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Copper",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatM",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Monounsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatP",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Polyunsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Fiberl",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Insoluble Fiber",
+				"textLabel": "",
+				"value1Label": "K Value",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FiberS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Soluble Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Folate",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Folate",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "lodine",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "lodine",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Magnes",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Magnesium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Niacin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Niacin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Pantot",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Pantothenic Acid",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Phos",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Phosphorus",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Potass",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Potassium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Ribo",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Riboflavin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "SugarA",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar Alcohol",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Thiam",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Thiamin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit D",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin D",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit E",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin E",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B12 ",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B12 ",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA ",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B6",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B6",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Zinc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Zinc",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}]
+		}, {
+			"matnr": 1507626,
+			"scaleData": {
+				"scalePLU": "",
+				"scaleDesc": "",
+				"scaleDesc2": "",
+				"scaleUoM": "",
+				"fwAmount": "",
+				"fractionalItem": "",
+				"class": "",
+				"tareReqd": "",
+				"scaleLabel1": "",
+				"scaleLabel2": "",
+				"EAS": "",
+				"priceReqd": "",
+				"scaleOfDept": "",
+				"printSafeHandling": "",
+				"changeSource": "",
+				"recordStatus": "",
+				"recordStatusDt": "",
+				"logoNumber": "",
+				"graphicNumber": "",
+				"useBy": ""
+			},
+			"nutrientData": [{
+				"code": "Contain",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Container Information",
+				"textLabel": "Serving Size",
+				"value1Label": "Serve/Container",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Serv",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving Information",
+				"textLabel": "Serving Unit",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calor",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CalorF",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CarboT Choles",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Total Carbohydrates Cholesterol",
+				"textLabel": "",
+				"value1Label": "Grams Milligrams",
+				"value2Label": "Percent RDA Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalSTn",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sal Trans Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatT",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Total Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatTm",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Trans Fal",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FiberD",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Dietary Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Proten",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Protein",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sodium",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sodium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sugar",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calcium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Iron",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Iron",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit A",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "VitaminA",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit c",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin C",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "ServC",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving/Container Information",
+				"textLabel": "Serve/Container",
+				"value1Label": "",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Beta",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Beta Carotene",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Biotin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Biotin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CalorS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CarboO",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Other Carbohydrates",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Copper",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Copper",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatM",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Monounsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatP",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Polyunsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Fiberl",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Insoluble Fiber",
+				"textLabel": "",
+				"value1Label": "K Value",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FiberS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Soluble Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Folate",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Folate",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "lodine",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "lodine",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Magnes",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Magnesium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Niacin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Niacin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Pantot",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Pantothenic Acid",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Phos",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Phosphorus",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Potass",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Potassium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Ribo",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Riboflavin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "SugarA",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar Alcohol",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Thiam",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Thiamin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit D",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin D",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit E",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin E",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B12 ",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B12 ",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA ",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B6",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B6",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Zinc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Zinc",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}]
+		}, {
+			"matnr": 94300,
+			"scaleData": {
+				"scalePLU": "",
+				"scaleDesc": "",
+				"scaleDesc2": "",
+				"scaleUoM": "",
+				"fwAmount": "",
+				"fractionalItem": "",
+				"class": "",
+				"tareReqd": "",
+				"scaleLabel1": "",
+				"scaleLabel2": "",
+				"EAS": "",
+				"priceReqd": "",
+				"scaleOfDept": "",
+				"printSafeHandling": "",
+				"changeSource": "",
+				"recordStatus": "",
+				"recordStatusDt": "",
+				"logoNumber": "",
+				"graphicNumber": "",
+				"useBy": ""
+			},
+			"nutrientData": [{
+				"code": "Contain",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Container Information",
+				"textLabel": "Serving Size",
+				"value1Label": "Serve/Container",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Serv",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving Information",
+				"textLabel": "Serving Unit",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calor",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CalorF",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CarboT Choles",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Total Carbohydrates Cholesterol",
+				"textLabel": "",
+				"value1Label": "Grams Milligrams",
+				"value2Label": "Percent RDA Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalSTn",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sal Trans Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatT",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Total Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatTm",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Trans Fal",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FiberD",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Dietary Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Proten",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Protein",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sodium",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sodium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sugar",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calcium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Iron",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Iron",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit A",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "VitaminA",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit c",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin C",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "ServC",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving/Container Information",
+				"textLabel": "Serve/Container",
+				"value1Label": "",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Beta",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Beta Carotene",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Biotin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Biotin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CalorS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CarboO",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Other Carbohydrates",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Copper",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Copper",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatM",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Monounsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatP",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Polyunsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Fiberl",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Insoluble Fiber",
+				"textLabel": "",
+				"value1Label": "K Value",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FiberS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Soluble Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Folate",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Folate",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "lodine",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "lodine",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Magnes",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Magnesium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Niacin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Niacin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Pantot",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Pantothenic Acid",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Phos",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Phosphorus",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Potass",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Potassium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Ribo",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Riboflavin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "SugarA",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar Alcohol",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Thiam",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Thiamin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit D",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin D",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit E",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin E",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B12 ",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B12 ",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA ",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B6",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B6",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Zinc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Zinc",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}]
+		}, {
+			"matnr": 10002662,
+			"scaleData": {
+				"scalePLU": "5106",
+				"scaleDesc": "ALL NATRUAL",
+				"scaleDesc2": "FRENCH BREAD",
+				"scaleUoM": "FW-Fix Wgl",
+				"fwAmount": "16",
+				"fractionalItem": "false",
+				"class": "0",
+				"tareReqd": "false",
+				"scaleLabel1": "267",
+				"scaleLabel2": "",
+				"EAS": "false",
+				"priceReqd": "false",
+				"scaleOfDept": "true",
+				"printSafeHandling": "false",
+				"changeSource": "Manual Change",
+				"recordStatus": "Change",
+				"recordStatusDt": "4/17/2017 5:58:56 PM",
+				"logoNumber": "",
+				"graphicNumber": "0",
+				"useBy": ""
+			},
+			"nutrientData": [{
+				"code": "Contain",
+				"text": "1",
+				"value1": "8.00",
+				"value2": "",
+				"desc": "Container Information",
+				"textLabel": "Serving Size",
+				"value1Label": "Serve/Container",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Serv",
+				"text": "1/8",
+				"value1": "59.00",
+				"value2": "",
+				"desc": "Serving Information",
+				"textLabel": "Serving Unit",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calor",
+				"text": "",
+				"value1": "140.00",
+				"value2": "",
+				"desc": "Calories",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CalorF",
+				"text": "",
+				"value1": "5.00",
+				"value2": "",
+				"desc": "Calories from Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CarboT Choles",
+				"text": "",
+				"value1": "29.00",
+				"value2": "",
+				"desc": "Total Carbohydrates Cholesterol",
+				"textLabel": "",
+				"value1Label": "Grams Milligrams",
+				"value2Label": "Percent RDA Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalS",
+				"text": "",
+				"value1": "0.00",
+				"value2": "",
+				"desc": "Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalSTn",
+				"text": "",
+				"value1": "0.00",
+				"value2": "",
+				"desc": "Sal Trans Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatT",
+				"text": "",
+				"value1": "0.50",
+				"value2": "",
+				"desc": "Total Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatTm",
+				"text": "",
+				"value1": "0.00",
+				"value2": "",
+				"desc": "Trans Fal",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FiberD",
+				"text": "",
+				"value1": "2.00",
+				"value2": "",
+				"desc": "Dietary Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Proten",
+				"text": "",
+				"value1": "5.00",
+				"value2": "",
+				"desc": "Protein",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sodium",
+				"text": "",
+				"value1": "230",
+				"value2": "",
+				"desc": "Sodium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sugar",
+				"text": "",
+				"value1": "1.00",
+				"value2": "",
+				"desc": "Sugar",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calc",
+				"text": "",
+				"value1": "",
+				"value2": "2.00",
+				"desc": "Calcium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Iron",
+				"text": "",
+				"value1": "",
+				"value2": "10.00",
+				"desc": "Iron",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit A",
+				"text": "",
+				"value1": "",
+				"value2": "0.00",
+				"desc": "VitaminA",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit c",
+				"text": "",
+				"value1": "",
+				"value2": "0.00",
+				"desc": "Vitamin C",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "ServC",
+				"text": "8",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving/Container Information",
+				"textLabel": "Serve/Container",
+				"value1Label": "",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Beta",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Beta Carotene",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Biotin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Biotin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CalorS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CarboO",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Other Carbohydrates",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Copper",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Copper",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatM",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Monounsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatP",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Polyunsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Fiberl",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Insoluble Fiber",
+				"textLabel": "",
+				"value1Label": "K Value",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FiberS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Soluble Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Folate",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Folate",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "lodine",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "lodine",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Magnes",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Magnesium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Niacin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Niacin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Pantot",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Pantothenic Acid",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Phos",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Phosphorus",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Potass",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Potassium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Ribo",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Riboflavin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "SugarA",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar Alcohol",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Thiam",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Thiamin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit D",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin D",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit E",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin E",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B12 ",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B12 ",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA ",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B6",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B6",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Zinc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Zinc",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}]
+		}, {
+			"matnr": 10010805,
+			"scaleData": {
+				"scalePLU": "",
+				"scaleDesc": "",
+				"scaleDesc2": "",
+				"scaleUoM": "",
+				"fwAmount": "",
+				"fractionalItem": "",
+				"class": "",
+				"tareReqd": "",
+				"scaleLabel1": "",
+				"scaleLabel2": "",
+				"EAS": "",
+				"priceReqd": "",
+				"scaleOfDept": "",
+				"printSafeHandling": "",
+				"changeSource": "",
+				"recordStatus": "",
+				"recordStatusDt": "",
+				"logoNumber": "",
+				"graphicNumber": "",
+				"useBy": ""
+			},
+			"nutrientData": [{
+				"code": "Contain",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Container Information",
+				"textLabel": "Serving Size",
+				"value1Label": "Serve/Container",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Serv",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving Information",
+				"textLabel": "Serving Unit",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calor",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CalorF",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "CarboT Choles",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Total Carbohydrates Cholesterol",
+				"textLabel": "",
+				"value1Label": "Grams Milligrams",
+				"value2Label": "Percent RDA Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FalSTn",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sal Trans Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatT",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Total Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FatTm",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Trans Fal",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "FiberD",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Dietary Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Proten",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Protein",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sodium",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sodium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Sugar",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": true,
+				"value2Edit": false
+			}, {
+				"code": "Calc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calcium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Iron",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Iron",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit A",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "VitaminA",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "Vit c",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin C",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": true
+			}, {
+				"code": "ServC",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Serving/Container Information",
+				"textLabel": "Serve/Container",
+				"value1Label": "",
+				"value2Label": "",
+				"textEdit": true,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Beta",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Beta Carotene",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Biotin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Biotin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CalorS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Calories from Saturated Fat",
+				"textLabel": "",
+				"value1Label": "Calories",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "CarboO",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Other Carbohydrates",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Copper",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Copper",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatM",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Monounsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FatP",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Polyunsaturated Fat",
+				"textLabel": "",
+				"value1Label": "Decigrams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Fiberl",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Insoluble Fiber",
+				"textLabel": "",
+				"value1Label": "K Value",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "FiberS",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Soluble Fiber",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Folate",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Folate",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "lodine",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "lodine",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Magnes",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Magnesium",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Niacin",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Niacin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Pantot",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Pantothenic Acid",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Phos",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Phosphorus",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Potass",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Potassium",
+				"textLabel": "",
+				"value1Label": "Milligrams",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Ribo",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Riboflavin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "SugarA",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Sugar Alcohol",
+				"textLabel": "",
+				"value1Label": "Grams",
+				"value2Label": "",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Thiam",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Thiamin",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit D",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin D",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vit E",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin E",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B12 ",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B12 ",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA ",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Vt B6",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Vitamin B6",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}, {
+				"code": "Zinc",
+				"text": "",
+				"value1": "",
+				"value2": "",
+				"desc": "Zinc",
+				"textLabel": "",
+				"value1Label": "",
+				"value2Label": "Percent RDA",
+				"textEdit": false,
+				"value1Edit": false,
+				"value2Edit": false
+			}]
+		}
+
+	],
+
+	"vendorStoreBlocks": [{
+		"site": "455",
+		"siteName": "Ingles Site #C455",
+		"status": true
+	}, {
+		"site": "460",
+		"siteName": "Ingles Site #C400",
+		"status": true
+	}, {
+		"site": "131",
+		"siteName": "Ingles Site #C131",
+		"status": true
+	}, {
+		"site": "201",
+		"siteName": "Ingles Site #C201",
+		"status": true
+	}],
+
+	"posFlags": [{
+		"selected": false,
+		"posFlagsID": 0,
+		"posFlagID": 2,
+		"hostID": 0,
+		"description": "Default Flags"
+	}, {
+		"selected": false,
+		"posFlagsID": 1,
+		"posFlagID": 4,
+		"hostID": 0,
+		"description": "Quantity Required"
+	}, {
+		"selected": false,
+		"posFlagsID": 2,
+		"posFlagID": 5,
+		"hostID": 0,
+		"description": "Quantity Prohibit"
+	}, {
+		"selected": false,
+		"posFlagsID": 3,
+		"posFlagID": 8,
+		"hostID": 0,
+		"description": "Scale"
+	}, {
+		"selected": false,
+		"posFlagsID": 4,
+		"posFlagID": 10,
+		"hostID": 0,
+		"description": "Store Coupon"
+	}, {
+		"selected": false,
+		"posFlagsID": 5,
+		"posFlagID": 177,
+		"hostID": 0,
+		"description": "DON'T USE-RESTRICT 3"
+	}, {
+		"selected": false,
+		"posFlagsID": 7,
+		"posFlagID": 179,
+		"hostID": 0,
+		"description": "PRICE REQ-MULTIPLY COUPON"
+	}, {
+		"selected": false,
+		"posFlagsID": 9,
+		"posFlagID": 181,
+		"hostID": 0,
+		"description": "DON'T USE-RECTRICT 3"
+	}, {
+		"selected": false,
+		"posFlagsID": 11,
+		"posFlagID": 183,
+		"hostID": 0,
+		"description": "MULTIPLY COUPON"
+	}, {
+		"selected": false,
+		"posFlagsID": 12,
+		"posFlagID": 184,
+		"hostID": 0,
+		"description": "NO FLAGS SET"
+	}, {
+		"selected": false,
+		"posFlagsID": 14,
+		"posFlagID": 186,
+		"hostID": 0,
+		"description": "SCALE ITEM-MULTIPLY COUPONS"
+	}, {
+		"selected": false,
+		"posFlagsID": 15,
+		"posFlagID": 187,
+		"hostID": 0,
+		"description": "QUANTITY REQUIRED-MULTIPLY CPNS"
+	}, {
+		"selected": false,
+		"posFlagsID": 16,
+		"posFlagID": 188,
+		"hostID": 0,
+		"description": "PRICE REQUIRED"
+	}, {
+		"selected": false,
+		"posFlagsID": 17,
+		"posFlagID": 189,
+		"hostID": 0,
+		"description": "MULTIPLY COUPONS-FSA ELIGIBLE"
+	}, {
+		"selected": false,
+		"posFlagsID": 18,
+		"posFlagID": 190,
+		"hostID": 0,
+		"description": "DON'T USE-RESTRICT 3"
+	}, {
+		"selected": false,
+		"posFlagsID": 19,
+		"posFlagID": 192,
+		"hostID": 0,
+		"description": "Price Required-No Points"
+	}, {
+		"selected": false,
+		"posFlagsID": 20,
+		"posFlagID": 193,
+		"hostID": 0,
+		"description": "Multiply Coupons-No Points"
+	}, {
+		"selected": false,
+		"posFlagsID": 21,
+		"posFlagID": 194,
+		"hostID": 0,
+		"description": "Price Req-Multiply Coupons-No Points"
+	}, {
+		"selected": false,
+		"posFlagsID": 22,
+		"posFlagID": 196,
+		"hostID": 0,
+		"description": "No Points-No Multiply Coupons"
+	}, {
+		"selected": false,
+		"posFlagsID": 23,
+		"posFlagID": 198,
+		"hostID": 0,
+		"description": "Qty Req-Multiply Coups-No Points"
+	}, {
+		"selected": false,
+		"posFlagsID": 24,
+		"posFlagID": 200,
+		"hostID": 0,
+		"description": "Price Req-Multiply Cpns-RS-No Points"
+	}, {
+		"selected": false,
+		"posFlagsID": 25,
+		"posFlagID": 202,
+		"hostID": 0,
+		"description": "Scale-Multiply Coupons"
+	}, {
+		"selected": false,
+		"posFlagsID": 26,
+		"posFlagID": 206,
+		"hostID": 0,
+		"description": "Blackhawk GC Restricted Hours"
+	}, {
+		"selected": false,
+		"posFlagsID": 31,
+		"posFlagID": 203,
+		"hostID": 0,
+		"description": "Price Required-Multiply Coupons"
+	}, {
+		"selected": false,
+		"posFlagsID": 34,
+		"posFlagID": 204,
+		"hostID": 0,
+		"description": "Price Required-RS 18-Multiply Coupon"
+	}, {
+		"selected": false,
+		"posFlagsID": 40,
+		"posFlagID": 212,
+		"hostID": 0,
+		"description": "Fireworks"
+	}],
+	"priceFamily": [{
+		"priceFamily": "770101",
+		"description": "Price Family Master Ref - PET SMORES",
+		"masterMaterial": 3003970,
+		"matDesc": "PRICE FAMILY MASTER REF - PET SMORES",
+		"familyGroup": "770101",
+		"groupDesc": "Price Family Master Ref - PET SMORES",
+		"wlMaterial": 25059,
+		"artDesc": "PET SMORES"
+	}, {
+		"priceFamily": "770101",
+		"description": "Price Family Master Ref - PET SMORES",
+		"masterMaterial": 3003970,
+		"matDesc": "PRICE FAMILY MASTER REF - PET SMORES",
+		"familyGroup": "770101",
+		"groupDesc": "Price Family Master Ref - PET SMORES",
+		"wlMaterial": 41021,
+		"artDesc": "PET NUTTY CRUNCHING"
+	}, {
+		"priceFamily": "770101",
+		"description": "Price Family Master Ref - PET SMORES",
+		"masterMaterial": 3003970,
+		"matDesc": "PRICE FAMILY MASTER REF - PET SMORES",
+		"familyGroup": "770101",
+		"groupDesc": "Price Family Master Ref - PET SMORES",
+		"wlMaterial": 41065,
+		"artDesc": "PET VAN I/C"
+	}, {
+		"priceFamily": "770101",
+		"description": "Price Family Master Ref - PET SMORES",
+		"masterMaterial": 3003970,
+		"matDesc": "PRICE FAMILY MASTER REF - PET SMORES",
+		"familyGroup": "770101",
+		"groupDesc": "Price Family Master Ref - PET SMORES",
+		"wlMaterial": 41066,
+		"artDesc": "PET CHOC I/C"
+	}],
+	"posStates": {
+		"salesOrg": "IM10",
+		"salseOrgText": "Ingles Sales Org.",
+		"distChnl": "40",
+		"distChnlText": "Retail",
+		"rows": [{
+			"state": "Ingles TN",
+			"ageRestrn": false,
+			"WICeligible": false,
+			"age": "",
+			"allSiteBlock": false,
+			"blockSitesFrom": "",
+			"blockSites": []
+		}, {
+			"state": "Ingles SC",
+			"ageRestrn": false,
+			"WICeligible": false,
+			"age": "",
+			"allSiteBlock": false,
+			"blockSitesFrom": "",
+			"blockSites": []
+		}, {
+			"state": "Ingles NC",
+			"ageRestrn": false,
+			"WICeligible": false,
+			"age": "",
+			"allSiteBlock": false,
+			"blockSitesFrom": "",
+			"blockSites": []
+		}, {
+			"state": "Ingles GA",
+			"ageRestrn": false,
+			"WICeligible": false,
+			"age": "",
+			"allSiteBlock": false,
+			"blockSitesFrom": "",
+			"blockSites": []
+		}, {
+			"state": "Ingles AL",
+			"ageRestrn": false,
+			"WICeligible": false,
+			"age": "",
+			"allSiteBlock": false,
+			"blockSitesFrom": "",
+			"blockSites": []
+		}, {
+			"state": "Ingles VA",
+			"ageRestrn": false,
+			"WICeligible": false,
+			"age": "",
+			"allSiteBlock": false,
+			"blockSitesFrom": "",
+			"blockSites": []
+		}]
+	},
+	"posStores": {
+		"accessParameters": {
+			"salesOrg": "IM10",
+			"salseOrgText": "Ingles Sales Org.",
+			"distChnl": "40",
+			"distChnlText": "Retail",
+			"site": "100",
+			"siteText": "Ingles Store 100",
+			"profitCenter": "1045540",
+			"profitCenterText": "Store 100"
+		},
+		"sellingPeriod": {
+			"forSaleFrom": "2021-01-01",
+			"forSaleTill": "9999-12-31",
+			"status": "A - Active",
+			"validFrom": ""
+		},
+		"block": {
+			"storeBlocked": false,
+			"validFrom": ""
+		}
+	},
+	"consumption": [{
+		"period": "09/2021",
+		"totalConsumption": "0",
+		"correctedValue": "0"
+	}, {
+		"period": "08/2021",
+		"totalConsumption": "0",
+		"correctedValue": "0"
+	}, {
+		"period": "07/2021",
+		"totalConsumption": "0",
+		"correctedValue": "0"
+	}, {
+		"period": "06/2021",
+		"totalConsumption": "0",
+		"correctedValue": "0"
+	}, {
+		"period": "05/2021",
+		"totalConsumption": "0",
+		"correctedValue": "924"
+	}, {
+		"period": "04/2021",
+		"totalConsumption": "0",
+		"correctedValue": "2,040"
+	}, {
+		"period": "03/2021",
+		"totalConsumption": "1,158",
+		"correctedValue": "1,158"
+	}, {
+		"period": "02/2021",
+		"totalConsumption": "2,040",
+		"correctedValue": "2,040"
+	}, {
+		"period": "01/2021",
+		"totalConsumption": "1,050",
+		"correctedValue": "1,050"
+	}, {
+		"period": "53/2020",
+		"totalConsumption": "612",
+		"correctedValue": "612"
+	}, {
+		"period": "52/2020",
+		"totalConsumption": "924",
+		"correctedValue": "924"
+	}, {
+		"period": "51/2020",
+		"totalConsumption": "930",
+		"correctedValue": "930"
+	}, {
+		"period": "50/2020",
+		"totalConsumption": "1,644",
+		"correctedValue": "1,644"
+	}, {
+		"period": "49/2020",
+		"totalConsumption": "612",
+		"correctedValue": "612"
+	}, {
+		"period": "48/2020",
+		"totalConsumption": "924",
+		"correctedValue": "924"
+	}]
+}

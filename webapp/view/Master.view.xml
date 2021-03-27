@@ -1,0 +1,303 @@
+<mvc:View controllerName="Ingles.AddOn.CreateEditMaterial.controller.Master" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<Page>
+		<content>
+			<f:SimpleForm visible="{= ${appControl>/mode} === 'CREATE' ? true : false }" editable="true" layout="ResponsiveGridLayout"
+				title="Sourcing Type" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+				<f:content>
+					<RadioButtonGroup id="sourcingType" columns="3" width="100%" selectedIndex="{appControl>/sourcingTypeKey}" class="sapUiMediumMarginBottom">
+						<RadioButton text="Warehouse" groupName="sourcingtype"/>
+						<RadioButton text="DSD" groupName="sourcingtype"/>
+						<RadioButton text="Cross Dock" groupName="sourcingtype"/>
+					</RadioButtonGroup>
+				</f:content>
+			</f:SimpleForm>
+			<f:SimpleForm visible="{= ${appControl>/mode} === 'CREATE' ? true : false }" editable="true" layout="ResponsiveGridLayout" title="Groupings"
+				adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+				<f:content>
+					<Label fieldGroupIds="lbl" text="Ref. Material" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<ComboBox selectedKey="{appControl>/refMaterial}" id="refMaterial" selectionChange="onRefMaterialSelect"
+						items="{MasterDataModel>/refMaterial}">
+						<items>
+							<core:ListItem additionalText="{MasterDataModel>code}" text="{MasterDataModel>name}" key="{MasterDataModel>code}"/>
+						</items>
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S8"/>
+						</layoutData>
+					</ComboBox>
+					<!--<Text text=""><layoutData><l:GridData span="XL1 L1 M1 S12" /></layoutData></Text>-->
+					<Label fieldGroupIds="lbl" text="Material Type" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<ComboBox selectedKey="{appControl>/materialType}" id="matType" showSecondaryValues="true" items="{MasterDataModel>/materialType}">
+						<items>
+							<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+						</items>
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S8"/>
+						</layoutData>
+					</ComboBox>
+					<Text text="">
+						<layoutData><l:GridData span="XL2 L2 M2 S12"/></layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Material Group" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<ComboBox selectedKey="{appControl>/materialGroup}" showSecondaryValues="true" items="{MasterDataModel>/materialGroup}">
+						<items>
+							<core:ListItem text="{MasterDataModel>code}: {MasterDataModel>name}" key="{MasterDataModel>code}"/>
+						</items>
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S8"/>
+						</layoutData>
+					</ComboBox>
+					<!--<Text text=""><layoutData><l:GridData span="XL1 L1 M1 S12" /></layoutData></Text>-->
+					<Label fieldGroupIds="lbl" text="Material Category" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<ComboBox selectedKey="{appControl>/materialCategory}" id="matCategory" showSecondaryValues="true"
+						items="{MasterDataModel>/materialCategory}">
+						<items>
+							<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+						</items>
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S8"/>
+						</layoutData>
+					</ComboBox>
+					<Text text="">
+						<layoutData><l:GridData span="XL2 L2 M2 S12"/></layoutData>
+					</Text>
+				</f:content>
+			</f:SimpleForm>
+			<f:SimpleForm visible="{= ${appControl>/mode} === 'CREATE' ? false : true }" editable="true" layout="ResponsiveGridLayout"
+				title="Filter Conditions" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+				<f:content>
+					<Label fieldGroupIds="lbl" text="Purchase Group" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<ComboBox selectedKey="" showSecondaryValues="true" items="{MasterDataModel>/purchasingGrp}">
+						<items>
+							<core:ListItem text="{MasterDataModel>code}:{MasterDataModel&gt;name}" key="{MasterDataModel>code}" additionalText=""/>
+						</items>
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S8"/>
+						</layoutData>
+					</ComboBox>
+					<!--<Text text=""><layoutData><l:GridData span="XL1 L1 M1 S12" /></layoutData></Text>-->
+					<Label fieldGroupIds="lbl" text="Ingles Matl. #" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Input>
+					<Label textAlign="Center" text="To" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S2"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Input>
+					<Text text="">
+						<layoutData><l:GridData span="XL2 L2 M2 S12"/></layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Purch. Status" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<ComboBox selectedKey="03">
+						<items>
+							<core:Item text="Active" key="03"/>
+							<core:Item text="Discontinued" key="05"/>
+							<core:Item text="Suspended" key="06"/>
+							<core:Item text="No Order" key="07"/>
+						</items>
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S8"/>
+						</layoutData>
+					</ComboBox>
+					<!--<Text text=""><layoutData><l:GridData span="XL1 L1 M1 S12" /></layoutData></Text>-->
+					<Label fieldGroupIds="lbl" text="UPC" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S8"/>
+						</layoutData>
+					</Input>
+					<Text text="">
+						<layoutData><l:GridData span="XL2 L2 M2 S12"/></layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Vendor" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<ComboBox selectedKey="{Country}">
+						<items>
+							<core:Item text="C" key="C"/>
+							<core:Item text="F" key="F"/>
+						</items>
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S8"/>
+						</layoutData>
+					</ComboBox>
+					<!--<Text text=""><layoutData><l:GridData span="XL1 L1 M1 S12" /></layoutData></Text>-->
+					<Label fieldGroupIds="lbl" text="Vendor Item #" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Input>
+					<Label textAlign="Center" text="To" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S2"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Input>
+					<Text text="">
+						<layoutData><l:GridData span="XL2 L2 M2 S12"/></layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Merch. Category" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<ComboBox selectedKey="{Country}">
+						<items>
+							<core:Item text="C" key="C"/>
+							<core:Item text="F" key="F"/>
+						</items>
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S8"/>
+						</layoutData>
+					</ComboBox>
+					<!--<Text text=""><layoutData><l:GridData span="XL1 L1 M1 S12" /></layoutData></Text>-->
+					<Label fieldGroupIds="lbl" text="Size" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Input>
+					<Label fieldGroupIds="lbl" text="Pack" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S2"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Input>
+					<Text text="">
+						<layoutData><l:GridData span="XL2 L2 M2 S12"/></layoutData>
+					</Text>
+					<!--<Text text=""><layoutData><l:GridData span="XL1 L1 M1 S12" /></layoutData></Text>-->
+					<Label fieldGroupIds="lbl" text="Location Code" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Input>
+					<Label fieldGroupIds="lbl" text="To" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S2"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S3"/>
+						</layoutData>
+					</Input>
+					<!--					<Text text="">
+						<layoutData><l:GridData span="XL2 L2 M2 S12"/></layoutData>
+					</Text>-->
+					<Label fieldGroupIds="lbl" text="Department" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<ComboBox selectedKey="" showSecondaryValues="true" items="{MasterDataModel>/posDept}">
+						<items>
+							<core:ListItem text="{MasterDataModel>code}: {MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+						</items>
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S8"/>
+						</layoutData>
+					</ComboBox>
+					<Text text=" ">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S12"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Bill.Status" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S4"/>
+						</layoutData>
+					</Label>
+					<ComboBox selectedKey="">
+						<items>
+							<core:Item text="Active" key="03"/>
+							<core:Item text="Recall" key="08"/>
+							<core:Item text="Vendor Out" key="09"/>
+							<core:Item text="Inactive" key="10"/>
+						</items>
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S8"/>
+						</layoutData>
+					</ComboBox>
+				</f:content>
+			</f:SimpleForm>
+		</content>
+		<footer>
+			<OverflowToolbar>
+				<content>
+					<ToolbarSpacer/>
+					<Button visible="{= ${appControl>/mode} === 'CREATE' ? true : false }" type="Transparent" icon="sap-icon://nav-back" text="Back"/>
+					<Button visible="{= ${appControl>/mode} === 'CREATE' ? true : false }" type="Emphasized" icon="sap-icon://feeder-arrow" text="Next"
+						press="onCreateNext"/>
+					<Button visible="{= ${appControl>/mode} === 'CREATE' ? false : true }" type="Transparent" icon="sap-icon://reset" text="Reset"></Button>
+					<Button visible="{= ${appControl>/mode} === 'CREATE' ? false : true }" type="Emphasized" icon="sap-icon://filter" text="Go"
+						press="onSearchPress"></Button>
+				</content>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

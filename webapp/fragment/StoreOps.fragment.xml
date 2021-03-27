@@ -1,0 +1,25 @@
+<core:FragmentDefinition
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" 
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	class="sapUiSizeCompact">
+		
+<l:Grid defaultSpan="XL6 L6 M6 S12"><l:content>
+		<f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title=""
+			adjustLabelSpan="false"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label fieldGroupIds="lbl"  text="Group" wrapping="false"><layoutData><l:GridData span="XL4 L4 M4 S4" /></layoutData></Label>
+				<Input value=""><layoutData><l:GridData span="XL8 L8 M8 S8" /></layoutData></Input>
+			</f:content>
+		</f:SimpleForm>
+</l:content></l:Grid>
+</core:FragmentDefinition>

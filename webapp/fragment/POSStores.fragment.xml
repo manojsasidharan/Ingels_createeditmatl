@@ -1,0 +1,141 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="sapUiSizeCompact">
+	<VBox>
+		<f:SimpleForm title="Access Paramaters" binding="{material>/posStores/accessParameters}" editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+			<f:content>
+				<Label fieldGroupIds="lbl" text="Sales Org" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12"/>
+					</layoutData>
+				</Label>
+				<Input value="{material>salesOrg}" editable="false" >
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S12"/>
+					</layoutData>
+				</Input>
+				<Text text="{material>salesOrgText}">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Text>
+				<Label fieldGroupIds="lbl" text="Site" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12"/>
+					</layoutData>
+				</Label>
+				<Input value="{material>site}" editable="false" >
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S12"/>
+					</layoutData>
+				</Input>
+				<Text text="{material>siteText}">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Text>
+				<Label fieldGroupIds="lbl" text="Dist. Channel" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12"/>
+					</layoutData>
+				</Label>
+				<Input value="{material>distChnl}" editable="false" >
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S12"/>
+					</layoutData>
+				</Input>
+				<Text text="{material>distChnlText}">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Text>
+				<Label fieldGroupIds="lbl" text="Profit Center" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12"/>
+					</layoutData>
+				</Label>
+				<Input value="{material>profitCenter}" editable="false" >
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S12"/>
+					</layoutData>
+				</Input>
+				<Text text="{material>profitCenterText}">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Text>
+			</f:content>
+		</f:SimpleForm>
+		<l:Grid defaultSpan="XL6 L6 M6 S12">
+			<l:content>
+				<f:SimpleForm title="POS Selling Period/Status" binding="{material>/posStores/sellingPeriod}" editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label fieldGroupIds="lbl" text="For Sale From" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+<!--						<DatePicker enabled="false" value="2021-01-01" valueFormat="yyyy-MM-dd" displayFormat="MM/dd/yyyy">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</DatePicker>-->
+						<Text text="{ path:'material>forSaleFrom', type: 'sap.ui.model.type.Date', formatOptions: { pattern:'MM/dd/yyyy', source: { pattern: 'yyyy/MM/dd' } } }" width="140px">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>						
+						</Text>
+						<Label fieldGroupIds="lbl" text="For Sale Till" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Text text="{ path:'material>forSaleTill', type: 'sap.ui.model.type.Date', formatOptions: { pattern:'MM/dd/yyyy', source: { pattern: 'yyyy/MM/dd' } } }" width="140px">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>						
+						</Text>						
+						<Label fieldGroupIds="lbl" text="Status" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Input value="{material>status}" editable="false">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Valid From" wrapping="false">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<DatePicker value="{material>validFrom}" valueFormat="yyyy-MM-dd" displayFormat="MM/dd/yyyy" width="140px" editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</DatePicker>
+					</f:content>
+				</f:SimpleForm>				
+				<f:SimpleForm title="Block from POS" editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label fieldGroupIds="lbl" text="Block from POS">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<Switch id="storeBlocked" state="{material>/posStores/block/storeBlocked}" customTextOn="Yes" customTextOff="No" enabled="false" />
+						<Label text="Valid From">
+							<layoutData>
+								<l:GridData span="XL2 L2 M2 S2"/>
+							</layoutData>
+						</Label>
+						<DatePicker value="{material>/posGlobal/blockData/blockedFrom}" valueFormat="yyyy-MM-dd" displayFormat="MM/dd/yyyy" width="140px" editable="false">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</DatePicker>
+					</f:content>
+				</f:SimpleForm>
+			</l:content>
+		</l:Grid>
+	</VBox>
+</core:FragmentDefinition>

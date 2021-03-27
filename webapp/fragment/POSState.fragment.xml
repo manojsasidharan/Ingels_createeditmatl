@@ -1,0 +1,81 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:t="sap.ui.table" class="sapUiSizeCompact">
+	<VBox binding="{material>/posStates}">
+		<f:SimpleForm editable="true" layout="ResponsiveGridLayout" title="Active Paramaters" adjustLabelSpan="false" columnsXL="1" columnsL="1"
+			columnsM="1" singleContainerFullSize="false">
+			<f:content>
+				<Label fieldGroupIds="lbl" text="Sales Org" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12"/>
+					</layoutData>
+				</Label>
+				<Input value="{material>salesOrg}" editable="false" >
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S12"/>
+					</layoutData>
+				</Input>
+				<Text text="{material>salesOrgText}">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Text>
+				<Label fieldGroupIds="lbl" text="Dist. Channel" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL1 L1 M1 S12"/>
+					</layoutData>
+				</Label>
+				<Input value="{material>distChnl}" editable="false" >
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S12"/>
+					</layoutData>
+				</Input>
+				<Text text="{material>distChnlText}">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S12"/>
+					</layoutData>
+				</Text>
+			</f:content>
+		</f:SimpleForm>
+		<Table inset="false" items="{material>rows}" class="sapUiTinyMargin" backgroundDesign="Transparent" width="400px"
+			showSeparators="None">
+			<headerToolbar>
+				<Toolbar >
+					<Title text="POS Control for each State" textAlign="Left" width="400px"/>
+				</Toolbar>
+			</headerToolbar>
+			<columns>
+				<Column width="70px">
+					<Text text="State"/>
+				</Column>
+				<Column hAlign="Center" width="100px">
+					<Text text="WIC Eligible"/>
+				</Column>
+				<Column hAlign="Center" width="100px">
+					<Text text="Age Restriction"/>
+				</Column>
+				<Column hAlign="Center" width="70px">
+					<Text text="Age"/>
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem>
+					<cells>
+						<Text text="{material>state}" />
+						<Switch state="{material>WICeligible}" customTextOn="Yes" customTextOff="No" enabled="{appControl>/editable}"/>
+						<Switch state="{material>ageRestrn}" customTextOn="Yes" customTextOff="No" enabled="{appControl>/editable}"/>
+						<ComboBox selectedKey="{material>age}" editable="{= ${material>ageRestrn} &amp;&amp; ${appControl>/editable} }" showSecondaryValues="true" >
+							<items>
+								<core:ListItem text="16" key="16" />
+								<core:ListItem text="17" key="17" />
+								<core:ListItem text="18" key="18" />
+								<core:ListItem text="19" key="19" />
+								<core:ListItem text="20" key="20" />
+								<core:ListItem text="21" key="21" />
+							</items>
+						</ComboBox>						
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+	</VBox>
+</core:FragmentDefinition>

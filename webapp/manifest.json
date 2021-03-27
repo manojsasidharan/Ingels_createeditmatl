@@ -1,0 +1,185 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "Ingles.AddOn.CreateEditMaterial",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.38.11"
+		},
+		"dataSources": {
+			"CostUpdatesSource": {
+				"uri": "data/CostUpdates.json",
+				"type": "JSON"
+			},
+			"MasterDataSource": {
+				"uri": "data/masterdata.json",
+				"type": "JSON"
+			},
+			"OtherConditionsSource": {
+				"uri": "data/OtherConditions.json",
+				"type": "JSON"
+			},
+			"TestDataSource": {
+				"uri": "data/testData.json",
+				"type": "JSON"
+			},
+			"PriceHistorySource": {
+				"uri": "data/MaterialPriceHistory.json",
+				"type": "JSON"
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"services": {
+			"ShellUIService": {
+				"lazy": false,
+				"factoryName": "sap.ushell.ui5service.ShellUIService"
+			}
+		},
+		"rootView": {
+			"viewName": "Ingles.AddOn.CreateEditMaterial.view.FlexibleColumnLayout",
+			"type": "XML",
+			"async": true,
+			"id": "fcl"
+		},
+		"dependencies": {
+			"minUI5Version": "1.60.1",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {},
+				"sap.ui.comp": {}
+			}
+		},
+		"config": {
+			"fullWidth": true
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "Ingles.AddOn.CreateEditMaterial.i18n.i18n"
+				}
+			},
+			"CostUpdatesModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "CostUpdatesSource"
+			},
+			"OtherConditionsModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "OtherConditionsSource"
+			},
+			"MasterDataModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "MasterDataSource"
+			},
+			"TestDataModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "TestDataSource"
+			},
+			"PriceHistoryModel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "PriceHistorySource"
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.f.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "Ingles.AddOn.CreateEditMaterial.view",
+				"controlId": "fcl",
+				"transition": "slide"
+			},
+			"routes": [
+				{
+					"pattern": ":layout:",
+					"name": "master",
+					"target": [
+						"master"
+					]
+				},
+				{
+					"pattern": "detail/{layout}",
+					"name": "searchDetail",
+					"target": [
+						"master",
+						"detail"
+					]
+				},
+				{
+					"pattern": "newMaterialData/{layout}",
+					"name": "newMaterialData",
+					"target": [
+						"newMaterialData"
+					]
+				},
+				{
+					"pattern": "materialData/{matnr}/{layout}",
+					"name": "currentMaterialData",
+					"target": [
+						"currentMaterialData"
+					]
+				}
+			],
+			"targets": {
+				"master": {
+					"viewName": "Master",
+					"controlAggregation": "beginColumnPages"
+				},
+				"detail": {
+					"viewName": "MaterialList",
+					"controlAggregation": "midColumnPages"
+				},
+				"newMaterialData": {
+					"viewName": "MaterialData",
+					"controlAggregation": "midColumnPages"
+				},
+				"currentMaterialData": {
+					"viewName": "MaterialData",
+					"controlAggregation": "endColumnPages"
+				}
+			}
+		}
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/aplx/createeditmatl/webapp",
+		"_version": "1.1.0"
+	}
+}

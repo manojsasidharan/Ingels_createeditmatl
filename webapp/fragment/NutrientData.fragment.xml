@@ -1,0 +1,69 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+	 xmlns="sap.m" xmlns:t="sap.ui.table" class="sapUiSizeCompact">
+	<VBox>
+		<t:Table rows="{material>/nutrientData}" id="nutrientDataTable" selectionMode="None" ariaLabelledBy="title" class="sapUiTinyMargin" visibleRowCount="20">
+				<t:extension>
+					<OverflowToolbar style="Clear">
+						<SearchField
+							placeholder="Filter"
+							search="filterNutrientData"
+							width="15rem"/>
+							<ToolbarSpacer />
+						<Label text="Label Shelf Life"/>
+						<Input width="80px" />
+						<Button text="Ingredients" type="Emphasized" icon="sap-icon://group-2" press=".onOpenTextInput($event, 'INGREDIENT')"/>
+					</OverflowToolbar>
+				</t:extension>			
+			<t:columns>
+				<t:Column resizable="false" width="150px" sortProperty="Code">
+					<Label wrapping="true" text="Code"/>
+					<t:template>
+						<Input value="{material>code}" editable="false" />
+					</t:template>
+				</t:Column>
+				<t:Column resizable="false" width="150px">
+					<Label wrapping="true" text="Text"/>
+					<t:template>
+						<Input value="{material>text}" editable="{= ${material>textEdit} &amp;&amp; ${appControl>/editable} }" valueState="{= ${material>textEdit} ? 'Information' : 'None' }" />
+					</t:template>
+				</t:Column>
+				<t:Column resizable="false" width="150px">
+					<Label wrapping="true" text="Value1"/>
+					<t:template>
+						<Input value="{material>value1}" editable="{= ${material>value1Edit} &amp;&amp; ${appControl>/editable} }" textAlign="Right" valueState="{= ${material>value1Edit} ? 'Information' : 'None' }"/>
+					</t:template>
+				</t:Column>
+				<t:Column resizable="false" width="150px">
+					<Label wrapping="true" text="Value2"/>
+					<t:template>
+						<Input value="{material>value2}" editable="{= ${material>value2Edit} &amp;&amp; ${appControl>/editable} }" textAlign="Right" valueState="{= ${material>value2Edit} ? 'Information' : 'None' }"/>
+					</t:template>
+					</t:Column>
+					<t:Column resizable="false" >
+						<Label   wrapping="true" text="Description"/>
+					<t:template>
+						<Input value="{material>desc}" editable="false" />
+					</t:template>
+					</t:Column>
+					<t:Column resizable="false" width="150px">
+						<Label   wrapping="true" text="Text Label"/>
+					<t:template>
+						<Input value="{material>textLabel}" editable="false"/>
+					</t:template>
+					</t:Column>
+					<t:Column resizable="false" width="150px">
+						<Label wrapping="true" text="Value1 Label"/>
+					<t:template>
+						<Input value="{material>value1Label}" editable="false"/>
+					</t:template>
+					</t:Column>
+					<t:Column resizable="false" width="150px">
+						<Label wrapping="true" text="Value2 Label"/>
+					<t:template>
+						<Input value="{material>value2Label}" editable="false"/>
+					</t:template>
+					</t:Column>					
+				</t:columns>
+			</t:Table>
+		</VBox>
+	</core:FragmentDefinition>

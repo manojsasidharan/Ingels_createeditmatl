@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="sapUiSizeCompact">
+	<Dialog id="txtDialog" class="sapUiSizeCompact" contentHeight="270px" contentWidth="620px">
+		<content>
+		</content>
+		<buttons>
+			<Button type="Emphasized" width="100px" icon="sap-icon://accept" text="OK" press="onCloseTextInput"/>
+			<Button width="100px" icon="sap-icon://cancel" text="Cancel" press="onCloseTextInput"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

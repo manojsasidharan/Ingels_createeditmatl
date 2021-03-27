@@ -1,0 +1,131 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:t="sap.ui.table" xmlns="sap.m" class="sapUiSizeCompact">
+	<Dialog class="sapUiSizeCompact" showHeader="false">
+		<subHeader>
+			<Bar>
+				<contentLeft>
+				<Title text="Material Price History" textAlign="Left" titleStyle="H4"/>
+				</contentLeft>
+				<contentRight>
+				<HBox>
+					<Label fieldGroupIds="lbl" text="Condition Types" wrapping="false" textAlign="Center">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S1"/>
+						</layoutData>
+					</Label>
+					<MultiComboBox items="{MasterDataModel>/condTypes}" width="300px">
+						<core:Item key="{MasterDataModel>code}" text="{MasterDataModel>name}"/>
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S2"/>
+						</layoutData>
+					</MultiComboBox>
+				</HBox>
+				</contentRight>
+			</Bar>
+		</subHeader>
+		<content width="800px">
+			<f:SimpleForm binding="{material>/purchasing/headerInfo}" editable="true" 
+				layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false" class="sapUiSizeCompact">
+				<f:content>
+					<Label fieldGroupIds="lbl" text="Material" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S1"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>material}" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL6 L6 M6 S6"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Status" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S1"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>status}">
+						<layoutData>
+							<l:GridData span="XL4 L4 M4 S4"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Pack" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S1"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>pack}">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S1"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Size" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S1"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>size}">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S1"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="UPC" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S1"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>UPC}">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S2"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Vendor" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S1"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>vendor}">
+						<layoutData>
+							<l:GridData span="XL4 L4 M4 S4"/>
+						</layoutData>
+					</Text>
+				</f:content>
+			</f:SimpleForm>
+			<t:Table rows="{material>/purchasing/priceHistory}" selectionMode="None" visibleRowCount="8" ariaLabelledBy="title" width="1000px" class="sapUiTinyMargin">
+				<t:columns>
+					<t:Column width="auto" resizable="true" autoResizable="true" >
+						<Label text="Start Date"/>
+						<t:template>
+							<Text text="{material>StartDate}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="auto" resizable="true" autoResizable="true">
+						<Label text="End Date"/>
+						<t:template>
+							<Text text="{material>EndDate}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="auto" resizable="true" autoResizable="true">
+						<Label text="Type"/>
+						<t:template>
+							<Text text="{material>Type}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="auto" resizable="true" autoResizable="true">
+						<Label text="Amount"/>
+						<t:template>
+							<Text text="{material>Amount}" wrapping="false" textAlign="Right"/>
+						</t:template>
+					</t:Column>
+					<t:Column width="auto" resizable="true" autoResizable="true">
+						<Label text="Remarks"/>
+						<t:template>
+							<Text text="{material>Remarks}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+		</content>
+		<buttons>
+			<Button type="Emphasized" width="100px" icon="sap-icon://accept" text="OK" press="onClosePriceHistory"/>
+			<Button width="100px" icon="sap-icon://cancel" text="Cancel" press="onClosePriceHistory"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

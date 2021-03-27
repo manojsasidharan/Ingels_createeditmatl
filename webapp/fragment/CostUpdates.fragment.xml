@@ -1,0 +1,64 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:t="sap.ui.table" xmlns="sap.m" class="sapUiSizeCompact">
+
+<Dialog title="Conditions / Cost Updates {material>/purchasing/selectionCriteria/matnr} {material&gt;/generalData/description}" class="sapUiSizeCompact"> <!--FOR DEMO-->
+	<content>
+		<f:SimpleForm binding="{material>/purchasing/conditionDetails}" editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+			<f:content>
+				<Label fieldGroupIds="lbl" text="Material List Cost" wrapping="false">
+					<layoutData>
+						<l:GridData span="XL3 L3 M3 S3"/>
+					</layoutData>
+				</Label>
+				<Input value="{material>netPrice}" editable="false" textAlign="Right" >
+					<layoutData>
+						<l:GridData span="XL2 L2 M2 S2"/>
+					</layoutData>
+				</Input>
+			</f:content>
+		</f:SimpleForm>
+		
+		<t:Table width="772px" class="sapUiTinyMargin" rows="{material>/purchasing/conditionDetails/costUpdates}" selectionMode="None" visibleRowCount="12" ariaLabelledBy="title">
+				<t:columns>
+					<t:Column resizable="true" width="200px">
+						<Label text="Particulars"/>
+						<t:template>
+							<VBox>
+							<Text visible="{=((${material>isSubItem} === true) ? false : true)}" text="{material>Name}" wrapping="false"/>
+							<Text visible="{=((${material>isSubItem} === true) ? true : false)}" class="ConditionCostSubItem" text="{material>Name}" wrapping="false"/>
+							</VBox>
+						</t:template>
+					</t:Column>
+					<t:Column resizable="false" width="150px">
+						<Label text="Cost"/>
+						<t:template>
+							<Input value="{material>Cost}" type="Number" textAlign="Right" editable="{= (${material>isSubItem} === false &amp;&amp; ${material>showItemLevel} === true &amp;&amp; ${material>ItemLevel} === true ? true : false )}" change="costUpdateChange"/>
+						</t:template>
+					</t:Column>
+					<t:Column resizable="false" width="150px">
+						<Label text="From"/>
+						<t:template>
+							<DatePicker visible="{=((${material>isSubItem} === true) ? false : true)}" displayFormat="MM/dd/yyyy" editable="{appControl>/editable}" value="{material>FromDate}"/>
+						</t:template>
+					</t:Column>
+					<t:Column resizable="false" width="150px">
+						<Label text="Till"/>
+						<t:template>
+							<DatePicker visible="{=((${material>isSubItem} === true) ? false : true)}" displayFormat="MM/dd/yyyy" editable="{appControl>/editable}" value="{material>ToDate}"/>
+						</t:template>
+					</t:Column>
+					<t:Column resizable="false" width="120px">
+						<Label text="Item Level"/>
+						<t:template>
+							<CheckBox selected="{material>ItemLevel}" visible="{= (${material>isSubItem} === false &amp;&amp; ${material>showItemLevel} === true ? true : false )}" text="Item Level" editable="{appControl>/editable}"/>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+	</content>
+	<buttons>
+		<Button type="Emphasized" width="100px" icon="sap-icon://accept" text="OK" press="onCloseCostUpdates"/>
+		<Button width="100px" icon="sap-icon://cancel" text="Cancel" press="onCloseCostUpdates"/>
+	</buttons>
+</Dialog>
+
+</core:FragmentDefinition>

@@ -1,0 +1,163 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" class="sapUiSizeCompact">
+	<VBox>
+		<l:Grid defaultSpan="XL6 L6 M6 S12">
+			<l:content>
+				<f:SimpleForm title="POS Attributes" binding="{material>/posGlobal}" editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="false"
+					columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label fieldGroupIds="lbl" text="POS Status" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Select forceSelection="false" selectedKey="{material>posStatus}" enabled="{appControl>/editable}">
+							<core:Item key="1" text="Active"/>
+							<core:Item key="2" text="Discontinued"/>
+							<core:Item key="3" text="Seasonal"/>
+							<core:Item key="4" text="To be discontinued"/>
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Select>
+						<Label fieldGroupIds="lbl" text="Status Valid from" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<DatePicker value="{material>posStatusFrom}" valueFormat="yyyy-MM-dd" displayFormat="MM/dd/yyyy" width="140px"
+							editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</DatePicker>						
+						<Label fieldGroupIds="lbl" text="POS Dept.(HQ)" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>deptHQ}" showSecondaryValues="true" items="{MasterDataModel>/posDept}" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="{MasterDataModel>code}: {MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
+							</items>
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="POS Description" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>posDescription}" editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="POS Tare" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>posTare}" showSecondaryValues="true" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="" key="" additionalText=""/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Department Tare" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>deptTare}" showSecondaryValues="true" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="" key="" additionalText=""/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Mixed Match Code" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>mixMatchCode}" editable="{appControl>/editable}">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Auth. to Sell in Stores" wrapping="false">
+							<layoutData><l:GridData span="XL3 L3 M3 S3" linebreak="true"/></layoutData>
+						</Label>
+						<Switch state="{material>authSellinStore}" customTextOn="Yes" customTextOff="No" enabled="{appControl>/editable}">
+							<layoutData><l:GridData span="XL3 L3 M3 S3"/></layoutData>
+						</Switch>
+					</f:content>
+				</f:SimpleForm>
+				<f:SimpleForm title="Block from POS" binding="{material>/posGlobal/blockData}" id="globalBlocks" editable="true"
+					layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label fieldGroupIds="lbl" text="Global block" wrapping="false">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Label>
+						<Switch state="{material>globalBlock}" enabled="{appControl>/editable}" name="globalBlock" id="globalBlock" change="onGlobalBlockChange">
+							<layoutData><l:GridData span="XL8 L8 M8 S8"/></layoutData>
+						</Switch>
+						<Label fieldGroupIds="lbl" text="Valid from" wrapping="false">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Label>
+						<Label fieldGroupIds="lbl" text="Zone level block" wrapping="false">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Label>
+						<MultiComboBox id="globalZoneBlock" name="globalZoneBlock" selectionFinish="onGlobalBlockChange" items="{MasterDataModel>/Zones}" width="400px"
+							selectedKeys="{material>blockedZones}" editable="{=((${material>globalBlock} !== true &amp;&amp; ${appControl>/editable} ) ? true : false)}">
+							<core:Item key="{MasterDataModel>code}" text="{MasterDataModel>code}: {MasterDataModel>name}"/>
+							<layoutData>
+								<l:GridData span="XL8 L8 M8 S8"/>
+							</layoutData>
+						</MultiComboBox>
+						<Label fieldGroupIds="lbl" text="Site level block" wrapping="false">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Label>
+						<!--						<MultiComboBox id="globalSiteBlock" items="{MasterDataModel>/siteList}" width="400px" selectedKeys="{material>blockedSites}"
+							name="globalSiteBlock" >
+							<core:Item key="{MasterDataModel>site}" text="{MasterDataModel>name}"/>
+							<layoutData>
+								<l:GridData span="XL8 L8 M8 S8"/>
+							</layoutData>
+						</MultiComboBox>-->
+						<MultiInput id="globalSiteBlock" name="globalSiteBlock" submit="onGlobalBlockChange"
+							editable="{=((${material>globalBlock} !== true &amp;&amp; ${appControl>/editable} ) ? true : false)}" valueHelpOnly="false"
+							valueHelpRequest="onValueHelpSite" tokenUpdate=".tokenUpdate($event, '/posGlobal/blockData/blockedSites')">
+							<layoutData>
+								<l:GridData span="XL8 L8 M8 S8"/>
+							</layoutData>
+						</MultiInput>
+						<Label fieldGroupIds="lbl" text="Site level block exceptions" wrapping="false">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Label>
+						<!--						<MultiComboBox id="globalSiteBlockExcp" items="{MasterDataModel>/siteList}" width="400px" name="globalSiteBlockException"
+							editable="{appControl>/editable}" selectedKeys="{material>blockedSitesExceptions}" >
+							<core:Item key="{MasterDataModel>site}" text="{MasterDataModel>name}"/>
+							<layoutData>
+								<l:GridData span="XL8 L8 M8 S8"/>
+							</layoutData>
+						</MultiComboBox>-->
+						<MultiInput id="globalSiteBlockException" name="globalSiteBlockException" 
+							submit="onGlobalBlockChange"
+							editable="{appControl>/editable}"
+							valueHelpOnly="false" valueHelpRequest="onValueHelpSite"
+							tokenUpdate=".tokenUpdate($event, '/posGlobal/blockData/blockedSitesExceptions')">
+							<layoutData>
+								<l:GridData span="XL8 L8 M8 S8"/>
+							</layoutData>
+						</MultiInput>
+						<Label fieldGroupIds="lbl" text="Valid from" wrapping="false">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Label>
+						<DatePicker value="{material>blockedFrom}" valueFormat="yyyy-MM-dd" displayFormat="MM/dd/yyyy" width="140px"
+							editable="{appControl>/editable}">
+							<layoutData>
+								<l:GridData span="XL8 L8 M8 S8"/>
+							</layoutData>
+						</DatePicker>
+						<Label fieldGroupIds="lbl" text="Site level block" wrapping="false">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Label>
+						<!--							<MultiComboBox id="globalSiteBlock" items="{MasterDataModel>/siteList}" width="400px" selectedKeys="{material>blockedSites}"  name="globalSiteBlock"
+						editable="{=((${material>globalBlock} !== true &amp;&amp; ${appControl>/editable} ) ? true : false)}" selectionFinish="onGlobalBlockChange">
+							<core:Item key="{MasterDataModel>site}" text="{MasterDataModel>name}"/>
+							<layoutData>
+								<l:GridData span="XL8 L8 M8 S8"/>
+							</layoutData>
+						</MultiComboBox>-->
+					</f:content>
+				</f:SimpleForm>
+			</l:content>
+		</l:Grid>
+	</VBox>
+</core:FragmentDefinition>

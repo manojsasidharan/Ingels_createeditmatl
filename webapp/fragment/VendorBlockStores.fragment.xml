@@ -1,0 +1,105 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:t="sap.ui.table" xmlns="sap.m" class="sapUiSizeCompact">
+	<Dialog title="Vendor Receiving Blocks" class="sapUiSizeCompact" showHeader="true" >
+		<content>
+			<VBox width="700px" >
+			<f:SimpleForm editable="true" 
+			binding="{material>/purchasing/headerInfo}"
+			layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false" class="sapUiSizeCompact">
+				<f:content>
+					<Label fieldGroupIds="lbl" text="Material" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S2"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>material}" wrapping="false">  <!--FOR DEMO-->
+						<layoutData>
+							<l:GridData span="XL4 L4 M4 S4"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Status" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S1"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>status}">
+						<layoutData>
+							<l:GridData span="XL5 L5 M5 S5"/>
+						</layoutData>
+					</Text>
+					
+					<Label fieldGroupIds="lbl" text="Pack" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S2"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>pack}">
+						<layoutData>
+							<l:GridData span="XL4 L4 M4 S4"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Size" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S1"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>size}">
+						<layoutData>
+							<l:GridData span="XL5 L5 M5 S5"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="UPC" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S2"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>UPC}">
+						<layoutData>
+							<l:GridData span="XL4 L4 M4 S4"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Vendor" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S1"/>
+						</layoutData>
+					</Label>
+					<Text text="{material>vendor}">
+						<layoutData>
+							<l:GridData span="XL5 L5 M5 S5"/>
+						</layoutData>
+					</Text>
+				</f:content>
+			</f:SimpleForm>
+			<t:Table rows="{material>/purchasing/vendorStoreBlocks}" id="vendorStoreBlocksTable" visibleRowCount="10" ariaLabelledBy="title" class="sapUiTinyMargin" >
+				<t:extension>
+					<OverflowToolbar>
+						<Title class="sapUiFormTitleH6" text="Enter Sites for site level block"/>
+						<ToolbarSpacer/>
+						<Button type="Transparent" icon="sap-icon://add" press="onAppendVendorStoreBlock" tooltip="Add row" visible="{appControl>/editable}"/>
+						<Button type="Transparent" icon="sap-icon://delete" press="onDeleteVendorStoreBlock" tooltip="Delete selected row" visible="{appControl>/editable}"/>
+					</OverflowToolbar>
+				</t:extension>			
+				<t:columns>
+					<t:Column resizable="true" autoResizable="true">
+						<Label text="Site"/>
+						<t:template>
+							<Input value="{material>site}" showValueHelp="true" valueHelpRequest="onValueHelpSite" 
+							description="{material>siteName}"
+							editable="{appControl>/editable}" fieldWidth="30%"/>
+						</t:template>
+					</t:Column>
+<!--					<t:Column width="auto" resizable="true" autoResizable="true">
+						<Label text="Site Name"/>
+						<t:template>
+							<Text text="{material>siteName}" />
+						</t:template>
+					</t:Column>	-->				
+				</t:columns>
+			</t:Table>
+			</VBox>
+		</content>
+		<buttons>
+			<Button type="Emphasized" width="100px" icon="sap-icon://accept" text="OK" press="onCloseVendorStoreBlocks"/>
+			<Button width="100px" icon="sap-icon://cancel" text="Cancel" press="onCloseVendorStoreBlocks"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

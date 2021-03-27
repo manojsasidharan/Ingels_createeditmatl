@@ -1,0 +1,26 @@
+/* Enter your custom styles here */
+
+.Basic-Others .sapUiFormTitleH4 {
+    border-bottom-color: transparent;
+}
+
+.PAList .sapMLIB {
+	border-bottom: none;
+}
+
+.sapUiSizeCompact .sapUxAPBlockContainerDesktop {
+	padding: 0px 0px 0px 0px !important;
+}
+
+.ConditionCostSubItem {
+	padding-left: 15px;
+    color: #5f9ea0;
+}
+
+.spacingcls {
+	padding-right: 10px !important;
+}
+
+.upcMessageText {
+	color: #ff0000;
+}

@@ -1,0 +1,14 @@
+[
+	{ "Name": "Off Invoice", "isSubItem": false, "Cost": -2.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "showItemLevel": false },
+	{ "Name": "Other Item Up-Down", "isSubItem": false, "Cost": 0.50, "FromDate": null, "ToDate": null, "ItemLevel": false, "showItemLevel": true },
+	{ "Name": "Other Vendor Up-Down", "isSubItem": false, "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "showItemLevel": false },
+	{ "Name": "Freight Allowance", "isSubItem": false, "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "showItemLevel": true },
+	{ "Name": "Prepay + Add", "isSubItem": false, "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "showItemLevel": true },
+	{ "Name": "Due Vendor", "isSubItem": true, "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "showItemLevel": false },
+	{ "Name": "Billback", "isSubItem": false, "Cost": -1.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "showItemLevel": false },
+	{ "Name": "Freight Bill", "isSubItem": false, "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "showItemLevel": true },
+	{ "Name": "Backhaul", "isSubItem": false, "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "showItemLevel": true },
+	{ "Name": "Next Last Cost", "isSubItem": true, "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "showItemLevel": false },
+	{ "Name": "Cash Discount", "isSubItem": false, "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "showItemLevel": false },
+	{ "Name": "Total Cost", "isSubItem": true, "Cost": 0.00, "FromDate": null, "ToDate": null, "ItemLevel": false, "showItemLevel": false }
+]

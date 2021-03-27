@@ -1,0 +1,215 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:t="sap.ui.table" class="sapUiSizeCompact">
+	<VBox>
+		<l:Grid defaultSpan="XL12 L12 M12 S12">
+			<l:content>
+				<t:Table rows="{material>/posFlags}" selectionMode="None" visibleRowCount="8" ariaLabelledBy="title" width="800px">
+					<t:extension>
+						<OverflowToolbar xmlns="sap.m">
+							<Title class="sapUiFormTitleH4" text="POS FLags - HQ*"/>
+						</OverflowToolbar>
+					</t:extension>
+					<t:columns>
+						<t:Column resizable="false" width="80px">
+							<Label wrapping="true" text="Selected"/>
+							<t:template>
+								<CheckBox selected="{material>selected}" editable="{appControl>/editable}"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false" width="140px">
+							<Label wrapping="true" text="POS Flags ID"/>
+							<t:template>
+								<Label text="{material>posFlagsID}"/>
+							</t:template>
+						</t:Column>
+						<t:Column resizable="false">
+							<Label wrapping="true" text="Description"/>
+							<t:template>
+								<Label text="{material>description}"/>
+							</t:template>
+						</t:Column>
+					</t:columns>
+				</t:Table>
+			</l:content>
+		</l:Grid>
+		<l:Grid defaultSpan="XL10 L10 M10 S12">
+			<l:content>
+				<f:SimpleForm title="Scale Data" binding="{material>/scaleData}" editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="false"
+					columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label fieldGroupIds="lbl" text="Scale PLU" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>scalePLU}" editable="{appControl>/editable}">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Scale Description" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>scaleDesc}" editable="{appControl>/editable}">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Scale Desc 2" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>scaleDesc2}" editable="{appControl>/editable}">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Scale UoM" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>scaleUoM}" showSecondaryValues="true" width="150px" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="FW-Fix Wgl" key="FW-Fix Wgl" additionalText=""/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="FW Amount" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>fwAmount}" editable="{appControl>/editable}">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Fractional Item" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>fractionalItem}" showSecondaryValues="true" width="150px" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="False" key="false" additionalText=""/>
+								<core:ListItem text="True" key="true" additionalText=""/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Class" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>class}" editable="{appControl>/editable}">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Tare required" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>tareReqd}" showSecondaryValues="true" width="150px" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="False" key="false" additionalText=""/>
+								<core:ListItem text="True" key="true" additionalText=""/>
+							</items>
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Scale Label1" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>scaleLabel1}" editable="{appControl>/editable}">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Scale Label 2" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>scaleLabel2}" editable="{appControl>/editable}">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="EAS" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>EAS}" showSecondaryValues="true" width="150px" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="False" key="false" additionalText=""/>
+								<core:ListItem text="True" key="true" additionalText=""/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Price Required" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>priceReqd}" showSecondaryValues="true" width="150px" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="False" key="false" additionalText=""/>
+								<core:ListItem text="True" key="true" additionalText=""/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Scale of Department" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>scaleOfDept}" showSecondaryValues="true" enabled="true" width="150px" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="False" key="false" additionalText=""/>
+								<core:ListItem text="True" key="true" additionalText=""/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Print Safe Handling" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>printSafeHandling}" showSecondaryValues="true" enabled="true" width="150px"
+							editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="False" key="false" additionalText=""/>
+								<core:ListItem text="True" key="true" additionalText=""/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Change Source" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>changeSource}" showSecondaryValues="true" enabled="false" width="150px" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="Manual Change" key="Manual Change" additionalText=""/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Record Status" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<ComboBox selectedKey="{material>recordStatus}" showSecondaryValues="true" width="150px" enabled="false" editable="{appControl>/editable}">
+							<items>
+								<core:ListItem text="Change" key="Change" additionalText=""/>
+							</items>
+							<layoutData>
+								<l:GridData span="XL4 L4 M4 S4"/>
+							</layoutData>
+						</ComboBox>
+						<Label fieldGroupIds="lbl" text="Record Status Date" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>recordStatusDt}" editable="{appControl>/editable}">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Logo Number" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>logoNumber}" editable="{appControl>/editable}">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Graphic Number" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>graphicNumber}" editable="{appControl>/editable}">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Input>
+						<Label fieldGroupIds="lbl" text="Use By" wrapping="false">
+							<layoutData><l:GridData span="XL2 L2 M2 S2"/></layoutData>
+						</Label>
+						<Input value="{material>useBy}" editable="{appControl>/editable}">
+							<layoutData><l:GridData span="XL4 L4 M4 S4"/></layoutData>
+						</Input>
+					</f:content>
+				</f:SimpleForm>
+			</l:content>
+		</l:Grid>
+	</VBox>
+</core:FragmentDefinition>

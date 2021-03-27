@@ -1,0 +1,111 @@
+<mvc:View controllerName="Ingles.AddOn.CreateEditMaterial.controller.MaterialData" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns="sap.uxap" class="sapUiSizeCompact" displayBlock="true">
+			<ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" upperCaseAnchorBar="false">
+				<headerTitle>
+					<ObjectPageDynamicHeaderTitle>
+						<expandedHeading>
+							<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.MaterialHeader" type="XML"></core:Fragment>
+						</expandedHeading>
+						<snappedHeading>
+							<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.MaterialHeader" type="XML"></core:Fragment>
+						</snappedHeading>
+						<actions>
+							<m:Button text="Save" press="onSave" type="Emphasized" visible="{appControl>/editable}"/>
+							<m:Button text="Cancel" press="onNavBack"/>
+						</actions>
+					</ObjectPageDynamicHeaderTitle>
+				</headerTitle>
+				<sections>
+					<ObjectPageSection title="Basic Data">
+						<subSections>
+							<ObjectPageSubSection >
+								<blocks>
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.BasicData" type="XML"></core:Fragment>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<ObjectPageSection title="Purchasing">
+						<subSections>
+							<ObjectPageSubSection>
+								<blocks>
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.Purchasing" type="XML"></core:Fragment>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<ObjectPageSection title="Material Profile" visible="{= (${appControl>/mode} === 'CREATE' || ${material>/sourcingTypeKey} !== 0 ) ? false : true }">
+						<subSections>
+							<ObjectPageSubSection>
+								<blocks>
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.MaterialProfile" type="XML"></core:Fragment>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<!--			<ObjectPageSection title="Store Ops"><subSections><ObjectPageSubSection><blocks>
+						<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.StoreOps" type="XML"></core:Fragment>
+			</blocks></ObjectPageSubSection></subSections></ObjectPageSection>-->
+					<!--			<ObjectPageSection title="Sales"><subSections><ObjectPageSubSection><blocks>
+						<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.Sales" type="XML"></core:Fragment>
+			</blocks></ObjectPageSubSection></subSections></ObjectPageSection>-->
+					<ObjectPageSection title="Logistics DC" visible="{path:'material>/sourcingTypeKey', formatter: '.isWarehouseSourceType'}" >
+						<subSections>
+							<ObjectPageSubSection>
+								<blocks>
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.LogisticsDC" type="XML"></core:Fragment>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<!--<ObjectPageSection title="Logistics Stores"><subSections><ObjectPageSubSection><blocks>-->
+					<!--			<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.LogisticsStores" type="XML"></core:Fragment>-->
+					<!--</blocks></ObjectPageSubSection></subSections></ObjectPageSection>-->
+					<ObjectPageSection title="POS Global">
+						<subSections>
+							<ObjectPageSubSection>
+								<blocks>
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.POSGlobal" type="XML"></core:Fragment>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<ObjectPageSection title="POS Stores">
+						<subSections>
+							<ObjectPageSubSection>
+								<blocks>
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.POSStores" type="XML"></core:Fragment>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<ObjectPageSection title="POS Area">
+						<subSections>
+							<ObjectPageSubSection>
+								<blocks>
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.POSState" type="XML"></core:Fragment>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<ObjectPageSection title="POS Flags &amp; Scale Data">
+						<subSections>
+							<ObjectPageSubSection>
+								<blocks>
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.ScaleData" type="XML"></core:Fragment>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<ObjectPageSection title="Nutrient Data">
+						<subSections>
+							<ObjectPageSubSection>
+								<blocks>
+									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.NutrientData" type="XML"></core:Fragment>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+				</sections>
+			</ObjectPageLayout>
+</mvc:View>

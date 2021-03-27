@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:t="sap.ui.table" xmlns="sap.m" class="sapUiSizeCompact">
+	<Dialog title="Additional Vendors with same PIR" class="sapUiSizeCompact" >
+		<content>
+			<t:Table id="addlVendorTbl" width="500px" rows="{material>/purchasing/addlVendor}" visibleRowCount="10" class="sapUiTinyMargin" >
+					<t:extension>
+						<OverflowToolbar>
+							<ToolbarSpacer/>
+							<Button type="Transparent" icon="sap-icon://add" press="onAppendVendorCopy" tooltip="Add row" visible="{appControl>/editable}"/>
+							<Button type="Transparent" icon="sap-icon://delete" press="onDeleteVendorCopy" tooltip="Delete selected row" visible="{appControl>/editable}"/>
+						</OverflowToolbar>
+					</t:extension>				
+				<t:columns>
+					<t:Column resizable="false" hAlign="Center" >
+						<Label wrapping="true" text="Vendor"/>
+						<t:template>
+							<Input value="{material>lifnr}" description="{material>name1}"
+							editable="{appControl>/editable}" showValueHelp="true" valueHelpRequest="onValueHelpVendor" fieldWidth="25%"/>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+		</content>
+		<buttons>
+			<Button type="Emphasized" width="100px" icon="sap-icon://accept" text="OK" press="onCloseVendorCopy"></Button>
+			<Button width="100px" icon="sap-icon://cancel" text="Cancel" press="onCloseVendorCopy"></Button>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

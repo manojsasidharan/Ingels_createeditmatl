@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:t="sap.ui.table" xmlns="sap.m" class="sapUiSizeCompact">
+	<Dialog title="Consumption Data" class="sapUiSizeCompact" >
+		<content>
+			<t:Table id="consmpDataTbl" width="500px" selectionMode="None" rows="{material>/consumption}" visibleRowCount="15" class="sapUiTinyMargin" >
+				<t:columns>
+					<t:Column resizable="false" hAlign="Center" width="150px">
+						<Label wrapping="true" text="Period"/>
+						<t:template>
+							<Text text="{material>period}" />
+						</t:template>
+					</t:Column>
+					<t:Column resizable="false" hAlign="Center" >
+						<Label wrapping="true" text="Consumption"/>
+						<t:template>
+							<Input value="{material>totalConsumption}" textAlign="Right" editable="false"/>
+						</t:template>
+					</t:Column>					
+					<t:Column resizable="false" hAlign="Center" >
+						<Label wrapping="true" text="Corr.Value" />
+						<t:template>
+							<Input value="{material>correctedValue}" textAlign="Right" editable="{appControl>/editable}"/>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:Table>
+		</content>
+		<buttons>
+			<Button type="Emphasized" width="100px" icon="sap-icon://accept" text="OK" press="onCloseConsumptionData"></Button>
+			<Button width="100px" icon="sap-icon://cancel" text="Cancel" press="onCloseConsumptionData"></Button>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

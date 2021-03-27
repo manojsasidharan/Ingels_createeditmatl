@@ -1,0 +1,123 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="sapUiSizeCompact">
+	<VBox>
+		<HBox>
+			<f:SimpleForm editable="true" layout="ResponsiveGridLayout" title="Access Paramaters" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+				<f:content>
+					<Label fieldGroupIds="lbl" text="Sales Org" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S12"/>
+						</layoutData>
+					</Label>
+					<Input value="IM10">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S12"/>
+						</layoutData>
+					</Input>
+					<Text text="Ingles Sales Org.">
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S12"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Price List" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S12"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S12"/>
+						</layoutData>
+					</Input>
+					<Label fieldGroupIds="lbl" text="Site" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S12"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S12"/>
+						</layoutData>
+					</Input>
+					<Label fieldGroupIds="lbl" text="Dist. Channel" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S12"/>
+						</layoutData>
+					</Label>
+					<Input value="40">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S12"/>
+						</layoutData>
+					</Input>
+					<Text text="Retail">
+						<layoutData>
+							<l:GridData span="XL3 L3 M3 S12"/>
+						</layoutData>
+					</Text>
+					<Label fieldGroupIds="lbl" text="Plant Group (Zone)" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S12"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S12"/>
+						</layoutData>
+					</Input>
+					<Label fieldGroupIds="lbl" text="Sales Unit" wrapping="false">
+						<layoutData>
+							<l:GridData span="XL1 L1 M1 S12"/>
+						</layoutData>
+					</Label>
+					<Input value="">
+						<layoutData>
+							<l:GridData span="XL2 L2 M2 S12"/>
+						</layoutData>
+					</Input>
+				</f:content>
+			</f:SimpleForm>
+		</HBox>
+		<OverflowToolbar>
+			<Title text="Sales Price" level="H3" titleStyle="H3"/>
+			<ToolbarSpacer/>			
+			<Button type="Emphasized" icon="sap-icon://money-bills" press="onPriceFamilyPress()" text="Price Family"/>
+		</OverflowToolbar>
+		<HBox width="100%">
+			<VBox width="30%" class="sapUiMediumMarginBeginEnd">
+				<List headerText="Purchasing data" backgroundDesign="Transparent" showSeparators="None">
+					<InputListItem label="Vendor"><Input value="100037" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="Purchasing Org."><Input value="IM10" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="Basic Pur.Pr."><Input value="0.83" description="{material>/salesCurrency}" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="Purch.net/net"><Input value="0.83" description="{material>/salesCurrency}" width="150px" editable="false"/></InputListItem>
+				</List>
+			</VBox>
+			<VBox width="35%" class="sapUiMediumMarginBeginEnd">
+				<List headerText="Calculated Price" backgroundDesign="Transparent" showSeparators="None">
+					<InputListItem label="Markup"><Input value="" description="%" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="Net Sales Price"><Input value="0.83" description="{material>/salesCurrency}" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="Gross SP"><Input value="1.66" description="{material>/salesCurrency}" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="Final Price"><Input value="1.66" description="{material>/salesCurrency}" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="Valid From"><DatePicker displayFormat="MM/dd/yyyy" width="150px" editable="false" value="02/11/2021"/></InputListItem>
+					<InputListItem label="Valid To"><DatePicker value="12/31/9999" displayFormat="MM/dd/yyyy" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="Margin (net)"><Input value="" description="%" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="Margin (gross)"><Input value="50.00" description="%" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="Save Calculated Price"><CheckBox text="" editable="false"/></InputListItem>
+					<InputListItem label="Delete Plant Prices"><CheckBox text="" editable="false"/></InputListItem>
+				</List>
+			</VBox>
+			<VBox width="35%" class="ssapUiMediumMarginBeginEnd">
+				<List headerText="Calculation procedure/planning data" backgroundDesign="Transparent" showSeparators="None">
+					<InputListItem label="PP Det. Seq."><Input value="01" width="150px"/></InputListItem>
+					<InputListItem label="SP Det. Seq."><Input value="01" width="150px"/></InputListItem>
+					<InputListItem label="Planned Markup"><Input value="0.00" description="%" width="150px"/></InputListItem>
+				</List>
+				<List headerText="Current Price" backgroundDesign="Transparent" showSeparators="None">
+					<InputListItem label="Curr. Final Price"><Input value="0.84" description="{material>/salesCurrency}" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="Valid From"><DatePicker displayFormat="MM/dd/yyyy" width="150px" editable="false" value="02/11/2021"/></InputListItem>
+					<InputListItem label="Valid To"><DatePicker value="12/31/9999" displayFormat="MM/dd/yyyy" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="CurrentMrgn(nt)"><Input value="-97.619" description="%" width="150px" editable="false"/></InputListItem>
+					<InputListItem label="CurrentMrgn(g)"><Input value="1.190" description="%" width="150px" editable="false"/></InputListItem>
+				</List>
+			</VBox>
+		</HBox>
+	</VBox>
+</core:FragmentDefinition>

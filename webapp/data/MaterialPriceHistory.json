@@ -1,0 +1,9 @@
+{
+	"priceHistory": [
+		{ "StartDate": "01/29/2021", "EndDate": "12/31/9999", "Type": "Net Price", "Amount": "35.76", "Remarks": ""},
+		{ "StartDate": "01/29/2021", "EndDate": "02/01/2021", "Type": "Performance Allowance", "Amount": "1.20", "Remarks": ""},
+		{ "StartDate": "11/28/2019", "EndDate": "01/28/2021", "Type": "Billback", "Amount": "0.70", "Remarks": ""},
+		{ "StartDate": "11/28/2019", "EndDate": "01/01/2021", "Type": "Scan-Down", "Amount": "0.03", "Remarks": ""},
+		{ "StartDate": "11/28/2019", "EndDate": "01/01/2021", "Type": "Price Change", "Amount": "4.80", "Remarks": ""}
+	]	
+}

@@ -1,0 +1,1552 @@
+{
+	"refMaterial": [{
+		"code": "Trading Goods - Base Each UoM",
+		"name": "Trading Goods - Base Each UoM"
+	}, {
+		"code": "Trading Goods - Base Pounds UoM",
+		"name": "Trading Goods - Base Pounds UoM"
+	}, {
+		"code": "Trading Goods - Base Gal UoM",
+		"name": "Trading Goods - Base Gal UoM"
+	}, {
+		"code": "Supplies",
+		"name": "Supplies"
+	}, {
+		"code": "Services",
+		"name": "Services"
+	}, {
+		"code": "Shippers (Display ADs)",
+		"name": "Shippers (Display ADs)"
+	}],
+	"materialGroup": [{
+		"code": "1014",
+		"name": "NUTS"
+	}, {
+		"code": "1836",
+		"name": "HBC - BURTS BEES"
+	}, {
+		"code": "9007",
+		"name": "HORMEL NATURALS"
+	}, {
+		"code": "5019",
+		"name": "FROZEN - GOURMET FOOD"
+	}, {
+		"code": "9100",
+		"name": "COLD DELI CASE"
+	}, {
+		"code": "6002",
+		"name": "BAKERY - BREAD/ROLLS"
+	}, {
+		"code": "1240",
+		"name": "SOFT DRINKS"
+	},{
+		"code": "5006",
+		"name": "DINNERS / ENTREES (FROZEN)"
+	}, {
+		"code": "5001",
+		"name": "FAMILY PACK (FROZEN)"
+	}, {
+		"code": "5002",
+		"name": "VEGETABLES (FROZEN)"
+	}, {
+		"code": "5004",
+		"name": "PIZZA (FROZEN)"
+	}, {
+		"code": "5006",
+		"name": "DINNERS / ENTREES (F)"
+	}, {
+		"code": "5008",
+		"name": "POT PIES / DINNERS"
+	}],
+	"materialType": [{
+		"code": "ZHAW",
+		"name": "ZHAW"
+	}],
+	"roundingRules": [{
+		"code": "-",
+		"name": "Start of chosen period"
+	}, {
+		"code": "+",
+		"name": "End of chosen period"
+	}, {
+		"code": "F",
+		"name": "Start of the following period"
+	}],
+	"materialCategory": [{
+		"code": "00",
+		"name": "Single Material"
+	}, {
+		"code": "01",
+		"name": "Generic Material"
+	}, {
+		"code": "10",
+		"name": "Sales Set"
+	}, {
+		"code": "11",
+		"name": "Prepack"
+	}, {
+		"code": "12",
+		"name": "Display"
+	}, {
+		"code": "22",
+		"name": "Group Material"
+	}],
+	"orderUnits": [{
+		"code": "CAR",
+		"name": "Carton"
+	}, {
+		"code": "LB",
+		"name": "Pound"
+	}, {
+		"code": "ZSP",
+		"name": "Ship Pk"
+	}, {
+		"code": "ZWP",
+		"name": "Wh PLT"
+	}, {
+		"code": "LAY",
+		"name": "LAY"
+	}, {
+		"code": "PAL",
+		"name": "Pallet"
+	}, {
+		"code": "EA",
+		"name": "Each"
+	}, {
+		"code": "OZ",
+		"name": "Ounce"
+	}, {
+		"code": "P20",
+		"name": "20 Pack"
+	}],
+	"purchasingGrp": [{
+		"code": "056",
+		"name": "Nate Helms"
+	}, {
+		"code": "001",
+		"name": "Gene McGlothlin"
+	}, {
+		"code": "002",
+		"name": "Dan Spears"
+	}, {
+		"code": "003",
+		"name": "Richard Dearing"
+	}, {
+		"code": "014",
+		"name": "Karen Ownbey"
+	}, {
+		"code": "004",
+		"name": "Steve Sawyer"
+	},
+	{
+		"code": "LG00",
+		"name": "Steve Sawyer"
+	}],
+	"confControls": [{
+		"code": "0001",
+		"name": "Confirmations"
+	}, {
+		"code": "0002",
+		"name": "Rough GR"
+	}, {
+		"code": "0003",
+		"name": "Inb. Deliv./Rough GR"
+	}, {
+		"code": "0004",
+		"name": "Inbound Delivery"
+	}],
+	"taxCodes": [{
+		"code": "I0",
+		"name": "A/P Sales Tax, Exempt"
+	}, {
+		"code": "I1",
+		"name": "A/P Sales Tax, Taxable, Distributed to Line Items"
+	}, {
+		"code": "O0",
+		"name": "A/R Sales Tax, Exempt"
+	}, {
+		"code": "O1",
+		"name": "A/R Sales Tax, Taxable"
+	}],
+	"prDateControls": [{
+		"code": "00",
+		"name": "No Control"
+	}, {
+		"code": "01",
+		"name": "Purchase Order Date"
+	}, {
+		"code": "02",
+		"name": "Delivery Date"
+	}, {
+		"code": "03",
+		"name": "Current Date"
+	}],
+	"incoTerms": [{
+		"code": "3BH",
+		"name": "Common Backhaul"
+	}, {
+		"code": "3LV",
+		"name": "Common Live Unload"
+	}, {
+		"code": "CFR",
+		"name": "Costs and Freight"
+	}, {
+		"code": "CIF",
+		"name": "Costs, Insurance and Freight"
+	}, {
+		"code": "CIP",
+		"name": "Carriage and Insurance Paid To"
+	}],
+	"mrpType": [{
+		"code": "VV",
+		"name": "Forecast based planning"
+	}, {
+		"code": "D1",
+		"name": "Demand-Driven MRP, Fixing Type-1-"
+	}, {
+		"code": "M1",
+		"name": "MPS, FCST Consumption, Auto Firming"
+	}, {
+		"code": "P1",
+		"name": "Forecast Consumption, Auto Firming"
+	}, {
+		"code": "R1",
+		"name": "Time-Phased Planning"
+	}],
+	"lotSizing": [{
+		"code": "EX",
+		"name": "Lot-for-lot order quantity"
+	}, {
+		"code": "FX",
+		"name": "Fixed Order Quantity"
+	}, {
+		"code": "HB",
+		"name": "Replenish to Maximum Stock Level"
+	}, {
+		"code": "MB",
+		"name": "Monthly Lot Size"
+	}],
+	"periodIndicators": [{
+		"code": "P",
+		"name": "Period according to fiscal year variant"
+	}, {
+		"code": "M",
+		"name": "Monthly"
+	}, {
+		"code": "W",
+		"name": "Weekly"
+	}, {
+		"code": "D",
+		"name": "Daily"
+	}],
+	"taxIndicator": [{
+		"code": "0",
+		"name": "Material 0%"
+	}, {
+		"code": "1",
+		"name": "Material 100%"
+	}, {
+		"code": "2",
+		"name": "Material 50% Exempt"
+	}],
+	"materialStatus": [{
+		"code": "01",
+		"name": "Design"
+	}, {
+		"code": "02",
+		"name": "Design and Plan"
+	}, {
+		"code": "03",
+		"name": "Use"
+	}, {
+		"code": "04",
+		"name": "Phase-out"
+	}],
+	"availCheck": [{
+		"code": "NC",
+		"name": "No ATP Check"
+	}, {
+		"code": "SP",
+		"name": "Stock and Plan. Rec."
+	}, {
+		"code": "SR",
+		"name": "Stock and Rel. Rec."
+	}, {
+		"code": "ST",
+		"name": "Consider Only Stock"
+	}],
+	"mrpController": [{
+		"code": "001",
+		"name": "Gene McGlothlin"
+	}, {
+		"code": "002",
+		"name": "Dan Spears"
+	}, {
+		"code": "003",
+		"name": "Richard Dearing"
+	}, {
+		"code": "004",
+		"name": "Steve Sawyer"
+	}],
+	"supplySource": [{
+		"code": "1",
+		"name": "Standard"
+	}, {
+		"code": "2",
+		"name": "Stock Transfer"
+	}, {
+		"code": "3",
+		"name": "Standard before Stock Transfer"
+	}, {
+		"code": "4",
+		"name": "Stock Transfer Before Standard"
+	}],
+	"smthPromCons": [{
+		"code": "0",
+		"name": "No Smoothing"
+	}, {
+		"code": "1",
+		"name": "Smoothing using Avg Values"
+	}],
+	"loadingGrps": [{
+		"code": "1",
+		"name": "Crane"
+	}, {
+		"code": "2",
+		"name": "Forklift"
+	}, {
+		"code": "3",
+		"name": "Manual"
+	}, {
+		"code": "4",
+		"name": "Auto"
+	}],
+	"storageLoc": [{
+		"code": "F10D",
+		"name": "Frozen"
+	}, {
+		"code": "H10D",
+		"name": "Repack"
+	}, {
+		"code": "P10D",
+		"name": "Perishable"
+	}, {
+		"code": "G10D",
+		"name": "Grocery"
+	}],
+	"condTypes": [{
+		"code": "NETPR",
+		"name": "Net Price"
+	}, {
+		"code": "ZBB",
+		"name": "Bill Back"
+	}, {
+		"code": "ZPA",
+		"name": "Perf.Allowance"
+	}, {
+		"code": "ZBH",
+		"name": "Back Haul"
+	}],
+	"posDept": [{
+		"code": "001",
+		"name": "Grocery"
+	}, {
+		"code": "005",
+		"name": "Frozen"
+	}, {
+		"code": "006",
+		"name": "Bakery"
+	}, {
+		"code": "007",
+		"name": "Deli"
+	}, {
+		"code": "008",
+		"name": "Produce"
+	}, {
+		"code": "009",
+		"name": "Meat"
+	}, {
+		"code": "010",
+		"name": "Deli"
+	}, {
+		"code": "011",
+		"name": "Meat"
+	}],
+	"locationCode": [{
+		"code": "1014",
+		"name": "Nuts"
+	}, {
+		"code": "1600",
+		"name": "SPIM LARGE PACKS"
+	}, {
+		"code": "1601",
+		"name": "DOMESTIC BEER (HM)"
+	}, {
+		"code": "1602",
+		"name": "DOMESTIC BEER (LM)"
+	}, {
+		"code": "9100",
+		"name": "COLD DELI CASE"
+	}, {
+		"code": "6002",
+		"name": "BAKERY - BREAD/ROLLS"
+	}, {
+		"code": "1240",
+		"name": "SOFT DRINKS"
+	}, {
+		"code": "1603",
+		"name": "NON-ALCOHOLIC"
+	}, {
+		"code": "1604",
+		"name": "BEER (IMPORT/MICRO)"
+	}, {
+		"code": "1605",
+		"name": "IMPORT SINGLES"
+	}, {
+		"code": "1606",
+		"name": "FLAVORED BEER"
+	}, {
+		"code": "1607",
+		"name": "BEER KEGS"
+	}, {
+		"code": "1608",
+		"name": "HARD SELTZER"
+	}, {
+		"code": "1610",
+		"name": "WINE"
+	}, {
+		"code": "1611",
+		"name": "WINE-PREMIUM"
+	}, {
+		"code": "1612",
+		"name": "NEW ITEMS"
+	}, {
+		"code": "1620",
+		"name": "BEER STIENS"
+	}, {
+		"code": "1699",
+		"name": "BEER KEG DEPOSITS"
+	}, {
+		"code": "2284",
+		"name": "WINE STORE ACCESS"
+	}],
+	"Zones": [{
+		"code": "67",
+		"name": "Ingles Frozen Food"
+	}, {
+		"code": "37",
+		"name": "Ingles Frozen Food"
+	}, {
+		"code": "2",
+		"name": "Ingles Frozen Food"
+	}, {
+		"code": "18",
+		"name": "Ingles Frozen Food"
+	}, {
+		"code": "19",
+		"name": "Ingles Frozen Food"
+	}, {
+		"code": "24",
+		"name": "Savmor"
+	}],
+	"siteList": [{
+		"site": "2",
+		"name": "Ingles #C2",
+		"zone": "37",
+		"state": "NC"
+	}, {
+		"site": "3",
+		"name": "Ingles #C3",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "4",
+		"name": "Ingles #C4",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "5",
+		"name": "Ingles #C5",
+		"zone": "37",
+		"state": "NC"
+	}, {
+		"site": "6",
+		"name": "Ingles #C6",
+		"zone": "37",
+		"state": "NC"
+	}, {
+		"site": "7",
+		"name": "Ingles #C7",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "8",
+		"name": "Ingles #C8",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "9",
+		"name": "Ingles #C9",
+		"zone": "19",
+		"state": "TN"
+	}, {
+		"site": "11",
+		"name": "Ingles #C11",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "12",
+		"name": "Ingles #C12",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "13",
+		"name": "Ingles #C13",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "14",
+		"name": "Ingles #C14",
+		"zone": "19",
+		"state": "NC"
+	}, {
+		"site": "15",
+		"name": "Ingles #C15",
+		"zone": "37",
+		"state": "SC"
+	}, {
+		"site": "16",
+		"name": "Ingles #C16",
+		"zone": "37",
+		"state": "SC"
+	}, {
+		"site": "17",
+		"name": "Ingles #C17",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "18",
+		"name": "Ingles #C18",
+		"zone": "24",
+		"state": "NC"
+	}, {
+		"site": "19",
+		"name": "Ingles #C19",
+		"zone": "24",
+		"state": "NC"
+	}, {
+		"site": "21",
+		"name": "Ingles #C21",
+		"zone": "18",
+		"state": "TN"
+	}, {
+		"site": "22",
+		"name": "Ingles #C22",
+		"zone": "37",
+		"state": "NC"
+	}, {
+		"site": "23",
+		"name": "Ingles #C23",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "24",
+		"name": "Ingles #C24",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "25",
+		"name": "Ingles #C25",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "27",
+		"name": "Ingles #C27",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "28",
+		"name": "Ingles #C28",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "29",
+		"name": "Ingles #C29",
+		"zone": "19",
+		"state": "SC"
+	}, {
+		"site": "30",
+		"name": "Ingles #C30",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "31",
+		"name": "Ingles #C31",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "32",
+		"name": "Ingles #C32",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "33",
+		"name": "Ingles #C33",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "34",
+		"name": "Ingles #C34",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "35",
+		"name": "Ingles #C35",
+		"zone": "2",
+		"state": "NC"
+	}, {
+		"site": "36",
+		"name": "Ingles #C36",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "37",
+		"name": "Ingles #C37",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "38",
+		"name": "Ingles #C38",
+		"zone": "2",
+		"state": "SC"
+	}, {
+		"site": "39",
+		"name": "Ingles #C39",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "41",
+		"name": "Ingles #C41",
+		"zone": "18",
+		"state": "SC"
+	}, {
+		"site": "42",
+		"name": "Ingles #C42",
+		"zone": "2",
+		"state": "SC"
+	}, {
+		"site": "43",
+		"name": "Ingles #C43",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "44",
+		"name": "Ingles #C44",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "45",
+		"name": "Ingles #C45",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "46",
+		"name": "Ingles #C46",
+		"zone": "19",
+		"state": "NC"
+	}, {
+		"site": "47",
+		"name": "Ingles #C47",
+		"zone": "37",
+		"state": "NC"
+	}, {
+		"site": "49",
+		"name": "Ingles #C49",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "50",
+		"name": "Ingles #C50",
+		"zone": "37",
+		"state": "NC"
+	}, {
+		"site": "51",
+		"name": "Ingles #C51",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "53",
+		"name": "Ingles #C53",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "55",
+		"name": "Ingles #C55",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "56",
+		"name": "Ingles #C56",
+		"zone": "37",
+		"state": "SC"
+	}, {
+		"site": "57",
+		"name": "Ingles #C57",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "58",
+		"name": "Ingles #C58",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "60",
+		"name": "Ingles #C60",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "61",
+		"name": "Ingles #C61",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "62",
+		"name": "Ingles #C62",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "63",
+		"name": "Ingles #C63",
+		"zone": "37",
+		"state": "NC"
+	}, {
+		"site": "65",
+		"name": "Ingles #C65",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "66",
+		"name": "Ingles #C66",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "67",
+		"name": "Ingles #C67",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "68",
+		"name": "Ingles #C68",
+		"zone": "37",
+		"state": "SC"
+	}, {
+		"site": "69",
+		"name": "Ingles #C69",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "70",
+		"name": "Ingles #C70",
+		"zone": "67",
+		"state": "TN"
+	}, {
+		"site": "71",
+		"name": "Ingles #C71",
+		"zone": "67",
+		"state": "TN"
+	}, {
+		"site": "72",
+		"name": "Ingles #C72",
+		"zone": "67",
+		"state": "TN"
+	}, {
+		"site": "73",
+		"name": "Ingles #C73",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "74",
+		"name": "Ingles #C74",
+		"zone": "2",
+		"state": "SC"
+	}, {
+		"site": "76",
+		"name": "Ingles #C76",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "77",
+		"name": "Ingles #C77",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "78",
+		"name": "Ingles #C78",
+		"zone": "19",
+		"state": "NC"
+	}, {
+		"site": "79",
+		"name": "Ingles #C79",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "80",
+		"name": "Ingles #C80",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "82",
+		"name": "Ingles #C82",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "83",
+		"name": "Ingles #C83",
+		"zone": "37",
+		"state": "NC"
+	}, {
+		"site": "84",
+		"name": "Ingles #C84",
+		"zone": "37",
+		"state": "NC"
+	}, {
+		"site": "85",
+		"name": "Ingles #C85",
+		"zone": "67",
+		"state": "TN"
+	}, {
+		"site": "86",
+		"name": "Ingles #C86",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "87",
+		"name": "Ingles #C87",
+		"zone": "18",
+		"state": "TN"
+	}, {
+		"site": "88",
+		"name": "Ingles #C88",
+		"zone": "67",
+		"state": "TN"
+	}, {
+		"site": "89",
+		"name": "Ingles #C89",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "91",
+		"name": "Ingles #C91",
+		"zone": "67",
+		"state": "TN"
+	}, {
+		"site": "93",
+		"name": "Ingles #C93",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "94",
+		"name": "Ingles #C94",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "96",
+		"name": "Ingles #C96",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "98",
+		"name": "Ingles #C98",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "100",
+		"name": "Ingles #C100",
+		"zone": "18",
+		"state": "NC"
+	}, {
+		"site": "101",
+		"name": "Ingles #C101",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "104",
+		"name": "Ingles #C104",
+		"zone": "18",
+		"state": "NC"
+	}, {
+		"site": "105",
+		"name": "Ingles #C105",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "106",
+		"name": "Ingles #C106",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "109",
+		"name": "Ingles #C109",
+		"zone": "18",
+		"state": "NC"
+	}, {
+		"site": "110",
+		"name": "Ingles #C110",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "111",
+		"name": "Ingles #C111",
+		"zone": "18",
+		"state": "NC"
+	}, {
+		"site": "114",
+		"name": "Ingles #C114",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "115",
+		"name": "Ingles #C115",
+		"zone": "18",
+		"state": "NC"
+	}, {
+		"site": "116",
+		"name": "Ingles #C116",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "117",
+		"name": "Ingles #C117",
+		"zone": "37",
+		"state": "NC"
+	}, {
+		"site": "118",
+		"name": "Ingles #C118",
+		"zone": "37",
+		"state": "NC"
+	}, {
+		"site": "119",
+		"name": "Ingles #C119",
+		"zone": "2",
+		"state": "NC"
+	}, {
+		"site": "120",
+		"name": "Ingles #C120",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "121",
+		"name": "Ingles #C121",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "127",
+		"name": "Ingles #C127",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "130",
+		"name": "Ingles #C130",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "131",
+		"name": "Ingles #C131",
+		"zone": "37",
+		"state": "NC"
+	}, {
+		"site": "132",
+		"name": "Ingles #C132",
+		"zone": "18",
+		"state": "NC"
+	}, {
+		"site": "133",
+		"name": "Ingles #C133",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "134",
+		"name": "Ingles #C134",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "146",
+		"name": "Ingles #C146",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "147",
+		"name": "Ingles #C147",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "148",
+		"name": "Ingles #C148",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "150",
+		"name": "Ingles #C150",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "155",
+		"name": "Ingles #C155",
+		"zone": "24",
+		"state": "NC"
+	}, {
+		"site": "177",
+		"name": "Ingles #C177",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "179",
+		"name": "Ingles #C179",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "180",
+		"name": "Ingles #C180",
+		"zone": "67",
+		"state": "NC"
+	}, {
+		"site": "200",
+		"name": "Ingles #C200",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "201",
+		"name": "Ingles #C201",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "202",
+		"name": "Ingles #C202",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "203",
+		"name": "Ingles #C203",
+		"zone": "18",
+		"state": "SC"
+	}, {
+		"site": "204",
+		"name": "Ingles #C204",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "205",
+		"name": "Ingles #C205",
+		"zone": "37",
+		"state": "SC"
+	}, {
+		"site": "206",
+		"name": "Ingles #C206",
+		"zone": "37",
+		"state": "SC"
+	}, {
+		"site": "208",
+		"name": "Ingles #C208",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "239",
+		"name": "Ingles #C239",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "240",
+		"name": "Ingles #C240",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "249",
+		"name": "Ingles #C249",
+		"zone": "37",
+		"state": "SC"
+	}, {
+		"site": "251",
+		"name": "Ingles #C251",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "253",
+		"name": "Ingles #C253",
+		"zone": "67",
+		"state": "SC"
+	}, {
+		"site": "301",
+		"name": "Ingles #C301",
+		"zone": "37",
+		"state": "TN"
+	}, {
+		"site": "302",
+		"name": "Ingles #C302",
+		"zone": "37",
+		"state": "TN"
+	}, {
+		"site": "304",
+		"name": "Ingles #C304",
+		"zone": "67",
+		"state": "TN"
+	}, {
+		"site": "305",
+		"name": "Ingles #C305",
+		"zone": "37",
+		"state": "TN"
+	}, {
+		"site": "306",
+		"name": "Ingles #C306",
+		"zone": "37",
+		"state": "TN"
+	}, {
+		"site": "307",
+		"name": "Ingles #C307",
+		"zone": "37",
+		"state": "TN"
+	}, {
+		"site": "313",
+		"name": "Ingles #C313",
+		"zone": "37",
+		"state": "TN"
+	}, {
+		"site": "372",
+		"name": "Ingles #C372",
+		"zone": "67",
+		"state": "TN"
+	}, {
+		"site": "397",
+		"name": "Ingles #C397",
+		"zone": "67",
+		"state": "TN"
+	}, {
+		"site": "398",
+		"name": "Ingles #C398",
+		"zone": "37",
+		"state": "TN"
+	}, {
+		"site": "399",
+		"name": "Ingles #C399",
+		"zone": "67",
+		"state": "TN"
+	}, {
+		"site": "402",
+		"name": "Ingles #C402",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "403",
+		"name": "Ingles #C403",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "405",
+		"name": "Ingles #C405",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "408",
+		"name": "Ingles #C408",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "409",
+		"name": "Ingles #C409",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "411",
+		"name": "Ingles #C411",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "412",
+		"name": "Ingles #C412",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "414",
+		"name": "Ingles #C414",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "416",
+		"name": "Ingles #C416",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "419",
+		"name": "Ingles #C419",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "421",
+		"name": "Ingles #C421",
+		"zone": "18",
+		"state": "GA"
+	}, {
+		"site": "423",
+		"name": "Ingles #C423",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "424",
+		"name": "Ingles #C424",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "426",
+		"name": "Ingles #C426",
+		"zone": "18",
+		"state": "#N/A"
+	}, {
+		"site": "428",
+		"name": "Ingles #C428",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "429",
+		"name": "Ingles #C429",
+		"zone": "18",
+		"state": "GA"
+	}, {
+		"site": "432",
+		"name": "Ingles #C432",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "436",
+		"name": "Ingles #C436",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "437",
+		"name": "Ingles #C437",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "438",
+		"name": "Ingles #C438",
+		"zone": "2",
+		"state": "GA"
+	}, {
+		"site": "439",
+		"name": "Ingles #C439",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "440",
+		"name": "Ingles #C440",
+		"zone": "2",
+		"state": "GA"
+	}, {
+		"site": "441",
+		"name": "Ingles #C441",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "442",
+		"name": "Ingles #C442",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "443",
+		"name": "Ingles #C443",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "444",
+		"name": "Ingles #C444",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "445",
+		"name": "Ingles #C445",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "449",
+		"name": "Ingles #C449",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "450",
+		"name": "Ingles #C450",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "451",
+		"name": "Ingles #C451",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "452",
+		"name": "Ingles #C452",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "453",
+		"name": "Ingles #C453",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "455",
+		"name": "Ingles #C455",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "456",
+		"name": "Ingles #C456",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "457",
+		"name": "Ingles #C457",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "467",
+		"name": "Ingles #C467",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "469",
+		"name": "Ingles #C469",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "474",
+		"name": "Ingles #C474",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "476",
+		"name": "Ingles #C476",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "480",
+		"name": "Ingles #C480",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "483",
+		"name": "Ingles #C483",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "484",
+		"name": "Ingles #C484",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "486",
+		"name": "Ingles #C486",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "488",
+		"name": "Ingles #C488",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "489",
+		"name": "Ingles #C489",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "491",
+		"name": "Ingles #C491",
+		"zone": "2",
+		"state": "GA"
+	}, {
+		"site": "492",
+		"name": "Ingles #C492",
+		"zone": "2",
+		"state": "GA"
+	}, {
+		"site": "493",
+		"name": "Ingles #C493",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "494",
+		"name": "Ingles #C494",
+		"zone": "2",
+		"state": "GA"
+	}, {
+		"site": "495",
+		"name": "Ingles #C495",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "496",
+		"name": "Ingles #C496",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "497",
+		"name": "Ingles #C497",
+		"zone": "2",
+		"state": "GA"
+	}, {
+		"site": "498",
+		"name": "Ingles #C498",
+		"zone": "67",
+		"state": "GA"
+	}, {
+		"site": "499",
+		"name": "Ingles #C499",
+		"zone": "37",
+		"state": "GA"
+	}, {
+		"site": "503",
+		"name": "Ingles #C503",
+		"zone": "18",
+		"state": "VA"
+	}, {
+		"site": "601",
+		"name": "Ingles #C601",
+		"zone": "2",
+		"state": "AL"
+	}, {
+		"site": "811",
+		"name": "Ingles #C811",
+		"zone": "24",
+		"state": "NC"
+	}, {
+		"site": "813",
+		"name": "Ingles #C813",
+		"zone": "24",
+		"state": "NC"
+	}, {
+		"site": "814",
+		"name": "Ingles #C814",
+		"zone": "24",
+		"state": "NC"
+	}, {
+		"site": "850",
+		"name": "Ingles #C850",
+		"zone": "24",
+		"state": "NC"
+	}, {
+		"site": "867",
+		"name": "Ingles #C867",
+		"zone": "24",
+		"state": "NC"
+	}, {
+		"site": "870",
+		"name": "Ingles #C870",
+		"zone": "24",
+		"state": "TN"
+	}],
+
+	"vendors": [{
+		"vendor": "834",
+		"vendorName": "CCBCC-CONA",
+		"salesPerson": "Griggs Candler",
+		"telephone": "999999834"
+	}, {
+		"vendor": "344",
+		"vendorName": "KRAFT FOODS GROUP INC.",
+		"salesPerson": "Joey Outlaw",
+		"telephone": "999999344"
+	}, {
+		"vendor": "3264",
+		"vendorName": "PERDUE ORGANIC CHICKEN",
+		"salesPerson": "Peter Partrick",
+		"telephone": "999993264"
+	}, {
+		"vendor": "40133",
+		"vendorName": "CLOROX - BURT'S BEES INC",
+		"salesPerson": "Steve Bernard",
+		"telephone": "999940133"
+	}, {
+		"vendor": "1507626",
+		"vendorName": "UNFI - FROZEN",
+		"salesPerson": "BRAD VICKERY ",
+		"telephone": "609-784-4451"
+	}, {
+		"vendor": "3853",
+		"vendorName": "HORMEL FOODS",
+		"salesPerson": "Carl Lee ",
+		"telephone": "999993853"
+	}, {
+		"vendor": "6001",
+		"vendorName": "BAKERY SCALE ITEMS",
+		"salesPerson": "TIM DAVEY",
+		"telephone": "8006355066"
+	}],
+
+	"labelSchemes": [{
+		"code": 0,
+		"name": "SHORT LABELS"
+	}, {
+		"code": 1,
+		"name": "LONG LABELS"
+	}, {
+		"code": 2,
+		"name": "NATIONAL BRAND SHORT"
+	}, {
+		"code": 3,
+		"name": "NATIONAL BRAND LONG"
+	}, {
+		"code": 4,
+		"name": "COMPETITIVE SHORT"
+	}, {
+		"code": 5,
+		"name": "COMPETITIVE LONG"
+	}, {
+		"code": 6,
+		"name": "ORGANIC SHORT"
+	}, {
+		"code": 7,
+		"name": "ORGANIC LONG"
+	}, {
+		"code": 8,
+		"name": "BABY CLUB SHORT"
+	}, {
+		"code": 9,
+		"name": "BABY CLUB LONG"
+	}, {
+		"code": 10,
+		"name": " BAKERY SHORT"
+	}, {
+		"code": 11,
+		"name": " BAKERY LONG"
+	}, {
+		"code": 12,
+		"name": " NEW ITEM SHORT"
+	}, {
+		"code": 13,
+		"name": " NEW ITEM LONG"
+	}, {
+		"code": 14,
+		"name": " WIC ITEM SMALL"
+	}, {
+		"code": 15,
+		"name": " WIC ITEM LARGE"
+	}, {
+		"code": 16,
+		"name": " BOGO SHORT"
+	}, {
+		"code": 17,
+		"name": " BOGO LONG"
+	}, {
+		"code": 18,
+		"name": " SHORT . NO REGULAR "
+	}, {
+		"code": 19,
+		"name": " LONG . NO REGULAR T"
+	}, {
+		"code": 20,
+		"name": " SHORT . REGULAR TAG"
+	}, {
+		"code": 21,
+		"name": " LONG . REGULAR TAG "
+	}, {
+		"code": 22,
+		"name": " GLUTEN FREE SHORT"
+	}]
+
+}

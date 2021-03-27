@@ -1,0 +1,169 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="sapUiSizeCompact">
+	<VBox binding="{material>/materialProfile/inventoryInfo}">
+		<HBox>
+			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Inventory On Hand" frameType="OneByOne">
+				<TileContent>
+					<NumericContent value="{material>inventoryOnOrder}" valueColor="Good" withMargin="false"/>
+				</TileContent>
+			</GenericTile>
+			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Inventory On Order" frameType="OneByOne">
+				<TileContent>
+					<NumericContent value="{material>inventoryOnHand}" valueColor="Neutral" withMargin="false"/>
+				</TileContent>
+			</GenericTile>
+			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Pending Relieve" frameType="OneByOne">
+				<TileContent>
+					<NumericContent value="{material>pendingRelieve}" valueColor="Error" withMargin="false"/>
+				</TileContent>
+			</GenericTile>
+			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Reg In Process" frameType="OneByOne">
+				<TileContent>
+					<NumericContent value="{material>regInProcess}" valueColor="Critical" withMargin="false"/>
+				</TileContent>
+			</GenericTile>
+		</HBox>
+		<l:Grid defaultSpan="XL6 L6 M6 S12">
+			<l:content>
+				<f:SimpleForm title="Important Dates" binding="{material>/materialProfile/impDates}" editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label fieldGroupIds="lbl" text="Item Added Date" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{ path: 'material>itemAddedDate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'MM/dd/yyyy', source: { pattern: 'yyyy-MM-dd' } } }" width="120px">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="First Receipt Date" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{ path: 'material>firstReceiptDate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'MM/dd/yyyy', source: { pattern: 'yyyy-MM-dd' } } }" width="120px">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Purchasing Effective Date" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{ path: 'material>purchEffDate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'MM/dd/yyyy', source: { pattern: 'yyyy-MM-dd' } } }" width="120px">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="STO Date - Billing Effective Date" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{ path: 'material>STOBillEffDate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'MM/dd/yyyy', source: { pattern: 'yyyy-MM-dd' } } }" width="120px">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Last Shipped Date" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{ path: 'material>lastShippedDate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'MM/dd/yyyy', source: { pattern: 'yyyy-MM-dd' } } }" width="120px">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Last Maintenance date" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{ path: 'material>lastMtncDate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'MM/dd/yyyy', source: { pattern: 'yyyy-MM-dd' } } }" width="120px">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Last Maintained by" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{material>lastChangedBy}">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+					</f:content>
+				</f:SimpleForm>
+				<f:SimpleForm title="PO Information" binding="{material>/materialProfile/poInfo}" editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label fieldGroupIds="lbl" text="Last Received PO" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{material>lastRecvPO}">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Last Received PO Date" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{ path: 'material>lastRecvPODate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'MM/dd/yyyy', source: { pattern: 'yyyy-MM-dd' } } }" width="120px">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Last Received PO Quantity" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{material>lastRecvPOQty}">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Last Goods Received Date" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{ path: 'material>lastRecvGoodsDate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'MM/dd/yyyy', source: { pattern: 'yyyy-MM-dd' } } }" width="120px">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Text text=""><layoutData><l:GridData span="XL12 L12 M12 S12"/></layoutData></Text>
+						<Text text=""><layoutData><l:GridData span="XL12 L12 M12 S12"/></layoutData></Text>
+						<Text text=""><layoutData><l:GridData span="XL12 L12 M12 S12"/></layoutData></Text>
+					</f:content>
+				</f:SimpleForm>
+				<f:SimpleForm title="Ranking Information" binding="{material>/materialProfile/rankInfo}" editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label fieldGroupIds="lbl" text="Anticipated Rank" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{material>anticipatedRank}">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Actual Service Level" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{material>actualServiceLevel}">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Annual Rank" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{material>annualRank}">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+					</f:content>
+				</f:SimpleForm>
+				<f:SimpleForm editable="true" layout="ResponsiveGridLayout" title="Inventory Information" adjustLabelSpan="false" binding="{material>/materialProfile/inventoryInfo}" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label fieldGroupIds="lbl" text="Inventory On Order" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{material>inventoryOnOrder}">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Inventory On Hand" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{material>inventoryOnHand}">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Promo On Hand" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{material>promoOnHand}">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Forward Buy On Hand" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{material>forwardBuyOnHand}">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Pending Relieve" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{material>pendingRelieve}">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+						<Label fieldGroupIds="lbl" text="Reg In Process" wrapping="false">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Label>
+						<Text text="{material>regInProcess}">
+							<layoutData><l:GridData span="XL6 L6 M6 S6"/></layoutData>
+						</Text>
+					</f:content>
+				</f:SimpleForm>
+			</l:content>
+		</l:Grid>
+	</VBox>
+</core:FragmentDefinition>
