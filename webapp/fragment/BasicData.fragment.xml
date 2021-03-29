@@ -423,7 +423,7 @@
 		<items>
 			<l:Grid defaultSpan="XL12 L12 M12 S12">
 				<l:content>
-					<t:Table id="UoMEANTable" rows="{path:'UoMData>/rows', templateShareable:false}" selectionMode="MultiToggle" visibleRowCount="6"
+					<t:Table id="UoMEANTable" rows="{path:'UoMData>/rows', templateShareable:false}" fixedColumnCount="9" selectionMode="MultiToggle" visibleRowCount="6"
 						ariaLabelledBy="title" width="100%">
 						<t:extension>
 							<OverflowToolbar xmlns="sap.m">
@@ -436,7 +436,7 @@
 							</OverflowToolbar>
 						</t:extension>
 						<t:columns>
-							<t:Column resizable="false">
+							<t:Column resizable="true" width="130px">
 								<Label xmlns="sap.m" wrapping="true" text="Alt.UoM"/>
 								<t:template>
 									<ComboBox xmlns="sap.m" selectedKey="{UoMData>altUoM}" showSecondaryValues="true"
@@ -453,13 +453,13 @@
 									<Text xmlns="sap.m" text="&lt;=&gt;"/>
 								</t:template>
 							</t:Column>
-							<t:Column resizable="false" width="77px" hAlign="Center">
+							<t:Column resizable="true" width="77px" hAlign="Center">
 								<Label xmlns="sap.m" wrapping="true" text="Number"/>
 								<t:template>
 									<Input xmlns="sap.m" value="{UoMData>number}" editable="{appControl>/editable}" textAlign="Center"/>
 								</t:template>
 							</t:Column>
-							<t:Column resizable="false" width="130px">
+							<t:Column resizable="true" width="130px">
 								<Label xmlns="sap.m" wrapping="true" text="Lower Level UoM"/>
 								<t:template>
 									<ComboBox xmlns="sap.m" selectedKey="{UoMData>LUoM}" showSecondaryValues="true"
@@ -494,7 +494,7 @@
 									<RadioButton xmlns="sap.m" selected="{UoMData>is_SUoM}" groupName="R4" editable="{appControl>/editable}"/>
 								</t:template>
 							</t:Column>
-							<t:Column resizable="false" width="130px">
+							<t:Column resizable="true">
 								<Label xmlns="sap.m" wrapping="true" text="EAN/UPC"/>
 								<t:template>
 									<Input xmlns="sap.m" value="{UoMData>UPC}" type="Number" editable="{appControl>/editable}"/>
