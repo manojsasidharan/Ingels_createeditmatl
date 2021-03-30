@@ -434,7 +434,7 @@
 						</ComboBox>
 						<Label fieldGroupIds="lbl" text="Eff. Price" wrapping="false">
 							<layoutData>
-								<l:GridData span="XL2 L2 M2 S2"/>
+								<l:GridData span="XL2 L2 M2 S2" linebreak="true"/>
 							</layoutData>
 						</Label>
 						<Input value="{material>effPrice}" editable="{appControl>/editable}">
@@ -470,7 +470,7 @@
 						</ComboBox>
 						<Label fieldGroupIds="lbl" text="Valid To" wrapping="false">
 							<layoutData>
-								<l:GridData span="XL2 L2 M2 S2"/>
+								<l:GridData span="XL2 L2 M2 S2" linebreak="true"/>
 							</layoutData>
 						</Label>
 						<DatePicker placeholder="Enter Date" change="handleChange" value="{material>validTo}" valueFormat="yyyy-MM-dd" displayFormat="MM/dd/yyyy" editable="{appControl>/editable}">
@@ -493,7 +493,7 @@
 						</ComboBox>
 						<Label fieldGroupIds="lbl" text="Freight Terms" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
 							<layoutData>
-								<l:GridData span="XL2 L2 M2 S2"/>
+								<l:GridData span="XL2 L2 M2 S2" linebreak="true"/>
 							</layoutData>
 						</Label>
 						<ComboBox selectedKey="{material>incoTerms}" showSecondaryValues="true" items="{MasterDataModel>/incoTerms}" editable="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
@@ -553,7 +553,7 @@
 			<Button type="Emphasized" class="spacingcls" icon="sap-icon://money-bills" press="onOpenCostUpdates()" text="Conditions/Cost Updates" />
 			<Button type="Emphasized" class="spacingcls" icon="sap-icon://money-bills" press="onOpenPriceHistory()" text="Material Price History" />
 			<Button type="Emphasized" class="spacingcls" icon="sap-icon://money-bills" press="onOpenVendorFunding()" text="Other Conditions"/>
-			<Button type="Emphasized" class="spacingcls" icon="sap-icon://money-bills" press="onOpenVendorStoreBlocks()" text="Vendor Receiving Blocks" />
+			<Button type="Emphasized" class="spacingcls" icon="sap-icon://money-bills" press="onOpenVendorStoreBlocks()" text="Vendor Site Blocks" />
 			<Button type="Emphasized" class="spacingcls" icon="sap-icon://copy" press="onOpenVendorCopy()" text="Copy to Vendors" visible="{appControl>/editable}"/>
 		</HBox>
 	</VBox>

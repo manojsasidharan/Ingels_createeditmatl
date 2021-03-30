@@ -2281,18 +2281,18 @@
 					"vendorItem": "2202"
 				},
 				"genData": {
-					"orderUnit": "CAR",
+					"orderUnit": "EA",
 					"regularSupplier": true,
 					"salesPerson": "TIM DAVEY",
 					"telephone": "8006355066",
 					"whMovingAvgCost": 33.35
 				},
 				"POUoM": {
-					"orderUnit": "CAR",
+					"orderUnit": "EA",
 					"ordConvNmrtr": "1",
 					"ordConvDnmtr": "1",
-					"ordConvNmrtrUoM": "CAR",
-					"ordConvDnmtrUoM": "CAR"
+					"ordConvNmrtrUoM": "EA",
+					"ordConvDnmtrUoM": "EA"
 				},
 				"sourcingDetails": {
 					"purchGroup": "LG00",
@@ -2311,14 +2311,14 @@
 					"blockVendor": false
 				},
 				"conditionDetails": {
-					"netPrice": 71.44,
-					"netPriceUoM": "CAR",
+					"netPrice": 15,
+					"netPriceUoM": "EA",
 					"netPricePer": 1,
-					"netPricePerUoM": "CAR",
-					"effPrice": 71.44,
-					"effPriceUoM": "CAR",
+					"netPricePerUoM": "EA",
+					"effPrice": 15,
+					"effPriceUoM": "EA",
 					"effPricePer": 1,
-					"effPricePerUoM": "CAR",
+					"effPricePerUoM": "EA",
 					"validTo": "",
 					"dateContrl": "01",
 					"group": "",
