@@ -478,12 +478,12 @@
 								<l:GridData span="XL4 L4 M4 S4"/>
 							</layoutData>
 						</DatePicker>
-						<Label fieldGroupIds="lbl" text="Pr. Date Cntr" wrapping="false">
+						<Label fieldGroupIds="lbl" text="Pr. Date Cntr" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 1 ? false : true )}"> <!--hide only for DSD-->
 							<layoutData>
 								<l:GridData span="XL2 L2 M2 S2"/>
 							</layoutData>
 						</Label>
-						<ComboBox selectedKey="{material>dateContrl}" showSecondaryValues="true" items="{MasterDataModel>/prDateControls}" editable="{appControl>/editable}">
+						<ComboBox selectedKey="{material>dateContrl}" showSecondaryValues="true" items="{MasterDataModel>/prDateControls}" editable="{appControl>/editable}" visible="{= (${material>/sourcingTypeKey} === 1 ? false : true )}"> <!--hide only for DSD-->
 							<items>
 								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
 							</items>
