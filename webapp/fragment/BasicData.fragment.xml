@@ -242,12 +242,12 @@
 								<l:GridData span="XL4 L4 M4 S4"/>
 							</layoutData>
 						</DatePicker>
-						<Label fieldGroupIds="lbl" text="Pur.Status" wrapping="false" required="true">
+						<Label fieldGroupIds="lbl" text="Pur.Status" wrapping="false" required="true" visible="{= (${material>/sourcingTypeKey} === 1 ? false : true )}"> <!--hide only for DSD-->
 							<layoutData>
 								<l:GridData span="XL2 L2 M2 S2"/>
 							</layoutData>
 						</Label>
-						<ComboBox selectedKey="{material>purchStatus}" editable="{appControl>/editable}">
+						<ComboBox selectedKey="{material>purchStatus}" editable="{appControl>/editable}" visible="{= (${material>/sourcingTypeKey} === 1 ? false : true )}"> <!--hide only for DSD-->
 							<items>
 								<core:Item text="Active" key="03"/>
 								<core:Item text="Discontinued" key="05"/>
@@ -258,13 +258,13 @@
 								<l:GridData span="XL4 L4 M4 S4"/>
 							</layoutData>
 						</ComboBox>
-						<Label fieldGroupIds="lbl" text="Valid From" wrapping="false">
+						<Label fieldGroupIds="lbl" text="Valid From" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 1 ? false : true )}"> <!--hide only for DSD-->
 							<layoutData>
 								<l:GridData span="XL2 L2 M2 S2"/>
 							</layoutData>
 						</Label>
 						<DatePicker placeholder="Enter Date" change="handleChange" value="{material>purchStatusFrom}" valueFormat="yyyy-MM-dd"
-							displayFormat="MM/dd/yyyy" editable="{appControl>/editable}">
+							displayFormat="MM/dd/yyyy" editable="{appControl>/editable}" visible="{= (${material>/sourcingTypeKey} === 1 ? false : true )}"> <!--hide only for DSD-->
 							<layoutData>
 								<l:GridData span="XL4 L4 M4 S4"/>
 							</layoutData>
