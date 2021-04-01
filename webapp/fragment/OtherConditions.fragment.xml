@@ -18,12 +18,12 @@
 			columnsM="1"
 			singleContainerFullSize="false" >
 			<f:content>
-				<Label fieldGroupIds="lbl"  text="WH Moving Avg. Cost" wrapping="false">
+				<Label fieldGroupIds="lbl"  text="WH Moving Avg. Cost" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
 					<layoutData>
 						<l:GridData span="XL3 L3 M3 S3" />
 					</layoutData>
 				</Label>
-				<Input value="{material>/purchasing/genData/whMovingAvgCost}" editable="false">
+				<Input value="{material>/purchasing/genData/whMovingAvgCost}" editable="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
 					<layoutData>
 						<l:GridData span="XL2 L2 M2 S2" />
 					</layoutData>
@@ -32,46 +32,53 @@
 		</f:SimpleForm>
 		<t:Table width="772px"
 				class="sapUiTinyMargin"
-				rows="{OtherConditionsModel>/}"
+				rows="{material>/purchasing/conditionDetails/otherCondition}"
 				selectionMode="None"
-				visibleRowCount="4"
+				visibleRowCount="{=${material>/purchasing/conditionDetails/otherCondition}.length}"
 				ariaLabelledBy="title">
 				<t:columns>
 					<t:Column width="200px">
 						<Label text="Particulars"></Label>
 						<t:template>
-							<Text text="{OtherConditionsModel>Name}" wrapping="false" />
+							<Text text="{material>Name}" wrapping="false" />
 						</t:template>
 					</t:Column>
 					<t:Column resizable="false" width="150px">
 						<Label text="Value"></Label>
 						<t:template>
-							<Input visible="{=(${OtherConditionsModel>Name}==='Total') ? false : true}" 
-							editable="{= ${OtherConditionsModel>Editable} &amp;&amp; ${appControl>/editable}  &amp;&amp; ${OtherConditionsModel>ItemLevel}}"
-							value="{OtherConditionsModel>Value}" type="Number" textAlign="Right"/>
+							<Input visible="{=(${material>Name}==='Total') ? false : true}" 
+							editable="{= ${material>Editable} &amp;&amp; ${appControl>/editable}  &amp;&amp; ${material>ItemLevel}}"
+							value="{material>Value}" type="Number" textAlign="Right"/>
 						</t:template>
 					</t:Column>
 					<t:Column resizable="false" width="150px" >
 						<Label text="From"></Label>
 						<t:template>
-							<DatePicker visible="{=(${OtherConditionsModel>Name}==='Total') ? false : true}"  
-							editable="{= ${OtherConditionsModel>Editable} &amp;&amp; ${appControl>/editable}  &amp;&amp; ${OtherConditionsModel>ItemLevel}}"
+							<DatePicker visible="{=(${material>Name}==='Total') ? false : true}"  
+							editable="{= ${material>Editable} &amp;&amp; ${appControl>/editable}  &amp;&amp; ${material>ItemLevel}}"
 							displayFormat="MM/dd/yyyy"/>
 						</t:template>
 					</t:Column>
 					<t:Column resizable="false" width="150px" >
 						<Label text="Till"></Label>
 						<t:template>
-							<DatePicker visible="{=(${OtherConditionsModel>Name}==='Total') ? false : true}"  
-							editable="{= ${OtherConditionsModel>Editable} &amp;&amp; ${appControl>/editable}  &amp;&amp; ${OtherConditionsModel>ItemLevel}}"
+							<DatePicker visible="{=(${material>Name}==='Total') ? false : true}"  
+							editable="{= ${material>Editable} &amp;&amp; ${appControl>/editable}  &amp;&amp; ${material>ItemLevel}}"
 							displayFormat="MM/dd/yyyy" />
 						</t:template>
 					</t:Column>
 					<t:Column resizable="false" width="120px">
-						<Label text="Item Level"></Label>
+						<Label text="Level"></Label>
 						<t:template>
-							<CheckBox text="Item Level" visible="{=(${OtherConditionsModel>Name}!=='Total' &amp;&amp; ${OtherConditionsModel>itemRelevant} ? true : false)}" 
-							editable="{= ${OtherConditionsModel>Editable} &amp;&amp; ${appControl>/editable} }" selected="{OtherConditionsModel>ItemLevel}" />
+							<HBox>
+								<Text text="{ parts: ['material>Name', 
+													  'material>itemRelevant', 
+													  'material>ItemLevel' ], 
+											formatter: '.otherConditionLevelText'}" width="50px"/>
+								<Switch state="{material>ItemLevel}" customTextOn=" " customTextOff=" "
+								visible="{=(${material>Name}!=='Total' &amp;&amp; ${material>itemRelevant} ? true : false)}" 
+									enabled="{appControl>/editable}"/>
+							</HBox>							
 						</t:template>
 					</t:Column>
 				</t:columns>

@@ -83,6 +83,7 @@ sap.ui.define([
 			var matnr = oEvent.getParameters().arguments.matnr;
 			var commonData = this.getOwnerComponent().getModel("TestDataModel").getData();
 			var costUpdate = this.getOwnerComponent().getModel("CostUpdatesModel").getData();
+			var otherCondition = this.getOwnerComponent().getModel("OtherConditionsModel").getData();
 			var appControl = this.getOwnerComponent().getModel("appControl").getData();
 			var referenceSet = commonData.referenceSet;
 			for (var i = 0; i < referenceSet.length; i++) {
@@ -127,17 +128,39 @@ sap.ui.define([
 					matData.validity.billStatusFrom = today;
 					matData.purchasing.conditionDetails.validTo = enddate;
 					matData.logistics.genlControlParam.fromDate = today;
+
+					var costUpdateArray = [];
+					for (var j = 0; j < costUpdate.length; j++) {
+						if (costUpdate[j].WHOnly) {
+							if (matData.sourcingTypeKey === 0) {
+								costUpdateArray.push(costUpdate[j]);
+							}
+						} else costUpdateArray.push(costUpdate[j]);
+
+					}
 					var sum = matData.purchasing.conditionDetails.netPrice;
-					for (var j = 0; j < costUpdate.length; j = j + 1) {
-						if (costUpdate[j].isSubItem === true) {
-							costUpdate[j].Cost = sum.toFixed(2);
+					for (j = 0; j < costUpdateArray.length; j = j + 1) {
+						if (costUpdateArray[j].isSubItem === true) {
+							costUpdateArray[j].Cost = sum.toFixed(2);
 						} else {
-							sum = sum + parseFloat(costUpdate[j].Cost);
-							costUpdate[j].FromDate = today;
-							costUpdate[j].ToDate = enddate;
+							sum = sum + parseFloat(costUpdateArray[j].Cost);
+							costUpdateArray[j].FromDate = today;
+							costUpdateArray[j].ToDate = enddate;
 						}
 					}
-					matData.purchasing.conditionDetails.costUpdates = JSON.parse(JSON.stringify(costUpdate));
+					matData.purchasing.conditionDetails.costUpdates = costUpdateArray;
+
+					var otherConditionsArray = [];
+					for (j = 0; j < otherCondition.length; j++) {
+						if (otherCondition[j].Name === "Performance Allowance" || otherCondition[j].Name === "WH Up-Charge") {
+							if (matData.sourcingTypeKey === 0) {
+								otherConditionsArray.push(otherCondition[j]);
+							}
+						} else otherConditionsArray.push(otherCondition[j]);
+
+					}
+					matData.purchasing.conditionDetails.otherCondition = otherConditionsArray;
+
 					matData.posStates = JSON.parse(JSON.stringify(commonData.posStates));
 					matData.posFlags = JSON.parse(JSON.stringify(commonData.posFlags));
 					matData.posStores = JSON.parse(JSON.stringify(commonData.posStores));
@@ -1114,6 +1137,52 @@ sap.ui.define([
 
 			oModel.setProperty(oPath, aContexts);
 			this.onGlobalBlockChange(oEvent);
+
+		},
+
+		costUpdateEditability: function (isSubitem, showItemLevel, ItemLevel, alwaysInput, sourcetypeKey, appEditable) {
+
+			//sourctypekey not used
+
+			if (appEditable === false)
+				return false;
+			else if (isSubitem === false && showItemLevel === true && ItemLevel === true)
+				return true;
+			else if (alwaysInput)
+				return true;
+			else
+				return false;
+
+		},
+
+		costUpdateEditState: function (isSubitem, showItemLevel, ItemLevel, alwaysInput, sourcetypeKey, appEditable) {
+			if (this.costUpdateEditability(isSubitem, showItemLevel, ItemLevel, alwaysInput, sourcetypeKey, appEditable))
+				return "Information";
+			else return "None";
+		},
+
+		costUpdateLevelText: function (isSubItem, sourcetypeKey, alwaysInput, showItemLevel, ItemLevel) {
+
+			//sourctypekey not used
+
+			if (isSubItem)
+				return "";
+			else if (alwaysInput === true)
+				return "Item";
+			else if (showItemLevel === true) {
+				if (ItemLevel) return "Item";
+				else return "Vendor";
+			} else return "Vendor";
+		},
+
+		otherConditionLevelText: function (name, itemrelevant, itemlevel) {
+			if (name === "Total")
+				return "";
+			else if (itemrelevant) {
+				if (itemlevel)
+					return "Item";
+				else return "Vendor";
+			} else return "Vendor";
 
 		}
 

@@ -233,7 +233,7 @@
 				<f:SimpleForm title="Data for Each Vendor/Purchasing Org/Plant (Details)" binding="{material>/purchasing/sourcingDetails}" editable="true"
 					layout="ResponsiveGridLayout" adjustLabelSpan="false" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
 					<f:content>
-						<Label fieldGroupIds="lbl" text="Purchase Grp." wrapping="false" required="true">
+						<Label fieldGroupIds="lbl" text="Buyer" wrapping="false" required="true">
 							<layoutData>
 								<l:GridData span="XL2 L2 M2 S2"/>
 							</layoutData>
@@ -245,56 +245,18 @@
 							<layoutData>
 								<l:GridData span="XL4 L4 M4 S4"/>
 							</layoutData>
-						</ComboBox><!--
-						<Label fieldGroupIds="lbl" text="Tax Code" wrapping="false">
-							<layoutData>
-								<l:GridData span="XL2 L2 M2 S2"/>
-							</layoutData>
-						</Label>
-						<Input value="{material>taxCode}" editable="false" >
-							<layoutData>
-								<l:GridData span="XL4 L4 M4 S4"/>
-							</layoutData>
-						</Input>-->
-						<!--<Label fieldGroupIds="lbl" text="Min Qty" wrapping="false">
-							<layoutData>
-								<l:GridData span="XL2 L2 M2 S2"/>
-							</layoutData>
-						</Label>
-						<Input value="{material>sourceMinQty}" editable="false">
-							<layoutData>
-								<l:GridData span="XL2 L2 M2 S2"/>
-							</layoutData>
-						</Input>
-						<ComboBox selectedKey="{material>sourceMinQtyUoM}" showSecondaryValues="true" items="{MasterDataModel>/orderUnits}" editable="false">
-							<items>
-								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
-							</items>
-							<layoutData>
-								<l:GridData span="XL2 L2 M2 S2"/>
-							</layoutData>
 						</ComboBox>
-						<Label fieldGroupIds="lbl" text="Max Qty" wrapping="false">
+						<Label fieldGroupIds="lbl" text="PI Deliv. Time" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
 							<layoutData>
 								<l:GridData span="XL2 L2 M2 S2"/>
 							</layoutData>
 						</Label>
-						<Input value="{material>maxQty}" editable="false">
-							<layoutData>
-								<l:GridData span="XL4 L4 M4 S4"/>
-							</layoutData>
-						</Input>-->
-						<Label fieldGroupIds="lbl" text="PI Deliv. Time" wrapping="false">
-							<layoutData>
-								<l:GridData span="XL2 L2 M2 S2"/>
-							</layoutData>
-						</Label>
-						<Input value="{material>piDelvyTime}" editable="false">
+						<Input value="{material>piDelvyTime}" editable="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
 							<layoutData>
 								<l:GridData span="XL2 L2 M2 S2"/>
 							</layoutData>
 						</Input>
-						<ComboBox selectedKey="Days" editable="false">
+						<ComboBox selectedKey="Days" editable="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
 							<items>
 								<core:Item text="Days" key="Days"/>
 							</items>
@@ -302,24 +264,16 @@
 								<l:GridData span="XL2 L2 M2 S2"/>
 							</layoutData>
 						</ComboBox>
-						<Label fieldGroupIds="lbl" text="Rem Shelf Life" wrapping="false">
+						<Label fieldGroupIds="lbl" text="Rem Shelf Life" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
 							<layoutData>
 								<l:GridData span="XL2 L2 M2 S2"/>
 							</layoutData>
 						</Label>
-						<Input value="{material>remShelfLife}" description="days" editable="false">
+						<Input value="{material>remShelfLife}" description="days" editable="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
 							<layoutData>
 								<l:GridData span="XL4 L4 M4 S4"/>
 							</layoutData>
 						</Input>
-<!--						<ComboBox selectedKey="Days" editable="false" >
-							<items>
-								<core:Item text="Days" key="Days"/>
-							</items>
-							<layoutData>
-								<l:GridData span="XL2 L2 M2 S2"/>
-							</layoutData>
-						</ComboBox>-->
 						<Label fieldGroupIds="lbl" text="Grtd.Shelf Life" wrapping="false">
 							<layoutData>
 								<l:GridData span="XL2 L2 M2 S2"/>
@@ -340,12 +294,12 @@
 								<l:GridData span="XL4 L4 M4 S4"/>
 							</layoutData>
 						</Input>
-						<Label fieldGroupIds="lbl" text="Shipping Instr" wrapping="false">
+						<Label fieldGroupIds="lbl" text="Shipping Instr" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
 							<layoutData>
 								<l:GridData span="XL2 L2 M2 S2"/>
 							</layoutData>
 						</Label>
-						<Input value="{material>shipInstr}" editable="{appControl>/editable}">
+						<Input value="{material>shipInstr}" editable="{appControl>/editable}" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
 							<layoutData>
 								<l:GridData span="XL4 L4 M4 S4"/>
 							</layoutData>
@@ -478,12 +432,12 @@
 								<l:GridData span="XL4 L4 M4 S4"/>
 							</layoutData>
 						</DatePicker>
-						<Label fieldGroupIds="lbl" text="Pr. Date Cntr" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 1 ? false : true )}"> <!--hide only for DSD-->
+						<Label fieldGroupIds="lbl" text="Pr. Date Cntr" wrapping="false" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
 							<layoutData>
 								<l:GridData span="XL2 L2 M2 S2"/>
 							</layoutData>
 						</Label>
-						<ComboBox selectedKey="{material>dateContrl}" showSecondaryValues="true" items="{MasterDataModel>/prDateControls}" editable="{appControl>/editable}" visible="{= (${material>/sourcingTypeKey} === 1 ? false : true )}"> <!--hide only for DSD-->
+						<ComboBox selectedKey="{material>dateContrl}" showSecondaryValues="true" items="{MasterDataModel>/prDateControls}" editable="{appControl>/editable}" visible="{= (${material>/sourcingTypeKey} === 0 ? true : false )}">
 							<items>
 								<core:ListItem text="{MasterDataModel>name}" key="{MasterDataModel>code}" additionalText="{MasterDataModel>code}"/>
 							</items>

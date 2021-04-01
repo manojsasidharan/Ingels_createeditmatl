@@ -27,7 +27,7 @@
 						</layoutData>
 					</Text>
 					
-					<Label fieldGroupIds="lbl" text="Pack" wrapping="false">
+					<Label fieldGroupIds="lbl"  text="{= (${material>/sourcingTypeKey} === 0 ? 'Pack' : 'Case Pack' )}" wrapping="false">
 						<layoutData>
 							<l:GridData span="XL2 L2 M2 S2"/>
 						</layoutData>
