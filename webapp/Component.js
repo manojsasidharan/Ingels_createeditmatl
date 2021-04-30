@@ -87,7 +87,8 @@ sap.ui.define([
 				sourcingType: "",
 				refMaterial: "",
 				materialType: "",
-				materialGroup: ""
+				materialGroup: "",
+				allstateagerestrn: ""
 			};
 			this.setModel(new JSONModel(appControl), "appControl");			
 

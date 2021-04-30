@@ -69,13 +69,49 @@
 					</Text>
 				</f:content>
 			</f:SimpleForm>
-			<t:Table rows="{material>/purchasing/vendorStoreBlocks}" id="vendorStoreBlocksTable" visibleRowCount="10" ariaLabelledBy="title" class="sapUiTinyMargin" >
+			<t:Table rows="{material>/purchasing/vendorStoreBlocks}" id="vendorStoreBlocksTable" 
+			firstVisibleRow="{appControl>/vendorStoreBlockFirstRow}"
+			visibleRowCount="10" ariaLabelledBy="title" class="sapUiTinyMargin" >
 				<t:extension>
 					<OverflowToolbar>
 						<Title class="sapUiFormTitleH6" text="Enter Sites for site level block"/>
 						<ToolbarSpacer/>
+						<SearchField
+							placeholder="Search"
+							search="filterVendorStoreBlock"
+							width="8rem"/>
 						<Button type="Transparent" icon="sap-icon://add" press="onAppendVendorStoreBlock" tooltip="Add row" visible="{appControl>/editable}"/>
 						<Button type="Transparent" icon="sap-icon://delete" press="onDeleteVendorStoreBlock" tooltip="Delete selected row" visible="{appControl>/editable}"/>
+		<MenuButton text="Add">
+			<menu>
+				<Menu>
+					<MenuItem text="Sites in State" >
+						<items>
+							<MenuItem text="North Carolina" press="addSite" />
+							<MenuItem text="South Carolina" />
+							<MenuItem text="Georgia" />
+							<MenuItem text="Tennesse" />
+							<MenuItem text="Virginia" />
+						</items>
+					</MenuItem>
+				</Menu>
+			</menu>
+		</MenuButton>	
+		<MenuButton text="Delete">
+			<menu>
+				<Menu>
+					<MenuItem text="Sites in State" >
+						<items>
+							<MenuItem text="North Carolina" press="addSite" />
+							<MenuItem text="South Carolina" />
+							<MenuItem text="Georgia" />
+							<MenuItem text="Tennesse" />
+							<MenuItem text="Virginia" />
+						</items>
+					</MenuItem>
+				</Menu>
+			</menu>
+		</MenuButton>						
 					</OverflowToolbar>
 				</t:extension>			
 				<t:columns>

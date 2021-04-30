@@ -1184,6 +1184,52 @@ sap.ui.define([
 				else return "Vendor";
 			} else return "Vendor";
 
+		},
+		
+		filterVendorStoreBlock: function (oEvent) {
+			var sQuery = oEvent.getParameter("query");
+			var oTable = this.getView().byId("vendorStoreBlocksTable");
+			var oModel = this.getView().getModel("material");
+			var oAppModel = this.getView().getModel("appControl");
+			var storeBlocks = oModel.getProperty("/purchasing/vendorStoreBlocks");
+			for( var i = 0; i < storeBlocks.length ; i++ )
+			{
+				if(storeBlocks[i].site === sQuery )
+				{
+					oAppModel.setProperty("/vendorStoreBlockFirstRow", i);
+					break;
+				}
+			}
+
+		},
+		
+		onAllStateAgeRestrn: function(oEvent)
+		{
+			var oModel = this.getView().getModel("material");
+			var selAge = oEvent.getSource().getSelectedKey();
+			if( selAge !== "" && selAge !== undefined )
+			{
+				var rows = oModel.getProperty("/posStates/rows");
+				for( var i = 0; i < rows.length; i++)
+				{
+					rows[i].ageRestrn = true;
+					rows[i].age = selAge;
+				}
+				
+				oModel.setProperty("/posStates/rows", rows);
+				this.getView().getModel("appControl").setProperty("/allstateagerestrn", "");
+				
+			}
+			
+		},
+		onStateAgeRestrn: function(oEvent)
+		{
+			var state = oEvent.getSource().getState();
+			if(state === false)
+			{
+				var sPath = oEvent.getSource().getParent().getBindingContextPath() + "/age";
+				this.getView().getModel("material").setProperty(sPath, "");
+			}
 		}
 
 	});

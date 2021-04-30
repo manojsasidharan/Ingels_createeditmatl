@@ -36,18 +36,35 @@
 				</Text>
 			</f:content>
 		</f:SimpleForm>
-		<Table inset="false" items="{material>rows}" class="sapUiTinyMargin" backgroundDesign="Transparent" width="400px"
+		<Table inset="false" items="{material>rows}" class="sapUiTinyMargin" backgroundDesign="Transparent" width="600px"
 			showSeparators="None">
 			<headerToolbar>
 				<Toolbar >
-					<Title text="POS Control for each State" textAlign="Left" width="400px"/>
+					<Title text="POS Control for each State" textAlign="Left"/>
+				<ToolbarSpacer/>
+				<Label text="All State Age Restriction"/>	
+						<ComboBox selectedKey="{appControl>/allstateagerestrn}" 
+								editable="{appControl>/editable}" 
+								showSecondaryValues="true" 
+								width="60px"
+								class="sapUiTinyMargin"
+								selectionChange="onAllStateAgeRestrn">
+							<items>
+								<core:ListItem text="16" key="16" />
+								<core:ListItem text="17" key="17" />
+								<core:ListItem text="18" key="18" />
+								<core:ListItem text="19" key="19" />
+								<core:ListItem text="20" key="20" />
+								<core:ListItem text="21" key="21" />
+							</items>
+						</ComboBox>					
 				</Toolbar>
 			</headerToolbar>
 			<columns>
-				<Column width="70px">
+				<Column width="100px">
 					<Text text="State"/>
 				</Column>
-				<Column hAlign="Center" width="100px">
+				<Column hAlign="Center" >
 					<Text text="WIC Eligible"/>
 				</Column>
 				<Column hAlign="Center" width="100px">
@@ -62,7 +79,7 @@
 					<cells>
 						<Text text="{material>state}" />
 						<Switch state="{material>WICeligible}" customTextOn="Yes" customTextOff="No" enabled="{appControl>/editable}"/>
-						<Switch state="{material>ageRestrn}" customTextOn="Yes" customTextOff="No" enabled="{appControl>/editable}"/>
+						<Switch state="{material>ageRestrn}" customTextOn="Yes" customTextOff="No" enabled="{appControl>/editable}" change="onStateAgeRestrn"/>
 						<ComboBox selectedKey="{material>age}" editable="{= ${material>ageRestrn} &amp;&amp; ${appControl>/editable} }" showSecondaryValues="true" >
 							<items>
 								<core:ListItem text="16" key="16" />
