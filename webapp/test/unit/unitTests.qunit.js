@@ -5,7 +5,7 @@ sap.ui.getCore().attachInit(function () {
 	"use strict";
 
 	sap.ui.require([
-		"Ingles/AddOn/CreateEditMaterial/test/unit/AllTests"
+		"Ingles/Mock/CreateEditMaterial/test/unit/AllTests"
 	], function () {
 		QUnit.start();
 	});

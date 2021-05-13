@@ -1,7 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"Ingles/AddOn/CreateEditMaterial/model/models",
+	"Ingles/Mock/CreateEditMaterial/model/models",
 	"sap/ui/model/json/JSONModel",
 	"sap/f/library",
 	"sap/f/FlexibleColumnLayoutSemanticHelper"
@@ -10,7 +10,7 @@ sap.ui.define([
 
 	var LayoutType = library.LayoutType;
 
-	return UIComponent.extend("Ingles.AddOn.CreateEditMaterial.Component", {
+	return UIComponent.extend("Ingles.Mock.CreateEditMaterial.Component", {
 
 		modes: {
 			create: "CREATE",

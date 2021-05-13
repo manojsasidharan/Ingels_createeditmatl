@@ -1,4 +1,4 @@
-<mvc:View controllerName="Ingles.AddOn.CreateEditMaterial.controller.Master" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+<mvc:View controllerName="Ingles.Mock.CreateEditMaterial.controller.Master" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
 	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
 	<Page>
 		<content>

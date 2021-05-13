@@ -7,7 +7,7 @@ sap.ui.define([
 
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "Ingles.AddOn.CreateEditMaterial.view.",
+		viewNamespace: "Ingles.Mock.CreateEditMaterial.view.",
 		autoWait: true
 	});
 });

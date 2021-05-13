@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"Ingles/AddOn/CreateEditMaterial/controller/CreateEditMaterial.controller"
+	"Ingles/Mock/CreateEditMaterial/controller/CreateEditMaterial.controller"
 ], function (Controller) {
 	"use strict";
 

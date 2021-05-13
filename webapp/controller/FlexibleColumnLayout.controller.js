@@ -4,7 +4,7 @@ sap.ui.define([
 ], function (Controller, JSONModel) {
 	"use strict";
 
-	return Controller.extend("Ingles.AddOn.CreateEditMaterial.controller.FlexibleColumnLayout", {
+	return Controller.extend("Ingles.Mock.CreateEditMaterial.controller.FlexibleColumnLayout", {
 
 		onInit: function () {
 			this.oRouter = this.getOwnerComponent().getRouter();

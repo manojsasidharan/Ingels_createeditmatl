@@ -9,7 +9,7 @@ sap.ui.define([
 ], function (Controller, Dialog, DialogType, Button, ButtonType, Label, JSONModel) {
 	"use strict";
 
-	return Controller.extend("Ingles.AddOn.CreateEditMaterial.controller.Master", {
+	return Controller.extend("Ingles.Mock.CreateEditMaterial.controller.Master", {
 		onInit: function () {
 			this.oRouter = this.getOwnerComponent().getRouter();			
 			this.eventBus = sap.ui.getCore().getEventBus();

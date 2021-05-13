@@ -1,7 +1,7 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-		"id": "Ingles.AddOn.CreateEditMaterial",
+		"id": "Ingles.Mock.CreateEditMaterial",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -61,7 +61,7 @@
 			}
 		},
 		"rootView": {
-			"viewName": "Ingles.AddOn.CreateEditMaterial.view.FlexibleColumnLayout",
+			"viewName": "Ingles.Mock.CreateEditMaterial.view.FlexibleColumnLayout",
 			"type": "XML",
 			"async": true,
 			"id": "fcl"
@@ -87,7 +87,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "Ingles.AddOn.CreateEditMaterial.i18n.i18n"
+					"bundleName": "Ingles.Mock.CreateEditMaterial.i18n.i18n"
 				}
 			},
 			"CostUpdatesModel": {
@@ -123,7 +123,7 @@
 				"routerClass": "sap.f.routing.Router",
 				"viewType": "XML",
 				"async": true,
-				"viewPath": "Ingles.AddOn.CreateEditMaterial.view",
+				"viewPath": "Ingles.Mock.CreateEditMaterial.view",
 				"controlId": "fcl",
 				"transition": "slide"
 			},
@@ -179,7 +179,7 @@
 		}
 	},
 	"sap.platform.abap": {
-		"uri": "/sap/bc/ui5_ui5/aplx/createeditmatl/webapp",
+		"uri": "/sap/bc/ui5_ui5/zmockarticle/webapp",
 		"_version": "1.1.0"
 	}
 }

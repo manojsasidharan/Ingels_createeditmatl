@@ -1,13 +1,13 @@
-<mvc:View controllerName="Ingles.AddOn.CreateEditMaterial.controller.MaterialData" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core"
+<mvc:View controllerName="Ingles.Mock.CreateEditMaterial.controller.MaterialData" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core"
 	xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns="sap.uxap" class="sapUiSizeCompact" displayBlock="true">
 			<ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" upperCaseAnchorBar="false">
 				<headerTitle>
 					<ObjectPageDynamicHeaderTitle>
 						<expandedHeading>
-							<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.MaterialHeader" type="XML"></core:Fragment>
+							<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.MaterialHeader" type="XML"></core:Fragment>
 						</expandedHeading>
 						<snappedHeading>
-							<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.MaterialHeader" type="XML"></core:Fragment>
+							<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.MaterialHeader" type="XML"></core:Fragment>
 						</snappedHeading>
 						<actions>
 							<m:Button text="Save" press="onSave" type="Emphasized" visible="{appControl>/editable}"/>
@@ -20,7 +20,7 @@
 						<subSections>
 							<ObjectPageSubSection >
 								<blocks>
-									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.BasicData" type="XML"></core:Fragment>
+									<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.BasicData" type="XML"></core:Fragment>
 								</blocks>
 							</ObjectPageSubSection>
 						</subSections>
@@ -29,7 +29,7 @@
 						<subSections>
 							<ObjectPageSubSection>
 								<blocks>
-									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.Purchasing" type="XML"></core:Fragment>
+									<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.Purchasing" type="XML"></core:Fragment>
 								</blocks>
 							</ObjectPageSubSection>
 						</subSections>
@@ -38,34 +38,34 @@
 						<subSections>
 							<ObjectPageSubSection>
 								<blocks>
-									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.MaterialProfile" type="XML"></core:Fragment>
+									<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.MaterialProfile" type="XML"></core:Fragment>
 								</blocks>
 							</ObjectPageSubSection>
 						</subSections>
 					</ObjectPageSection>
 					<!--			<ObjectPageSection title="Store Ops"><subSections><ObjectPageSubSection><blocks>
-						<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.StoreOps" type="XML"></core:Fragment>
+						<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.StoreOps" type="XML"></core:Fragment>
 			</blocks></ObjectPageSubSection></subSections></ObjectPageSection>-->
 					<!--			<ObjectPageSection title="Sales"><subSections><ObjectPageSubSection><blocks>
-						<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.Sales" type="XML"></core:Fragment>
+						<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.Sales" type="XML"></core:Fragment>
 			</blocks></ObjectPageSubSection></subSections></ObjectPageSection>-->
 					<ObjectPageSection title="Logistics DC" visible="{path:'material>/sourcingTypeKey', formatter: '.isWarehouseSourceType'}" >
 						<subSections>
 							<ObjectPageSubSection>
 								<blocks>
-									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.LogisticsDC" type="XML"></core:Fragment>
+									<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.LogisticsDC" type="XML"></core:Fragment>
 								</blocks>
 							</ObjectPageSubSection>
 						</subSections>
 					</ObjectPageSection>
 					<!--<ObjectPageSection title="Logistics Stores"><subSections><ObjectPageSubSection><blocks>-->
-					<!--			<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.LogisticsStores" type="XML"></core:Fragment>-->
+					<!--			<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.LogisticsStores" type="XML"></core:Fragment>-->
 					<!--</blocks></ObjectPageSubSection></subSections></ObjectPageSection>-->
 					<ObjectPageSection title="POS Global">
 						<subSections>
 							<ObjectPageSubSection>
 								<blocks>
-									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.POSGlobal" type="XML"></core:Fragment>
+									<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.POSGlobal" type="XML"></core:Fragment>
 								</blocks>
 							</ObjectPageSubSection>
 						</subSections>
@@ -74,7 +74,7 @@
 						<subSections>
 							<ObjectPageSubSection>
 								<blocks>
-									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.POSStores" type="XML"></core:Fragment>
+									<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.POSStores" type="XML"></core:Fragment>
 								</blocks>
 							</ObjectPageSubSection>
 						</subSections>
@@ -83,7 +83,7 @@
 						<subSections>
 							<ObjectPageSubSection>
 								<blocks>
-									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.POSState" type="XML"></core:Fragment>
+									<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.POSState" type="XML"></core:Fragment>
 								</blocks>
 							</ObjectPageSubSection>
 						</subSections>
@@ -92,7 +92,7 @@
 						<subSections>
 							<ObjectPageSubSection>
 								<blocks>
-									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.ScaleData" type="XML"></core:Fragment>
+									<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.ScaleData" type="XML"></core:Fragment>
 								</blocks>
 							</ObjectPageSubSection>
 						</subSections>
@@ -101,7 +101,7 @@
 						<subSections>
 							<ObjectPageSubSection>
 								<blocks>
-									<core:Fragment fragmentName="Ingles.AddOn.CreateEditMaterial.fragment.NutrientData" type="XML"></core:Fragment>
+									<core:Fragment fragmentName="Ingles.Mock.CreateEditMaterial.fragment.NutrientData" type="XML"></core:Fragment>
 								</blocks>
 							</ObjectPageSubSection>
 						</subSections>

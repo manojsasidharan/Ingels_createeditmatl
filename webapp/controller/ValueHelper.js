@@ -10,7 +10,7 @@ sap.ui.define([
 ], function (Object, JSONModel, ValueHelpDialog, FilterBar, Filter, FilterOperator, Input, SearchField) {
 	"use strict";
 
-	return Object.extend("Ingles.AddOn.CreateEditMaterial.controller.ValueHelper", {
+	return Object.extend("Ingles.Mock.CreateEditMaterial.controller.ValueHelper", {
 		srchHelpName: "",
 		srchHelpDialog: null,
 		srchHelpDialogName: "",

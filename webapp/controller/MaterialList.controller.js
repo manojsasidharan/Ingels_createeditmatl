@@ -4,7 +4,7 @@ sap.ui.define([
 ], function (Controller, JSONModel) {
 	"use strict";
 
-	return Controller.extend("Ingles.AddOn.CreateEditMaterial.controller.MaterialList", {
+	return Controller.extend("Ingles.Mock.CreateEditMaterial.controller.MaterialList", {
 
 		/**
 		 * Called when a controller is instantiated and its View controls (if available) are already created.

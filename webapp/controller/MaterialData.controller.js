@@ -6,7 +6,7 @@ sap.ui.define([
 	"sap/m/MessageToast",
 	"sap/ui/model/ListBinding",
 	//"sap/ui/comp/filterbar/FilterBar",
-	"Ingles/AddOn/CreateEditMaterial/controller/ValueHelper",
+	"Ingles/Mock/CreateEditMaterial/controller/ValueHelper",
 	// "sap/m/Input",
 	// "sap/m/SearchField",
 	"sap/ui/model/Filter",
@@ -14,7 +14,7 @@ sap.ui.define([
 ], function (Controller, Fragment, JSONModel, History, MessageToast, ListBinding, ValueHelper, Filter, FilterOperator) {
 	"use strict";
 
-	return Controller.extend("Ingles.AddOn.CreateEditMaterial.controller.MaterialData", {
+	return Controller.extend("Ingles.Mock.CreateEditMaterial.controller.MaterialData", {
 		onInit: function () {
 			this.getView().getControlsByFieldGroupId("lbl").forEach(function (mLbl) {
 				mLbl.setTooltip(mLbl.getText());
@@ -413,7 +413,7 @@ sap.ui.define([
 				var that = this;
 				Fragment.load({
 					id: "PADialog",
-					name: "Ingles.AddOn.CreateEditMaterial.fragment.ProductAttributes",
+					name: "Ingles.Mock.CreateEditMaterial.fragment.ProductAttributes",
 					controller: this
 				}).then(function (oDialog) {
 					that.PADialog = oDialog;
@@ -434,7 +434,7 @@ sap.ui.define([
 				this.TxtDialog.destroy();
 			}
 
-			this.TxtDialog = new sap.ui.xmlfragment("EANDialog", "Ingles.AddOn.CreateEditMaterial.fragment.Texts", this);
+			this.TxtDialog = new sap.ui.xmlfragment("EANDialog", "Ingles.Mock.CreateEditMaterial.fragment.Texts", this);
 			this.getView().addDependent(this.TxtDialog);
 			var textArea;
 			switch (textType) {
@@ -488,7 +488,7 @@ sap.ui.define([
 			}
 
 			if (!this.CDDialog) {
-				this.CDDialog = new sap.ui.xmlfragment("CDDialog", "Ingles.AddOn.CreateEditMaterial.fragment.ConsumptionData", this);
+				this.CDDialog = new sap.ui.xmlfragment("CDDialog", "Ingles.Mock.CreateEditMaterial.fragment.ConsumptionData", this);
 				this.getView().addDependent(this.CDDialog);
 			}
 			this.CDDialog.open();
@@ -504,7 +504,7 @@ sap.ui.define([
 				var that = this;
 				Fragment.load({
 					id: "CUDialog",
-					name: "Ingles.AddOn.CreateEditMaterial.fragment.CostUpdates",
+					name: "Ingles.Mock.CreateEditMaterial.fragment.CostUpdates",
 					controller: this
 				}).then(function (oDialog) {
 					that.CUDialog = oDialog;
@@ -525,7 +525,7 @@ sap.ui.define([
 				var that = this;
 				Fragment.load({
 					id: "VFDialog",
-					name: "Ingles.AddOn.CreateEditMaterial.fragment.OtherConditions",
+					name: "Ingles.Mock.CreateEditMaterial.fragment.OtherConditions",
 					controller: this
 				}).then(function (oDialog) {
 					that.VFDialog = oDialog;
@@ -550,7 +550,7 @@ sap.ui.define([
 				var that = this;
 				Fragment.load({
 					id: "PHDialog",
-					name: "Ingles.AddOn.CreateEditMaterial.fragment.MaterialPriceHistory",
+					name: "Ingles.Mock.CreateEditMaterial.fragment.MaterialPriceHistory",
 					controller: this
 				}).then(function (oDialog) {
 					that.PHDialog = oDialog;
@@ -571,7 +571,7 @@ sap.ui.define([
 				var that = this;
 				Fragment.load({
 					id: "AVDialog",
-					name: "Ingles.AddOn.CreateEditMaterial.fragment.AccountingView",
+					name: "Ingles.Mock.CreateEditMaterial.fragment.AccountingView",
 					controller: this
 				}).then(function (oDialog) {
 					that.AVDialog = oDialog;
@@ -596,7 +596,7 @@ sap.ui.define([
 				var that = this;
 				Fragment.load({
 					id: "VSBDialog",
-					name: "Ingles.AddOn.CreateEditMaterial.fragment.VendorBlockStores",
+					name: "Ingles.Mock.CreateEditMaterial.fragment.VendorBlockStores",
 					controller: this
 				}).then(function (oDialog) {
 					that.VSBDialog = oDialog;
@@ -648,7 +648,7 @@ sap.ui.define([
 				var that = this;
 				Fragment.load({
 					id: "PFDialog",
-					name: "Ingles.AddOn.CreateEditMaterial.fragment.PriceFamily",
+					name: "Ingles.Mock.CreateEditMaterial.fragment.PriceFamily",
 					controller: this
 				}).then(function (oDialog) {
 					that.PFDialog = oDialog;
@@ -673,7 +673,7 @@ sap.ui.define([
 				var that = this;
 				Fragment.load({
 					id: "VCDialog",
-					name: "Ingles.AddOn.CreateEditMaterial.fragment.VendorCopy",
+					name: "Ingles.Mock.CreateEditMaterial.fragment.VendorCopy",
 					controller: this
 				}).then(function (oDialog) {
 					that.VCDialog = oDialog;
@@ -726,7 +726,7 @@ sap.ui.define([
 
 		onOpenAddlEAN: function (oEvent) {
 			if (!this.EANDialog) {
-				this.EANDialog = new sap.ui.xmlfragment("EANDialog", "Ingles.AddOn.CreateEditMaterial.fragment.AddlEAN", this);
+				this.EANDialog = new sap.ui.xmlfragment("EANDialog", "Ingles.Mock.CreateEditMaterial.fragment.AddlEAN", this);
 				this.getView().addDependent(this.EANDialog);
 			}
 			this.EANDialog.open();
